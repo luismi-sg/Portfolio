@@ -1,0 +1,44 @@
+.Inicio{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.Inicio-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #09001270 , #1b004c);
+    mix-blend-mode:hard-light;
+    text-align: center;
+}
+.Inicio-h1{
+    color: #9300e9;
+    font-size: 18em;
+    line-height: .9em;
+    opacity: .8;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.Inicio-h2{
+    color: #d7cdff;
+    font-size: 2em;
+    opacity: .7;
+    line-height: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    mix-blend-mode:hard-light;
+}
+@media (max-width:500px) {
+    .Inicio-h1{
+        font-size: 8em;
+    }
+    .Inicio-h2{
+        font-size: 1em;
+    }
+}
