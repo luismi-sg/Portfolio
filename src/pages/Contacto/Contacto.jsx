@@ -3,9 +3,23 @@ import './Contacto.css'
 export const Contacto = () => {
     return( 
         <div className='Contacto'>
+            <h2 className='Contacto-h2'>CONTACTO</h2>
             <div className='Contacto-wrapper'>
-                <h2 className='Contacto-h2'>CONTACTO</h2>
+                <div className='Perfil-wrapper'>
+                    <div className='Imagen-wrapper'>
+                        <img className='Imagen-img' src="/assets/luismi_port.webp" alt="" />
+                    </div>
+                    <div className='Info-wrapper'>
+                        <h3 className='Info-h3'>Luis Miguel Sovero</h3>
+                        <p className='Info-p'>✅ Estudiando Desarrollo y Diseño Web en CEI - Centro de Estudios de Innovación, Madrid.</p>
+                        <p className='Info-p'>✅ Apuntando a desenvolverme en el ámbito laboral como Frontend Developer. </p>
+                        <p className='Info-p'>✅ Diseñador gráfico digital. Mi experiencia se basa en el desarrollo de branding y rediseño de imagen corporativa para diversas empresas.</p>
+                        <p className='Info-p'>✅ Especializado en diseño digital, el cual llevo realizando gran parte de mi carrera profesional de forma inherente, en entornos multimedia y multicanal.
+                        </p>
+                    </div>
+                </div>
             </div>
+            
             <div className='Redes-wrapper'>
                 <ul className='Redes-ul'>
                     <li className='Redes-li'><a href='https://www.linkedin.com/in/luismisg/' target='_blank' title='Perfil de Linkedin'>LINKEDIN</a></li>

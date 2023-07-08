@@ -15,10 +15,10 @@ export const Fondos = () => {
                 setsIsActive(0)
                 break;
             case '/trabajos':
-                setsIsActive(1)
+                setsIsActive(2)
                 break;
             case '/contacto':
-                setsIsActive(2)
+                setsIsActive(1)
                 break;
         }
 

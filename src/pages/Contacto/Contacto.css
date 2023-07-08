@@ -1,7 +1,11 @@
 .Contacto{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .Contacto-wrapper{
     height: 100%;
@@ -10,35 +14,105 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    
+}
+.Perfil-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.Imagen-wrapper{
+    width: 30%;
+}
+.Info-wrapper{
+    padding: 2em;
+    background-color: #ffffff88;
+    width: 30%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+.Info-h3{
+    color: #000;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.Info-p{
+    color: #000;
 }
 .Contacto-h2{
+    position: absolute;
+    top: 0;
+    left: 1em;
+
     font-weight: 300;
     letter-spacing: .2em;
     line-height: 1.8em;
-    color: #fff;
+    color: #000000;
     font-size: 8em;
+
     opacity: .5;
+    animation: aparecerArriba .5s ease ;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 .Redes-wrapper{
     position: absolute;
     top: 2em;
     right: 3em;
 }
-.Redes-ul{
-
-}
 .Redes-li{
     text-align: right;
     opacity: .5;
     font-size: 1.5em;
     line-height: 2em;
+    transition: all .5s ease;
+}
+.Redes-li:hover{
+
+    opacity: 1;
 }
 @media (max-width:500px){
     .Contacto-h2{
-        position: absolute;
-        transform: rotate(90deg);
-        font-size: 8em;
-        right: -70px;
+        right:300px;
+        font-size: 3em;
+        animation: none;
+        opacity: .5;
     }
+    .Perfil-wrapper{
+        margin: 5em 0em;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+    }
+    .Imagen-wrapper{
+        width: 90%;
+    }
+    .Info-h3{
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+    }
+    .Info-p{
+        color: #000;
+        font-size: .9em;
+    }
+    .Info-wrapper{
+        width: 90%;
+        padding: 1em;
+    }
+    .Redes-wrapper{
+        position: absolute;
+        top: 6em;
+        right: 2em;
+    }
+    .Redes-li{
+        opacity: .8;
+    }
+    
 }
