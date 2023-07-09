@@ -38,7 +38,7 @@ body{
         padding: 1em;
     }
     .Header-ul{
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .Header-li:nth-child(2){
         margin: 0em;

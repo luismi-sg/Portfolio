@@ -79,19 +79,16 @@
 }
 @media (max-width:500px){
     .Contacto-h2{
-        right:300px;
-        font-size: 3em;
-        animation: none;
-        opacity: .5;
+        display: none;
     }
     .Perfil-wrapper{
-        margin: 5em 0em;
+        margin: 0.5em 0em;
         display: flex;
         flex-flow: column nowrap;
-        gap: 0;
+        gap: 1em;
     }
     .Imagen-wrapper{
-        width: 90%;
+        width: 50%;
     }
     .Info-h3{
         font-size: 1.5em;
@@ -108,8 +105,8 @@
     }
     .Redes-wrapper{
         position: absolute;
-        top: 6em;
-        right: 2em;
+        top: 1em;
+        right: 1em;
     }
     .Redes-li{
         opacity: .8;

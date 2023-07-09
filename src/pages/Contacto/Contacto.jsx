@@ -7,7 +7,7 @@ export const Contacto = () => {
             <div className='Contacto-wrapper'>
                 <div className='Perfil-wrapper'>
                     <div className='Imagen-wrapper'>
-                        <img className='Imagen-img' src="/assets/luismi_port.webp" alt="" />
+                        <img className='Imagen-img' src="/assets/luismi-sovero-foto.webp" alt="" />
                     </div>
                     <div className='Info-wrapper'>
                         <h3 className='Info-h3'>Luis Miguel Sovero</h3>
