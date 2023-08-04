@@ -67,12 +67,23 @@
     top: 2em;
     right: 3em;
 }
+.Redes-a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
 .Redes-li{
     text-align: right;
     opacity: .5;
     font-size: 1.5em;
     line-height: 2em;
     transition: all .5s ease;
+}
+.Redes-icon{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .Redes-li:hover{
 
@@ -86,7 +97,8 @@
 }
 @media (max-width: 1023px){
     .Contacto-h2{
-        display: none;
+        padding-top: 2rem;
+        font-size: 2rem;
     }
     .Perfil-wrapper{
         margin: 0.5rem 0;
@@ -120,6 +132,12 @@
     }
 }
 @media (max-width:767px){
+    .Redes-a p{
+        display: none;
+    }
+    .Redes-icon{
+        margin-bottom: 1.5rem;
+    }
     .Info-wrapper{
         padding: 1rem;
     }
