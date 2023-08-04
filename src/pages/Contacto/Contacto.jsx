@@ -13,9 +13,8 @@ export const Contacto = () => {
                         <h3 className='Info-h3'>Luis Miguel Sovero</h3>
                         <p className='Info-p'>✅ Estudiando Desarrollo y Diseño Web en CEI - Centro de Estudios de Innovación, Madrid.</p>
                         <p className='Info-p'>✅ Apuntando a desenvolverme en el ámbito laboral como Frontend Developer. </p>
-                        <p className='Info-p'>✅ Diseñador UX/UI. Experiencia basada en el desarrollo de interfaces.</p>
-                        <p className='Info-p'>✅ Habilidades como React, JavaScript, HTML, CSS, Figma.
-                        </p>
+                        <p className='Info-p'>✅ Diseñador UX/UI. Experiencia basada en el desarrollo de interfaces. </p>
+                        <p className='Info-p'>✅ Habilidades como React, JavaScript, HTML, CSS, Figma, Wordpress, Client First, Metodología BEM, Pixel Perfect, Atomic Design.</p>
                     </div>
                 </div>
             </div>

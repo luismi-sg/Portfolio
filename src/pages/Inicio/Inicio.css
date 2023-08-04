@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     color: #fff;
+    min-width: 22.5rem;
 }
 .Inicio-wrapper{
     position: absolute;
@@ -34,9 +35,15 @@
     text-transform: uppercase;
     mix-blend-mode:hard-light;
 }
-@media (max-width:500px) {
+
+@media (max-width: 1023px){
     .Inicio-h1{
-        font-size: 8em;
+        font-size: 14em;
+    }
+}
+@media (max-width:767px) {
+    .Inicio-h1{
+        font-size: 7em;
     }
     .Inicio-h2{
         font-size: 1em;

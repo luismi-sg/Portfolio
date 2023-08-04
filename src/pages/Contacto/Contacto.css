@@ -6,6 +6,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    min-width: 22.5rem;
 }
 .Contacto-wrapper{
     height: 100%;
@@ -77,22 +78,28 @@
 
     opacity: 1;
 }
-@media (max-width:500px){
+@media (max-width: 1479px){
+    .Info-wrapper{
+        width: 40%;
+        padding: 2em;
+    }
+}
+@media (max-width: 1023px){
     .Contacto-h2{
         display: none;
     }
     .Perfil-wrapper{
-        margin: 0.5em 0em;
+        margin: 0.5rem 0;
         display: flex;
         flex-flow: column nowrap;
-        gap: 1em;
+        gap: 2rem;
     }
     .Imagen-wrapper{
-        width: 50%;
+        width: 60%;
     }
     .Info-h3{
-        font-size: 1.5em;
-        margin-bottom: 0.5em;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
         font-weight: 600;
     }
     .Info-p{
@@ -101,15 +108,20 @@
     }
     .Info-wrapper{
         width: 90%;
-        padding: 1em;
+        padding: 1rem;
     }
     .Redes-wrapper{
         position: absolute;
-        top: 1em;
-        right: 1em;
+        top: 1rem;
+        right: 1rem;
     }
     .Redes-li{
         opacity: .8;
     }
-    
+}
+@media (max-width:767px){
+    .Info-wrapper{
+        padding: 1rem;
+    }
+
 }

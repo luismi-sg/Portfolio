@@ -2,7 +2,7 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
-    min-width: 340px;
+    min-width: 22.5rem;
 }
 .Header{
     width: 100%;
@@ -33,7 +33,7 @@ body{
 .Header-li:nth-child(2){
     margin: 0em 5em ;
 }
-@media (max-width:500px){
+@media (max-width:767px){
     .Header-nav{
         padding: 1em;
     }
