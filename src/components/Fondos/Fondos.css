@@ -48,9 +48,6 @@
     opacity: 1;
     display:block;
 }
-@media (max-width: 1023px){
-
-}
 @media (max-width:767px) {
     .Fondo-trabajos{
         background: none;
