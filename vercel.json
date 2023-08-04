@@ -1,21 +1,8 @@
 {
-    "version": 2,
-    "rewrites": [
+  "rewrites": [
       {
         "source": "/(.*)",
         "destination": "/"
-      }
-    ],
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@now/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "index.js"
       }
     ]
 }
