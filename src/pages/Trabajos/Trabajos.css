@@ -28,6 +28,42 @@
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
+.Tabs-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+.Trabajos-Tabs-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.Button-tabs{
+    padding: 1rem;
+    background-color: #000;
+    cursor: pointer;
+}
+.Button-tabs:hover{
+    background-color: #0026ff;
+}
+.tab-isActive{
+    background-color: #0026ff;
+}
+.Tabs-content{
+    min-height: 4rem;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-isActive{
+    display: flex;
+}
 .Trabajos-grid{
     width: 85%;
     display: grid;
