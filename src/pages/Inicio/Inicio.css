@@ -24,15 +24,13 @@
     line-height: .9em;
     opacity: .8;
     font-weight: 300;
-    text-transform: uppercase;
 }
 .Inicio-h2{
-    color: #d7cdff;
+    color: #eee;
     font-size: 2em;
     opacity: .7;
     line-height: .8em;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 400;
     mix-blend-mode:hard-light;
 }
 

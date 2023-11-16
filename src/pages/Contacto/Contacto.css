@@ -43,12 +43,19 @@
     
 }
 .Info-h3{
-    color: #000;
+    color: #1B1B1B;
+    font-weight: 700;
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+}
+.Info-h4{
+    color: #1B1B1B;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
 }
 .Info-p{
-    color: #000;
+    color: #1B1B1B;
+    margin-bottom: .5em;
 }
 .Contacto-h2{
     display: none;
@@ -59,7 +66,7 @@
     font-weight: 300;
     letter-spacing: .2em;
     line-height: 1.8em;
-    color: #000000;
+    color: #1B1B1B;
     font-size: 8em;
 
     opacity: .5;
@@ -67,10 +74,11 @@
     animation-delay: 0s;
     animation-fill-mode: forwards;
 }
-.Redes-wrapper{
-    position: absolute;
-    top: 2em;
-    right: 3em;
+.Redes-ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 .Redes-a{
     display: flex;

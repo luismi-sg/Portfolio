@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 202 202">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_125);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_127);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_127" data-name="Degradado sin nombre 127" x1="69.65" y1="194.24" x2="203.77" y2="99.87" gradientUnits="userSpaceOnUse">
+      <stop offset=".03" stop-color="#274fff"/>
+      <stop offset=".04" stop-color="#284eff"/>
+      <stop offset=".14" stop-color="#513fff"/>
+      <stop offset=".25" stop-color="#7432ff"/>
+      <stop offset=".37" stop-color="#9128ff"/>
+      <stop offset=".49" stop-color="#a720ff"/>
+      <stop offset=".63" stop-color="#b61aff"/>
+      <stop offset=".78" stop-color="#c017ff"/>
+      <stop offset="1" stop-color="#c316ff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_125" data-name="Degradado sin nombre 125" x1="29.67" y1="153.49" x2="86.24" y2="59.15" gradientUnits="userSpaceOnUse">
+      <stop offset=".03" stop-color="#274fff"/>
+      <stop offset="1" stop-color="#c316ff"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="m101,83l59.66,108h-19.99l-39.66-72-40.01,72h-19.99l60.01-108Zm79.66,108h20.34l-60-108-10,18,49.66,90Z"/>
+  <polygon class="cls-1" points="101 11 111 29 32.37 171 21.3 191 1 191 101 11"/>
+</svg>

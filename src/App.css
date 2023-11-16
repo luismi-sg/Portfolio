@@ -7,33 +7,46 @@ body{
 .Header{
     width: 100%;
     position: fixed;
+    padding: 0 3rem ;
     top: 32px;
     z-index: 1;
-}
-.Header-nav{
-    padding: 1em 3em;
-    width: 50%;
-    background-image: linear-gradient(to left, #2b2b2b33 , #20202033);
-    box-shadow: 0px 0px 10px 0px#1a1a1abb;
-    margin: 0 auto;
-    border-radius: 50px;
-}
-.Header-ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap:10rem;
+}
+.Header-nav{
+    width: 40%;
+    min-height: 48px;
+    box-shadow: 0px 0px 8px 0px#1a1a1a44;
+    border-radius: 50px;
+    
+}
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .Header-li{
     color: #2b2b2b;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: .9em;
+    min-width: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 .Header-li:hover{
-    color: rgb(32, 17, 253);
+    color: #a3a3a3;
+}
+.Header-svg{
+    margin: .5rem 0 ;
+    width: 3rem;
+    height: 3rem;
 }
 @media (max-width:1024px){
     .Header-ul{
@@ -42,15 +55,36 @@ body{
     }
 }
 @media (max-width:767px){
-    .Header-ul{
-        gap:0.5rem;
+    .Header{
+        width: 100%;
+        position: fixed;
+        padding: 0 ;
+        top: 90%;
     }
     .Header-nav{
-        padding: 1em;
         width: 90%;
+        border-radius: 50px;
+        min-height: 0;
+    }
+    .Header-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
     }
     .Header-li{
-        font-weight: 700;
-        font-size: .8em;
+        color: #2b2b2b;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: .9em;
+        min-width: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .Header-li:hover{
+        color: #eee;
     }
 }

@@ -16,11 +16,15 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className='Header'>
+          
           <nav className='Header-nav'>
             <ul className='Header-ul'>
-              <li className='Header-li'><NavLink to={ '/trabajos' }> Trabajos </NavLink></li>
-              <li className='Header-li'><NavLink to={ '/' }> Inicio </NavLink></li>
-              <li className='Header-li'><NavLink to={ '/contacto' }> Contacto </NavLink></li>
+              <li className='Header-li'><NavLink to={ '/trabajos' }> Projects </NavLink></li>
+              <li className='Header-li'>
+                <NavLink to={ '/' }>
+                  <img className="Header-svg" src="/assets/Logo-luismi.svg" alt="Logo Luis Miguel Sovero" />
+                </NavLink></li>
+              <li className='Header-li'><NavLink to={ '/contacto' }> About </NavLink></li>
             </ul>
           </nav>
         </header>
