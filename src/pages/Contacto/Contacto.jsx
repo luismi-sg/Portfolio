@@ -3,7 +3,6 @@ import './Contacto.css'
 export const Contacto = () => {
     return( 
         <div className='Contacto'>
-            <h2 className='Contacto-h2'>CONTACTO</h2>
             <div className='Contacto-wrapper'>
                 <div className='Perfil-wrapper'>
                     <div className='Imagen-wrapper'>
