@@ -25,12 +25,16 @@
     gap: 2em;
 }
 .Imagen-wrapper{
-    width: 30%;
+    width: 30%; 
+}
+.Imagen-img{
+    border-radius: 16px;
 }
 .Info-wrapper{
     padding: 2em;
     background-color: #ffffff88;
     width: 30%;
+    border-radius: 16px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -47,6 +51,7 @@
     color: #000;
 }
 .Contacto-h2{
+    display: none;
     position: absolute;
     top: 0;
     left: 1em;
