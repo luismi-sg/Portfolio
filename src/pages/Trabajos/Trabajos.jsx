@@ -13,6 +13,7 @@ export const Trabajos = () => {
         {
             id: "0",
             img : "/assets/trabajo3_netflix.png",
+            alt : "Miniature Netflix App",
             titulo : "Netflix-project",
             gitUrl : "https://github.com/luismi-sg/Netflix-proyecto",
             webUrl : "https://netflix-proyecto.vercel.app/",
@@ -20,6 +21,7 @@ export const Trabajos = () => {
         {
             id: "1",
             img : "/assets/trabajo2_spotify.png",
+            alt : "Miniature Spotify App",
             titulo : "Spotify-project",
             gitUrl : "https://github.com/luismi-sg/APP-Spotify",
             webUrl : "https://spotify-proyecto.vercel.app/",
@@ -27,6 +29,7 @@ export const Trabajos = () => {
         {
             id: "2",
             img : "/assets/trabajo1_pink-floyd.png",
+            alt : "Miniature Web Pink Floyd",
             titulo : "Web Pink Floyd",
             gitUrl : "https://github.com/luismi-sg/atom-mother-web",
             webUrl : "https://atom-mother-web.netlify.app/",
@@ -63,9 +66,9 @@ export const Trabajos = () => {
                     <div className='Tabs-wrapper'>
                         <div className={ toggleState === 1 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <section className='Trabajos-grid'>
-                            { proyectosLm && proyectosLm.map( ({id , img , titulo , gitUrl , webUrl}) => 
-                                <article key = { id } className='Trabajos-article'>
-                                    <img className='Trabajos-img' src={ img } alt="" />
+                            { proyectosLm && proyectosLm.map( ({id , img , alt , titulo , gitUrl , webUrl}) => 
+                                <article key = { id } className='Trabajos-article' >
+                                    <img className='Trabajos-img' src={ img } alt={ alt } loading='lazy'/>
                                     <div className="Trabajos-info">
                                         <h3 className='Trabajos-h3'>{titulo}</h3>
                                         <div className="Trabajos-rrss">

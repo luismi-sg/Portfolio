@@ -109,13 +109,15 @@
 }
 @media (max-width: 1023px){
     .Perfil-wrapper{
-        margin: 0.5rem 0;
+        padding-top: 8rem;
         display: flex;
         flex-flow: column nowrap;
         gap: 2rem;
+        background-image: linear-gradient(to left top , #120b3c , #8949ff);
+        min-height: 100vh;
     }
     .Imagen-wrapper{
-        width: 60%;
+        width: 50%;
     }
     .Info-h3{
         font-size: 1.5rem;
@@ -130,19 +132,16 @@
         width: 90%;
         padding: 1rem;
     }
-    .Redes-wrapper{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
+    .Redes-ul{
+        flex-flow: row nowrap;
     }
     .Redes-li{
         opacity: .8;
     }
 }
 @media (max-width:767px){
-    .Contacto-wrapper{
-        align-items: flex-start;
-        padding-top: 8rem;
+    .Imagen-wrapper{
+        width: 80%;
     }
     .Redes-a p{
         display: none;
