@@ -11,7 +11,8 @@
 */
 /* Aquí definimos las Custom properties */
 :root {
-  --negro: #393939;
+  --negro: #1a1a1a;
+  --lila:#b027ff;
   /* Tipografía */
   font-family: 'Jost', sans-serif;
 }
@@ -19,7 +20,7 @@
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --negro: #ececec;
+    --negro: #1a1a1a;
   }
 }
 /* Opcional */
@@ -92,16 +93,15 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
-  content: none;
 }
 
 /* Configuramos el texto que seleccionamos */
 ::-moz-selection {
-  background-color: var(--negro);
+  background-color: var(--lila);
   color: var(--blanco);
 }
 ::selection {
-  background-color: var(--negro);
+  background-color: var(--lila);
   color: var(--blanco);
 }
 

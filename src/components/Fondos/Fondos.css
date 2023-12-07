@@ -44,6 +44,12 @@
     top: 0;
     left: 0;
 }
+.Fondo-interna{
+    visibility: hidden;
+    background-color: #1a1a1a;
+    opacity: 0;
+    transition: all 1s ease;
+}
 .isActive{
     opacity: 1;
     visibility: visible;

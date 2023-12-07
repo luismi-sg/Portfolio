@@ -20,6 +20,9 @@ export const Fondos = () => {
             case '/contacto':
                 setsIsActive(1)
                 break;
+            case '/beatscene':
+                setsIsActive(3)
+                break;
         }
 
     },[ location ])
@@ -36,6 +39,7 @@ export const Fondos = () => {
             </div>
             <div className={`Fondo-contacto ${ isActive === 1 ? 'isActive' : '' }`}></div>
             <div className={`Fondo-trabajos ${ isActive === 2 ? 'isActive' : '' }`}></div>
+            <div className={`Fondo-interna ${ isActive === 3 ? 'isActive' : '' }`}></div>
         </div>
     )
 }

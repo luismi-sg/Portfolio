@@ -35,6 +35,16 @@ export const Trabajos = () => {
             webUrl : "https://atom-mother-web.netlify.app/",
         },
     ]
+    const uxuiLm = [
+        {
+            id: "4",
+            img : "/assets/trabajo4_beatscene.webp",
+            alt : "Miniature BeatScene App",
+            titulo : "BeatScene App",
+            gitUrl : "#",
+            webUrl : "/beatscene",
+        }
+    ]
 
 
     return( 
@@ -89,7 +99,23 @@ export const Trabajos = () => {
                             </section>
                         </div>
                         <div className={ toggleState === 2 ? "Tabs-content content-isActive" : "Tabs-content"}>
-                            <p>UX/UI Design Under Construction...</p>
+                        <section className='Trabajos-grid'>
+                            { uxuiLm && uxuiLm.map( ({id , img , alt , titulo , gitUrl , webUrl}) => 
+                                <article key = { id } className='Trabajos-article' >
+                                    <img className='Trabajos-img' src={ img } alt={ alt } loading='lazy'/>
+                                    <div className="Trabajos-info">
+                                        <h3 className='Trabajos-h3'>{titulo}</h3>
+                                        <div className="Trabajos-rrss">
+                                            <a className='Redes-a' href={webUrl} title='WebPage'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="Redes-icon" viewBox="0 0 16 16">
+                                                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            ) }
+                            </section>
                         </div>
                         <div className={ toggleState === 3 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <p>Graphic Design Under Construction...</p>

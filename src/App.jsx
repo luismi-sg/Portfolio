@@ -6,6 +6,7 @@ import { Contacto } from './pages/Contacto/Contacto'
 import { Inicio } from './pages/Inicio/Inicio'
 import { Trabajos } from './pages/Trabajos/Trabajos'
 import { Fondos } from './components/Fondos/Fondos'
+import { BeatScene } from './pages/BeatScene/BeatScene'
 
 
 
@@ -16,7 +17,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className='Header'>
-          
           <nav className='Header-nav'>
             <ul className='Header-ul'>
               <li className='Header-li'><NavLink to={ '/trabajos' }> Projects </NavLink></li>
@@ -24,7 +24,7 @@ function App() {
                 <NavLink to={ '/' }>
                   <img className="Header-svg" src="/assets/Logo-luismi.svg" alt="Logo Luis Miguel Sovero" />
                 </NavLink></li>
-              <li className='Header-li'><NavLink to={ '/contacto' }> About </NavLink></li>
+              <li className='Header-li'><NavLink to={ '/contacto' }> About me </NavLink></li>
             </ul>
           </nav>
         </header>
@@ -33,6 +33,7 @@ function App() {
             <Route path='/' element={ <Inicio /> }/>
             <Route path='/trabajos' element={ <Trabajos /> }/>
             <Route path='/contacto' element={ <Contacto /> } />
+            <Route path='/beatscene' element={ <BeatScene /> } />
           </Routes>
       </div>
     </BrowserRouter>
