@@ -89,6 +89,7 @@
     transition: all .5s ease;
     border-radius: 16px;
     object-fit: cover;
+    aspect-ratio: 4/3;
 }
 .Trabajos-info{
     margin-top: 1.25rem;
@@ -96,7 +97,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 0;
+    padding: .5rem;
 }
 .Trabajos-h3{
     display: block;

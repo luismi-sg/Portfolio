@@ -32,7 +32,7 @@ export const Fondos = () => {
         <div className='Fondos'>
             <div className={`Fondo-inicio ${ isActive === 0 ? 'isActive' : '' }`}>
                 <div className='Video-wrapper'>
-                    <video className='Video-video' autoPlay='on' loop='on' muted data-object-fit="cover">
+                    <video className='Video-video' autoPlay='on' loop='on' muted data-object-fit="cover" controls='off' playsInline>
                         <source autoPlay src='/assets/Main_background_video.mp4' type="video/mp4"></source>
                     </video>
                 </div>
