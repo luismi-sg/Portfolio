@@ -1,83 +1,139 @@
 .Contacto{
     width: 100%;
     min-height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    color: #e2ddd6;
     min-width: 22.5rem;
 }
 .Contacto-wrapper{
+    margin: 0 auto;
     min-height: 100vh;
+    max-width: 100rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.Perfil-wrapper{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-.Imagen-wrapper{
-    width: 30%; 
-}
-.Imagen-img{
-    border-radius: 16px;
-}
-.Info-wrapper{
-    padding: 2rem;
-    background-color: #ffffff88;
-    width: 30%;
-    border-radius: 16px;
-
+.grid-wrapper{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8rem 3rem 3rem;
+}
+.Perfil-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+.Perfil-wrapper :nth-child(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.Perfil-wrapper :nth-child(2){
+    grid-column: span 2;
+    grid-row: span 1;
+    align-items: flex-start;
+}
+.grid-container{
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.grid-container:nth-child(4),
+.grid-container:nth-child(2),
+.grid-container:nth-child(3){
+    background-color: #1a1a1aaa;
+}
+.grid-enlace{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(7deg);
+}
+.grid-span {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    animation: move 16s linear infinite alternate;
+    animation-play-state: running;
+    word-break: keep-all;
+    white-space: nowrap;
+    transition: all .5s ease;
     
+  }
+  .grid-span:nth-child(1),
+  .grid-span:nth-child(3)
+  {
+    animation: moveReverse 16s linear infinite alternate;
+  }
+  .grid-container:hover .grid-span:nth-child(1),
+  .grid-container:hover .grid-span:nth-child(3){
+    color: #b027ff;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-42%);
+    }
+  }
+  @keyframes moveReverse {
+    from {
+      transform: translateX(-42%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+.Imagen-wrapper{
+    width: 100%; 
+    overflow: hidden;
+}
+.Imagen-img{
+    border-radius: 24px;
+    transition: all 2s ease ;
+}
+.Imagen-img:hover{
+    transform: scale(1.05);
+}
+.Info-wrapper{
+    padding: 2rem;    
 }
 .Info-h3{
-    color: #1B1B1B;
+    color: #b027ff;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: .5em;
 }
 .Info-h4{
-    color: #1B1B1B;
+    color: #e2ddd6;
     font-size: 1.4em;
     margin-bottom: 1.5em;
 }
-.Info-p{
-    color: #1B1B1B;
+.Info-li{
+    color: #e2ddd6;
     margin-bottom: .5em;
-}
-.Contacto-h2{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 1em;
-
-    font-weight: 300;
-    letter-spacing: .2em;
-    line-height: 1.8em;
-    color: #1B1B1B;
-    font-size: 8em;
-
-    opacity: .5;
-    animation: aparecerArriba .5s ease ;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+    line-height: 1.6rem;
 }
 .Redes-ul{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 3rem;
 }
 .Redes-a{
     display: flex;
@@ -88,36 +144,42 @@
 }
 .Redes-li{
     text-align: right;
-    opacity: .5;
+    opacity: .3;
     font-size: 1.5em;
     line-height: 2em;
     transition: all .5s ease;
 }
 .Redes-icon{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .Redes-li:hover{
-
     opacity: 1;
-}
-@media (max-width: 1479px){
-    .Info-wrapper{
-        width: 40%;
-        padding: 2em;
-    }
+    color: #b027ff;
 }
 @media (max-width: 1023px){
-    .Perfil-wrapper{
-        padding-top: 8rem;
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 2rem;
-        background-image: linear-gradient(to left top , #120b3c , #8949ff);
-        min-height: 100vh;
+    .Contacto-wrapper{
+        background-image: linear-gradient(to left top , #2d2035 , #160d49 );
     }
-    .Imagen-wrapper{
-        width: 50%;
+    .grid-wrapper{
+        padding: 0;
+        width: 100%;
+    }
+    .Perfil-wrapper{
+        padding: 10rem 2rem 2rem;
+        grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+        grid-template-rows: repeat(auto-fill , minmax(300px , 1fr));
+    }
+    .Perfil-wrapper :nth-child(1){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .Perfil-wrapper :nth-child(2){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .grid-container{
+        aspect-ratio: 1 / 1;
     }
     .Info-h3{
         font-size: 1.5rem;
@@ -129,8 +191,7 @@
         font-size: .9em;
     }
     .Info-wrapper{
-        width: 90%;
-        padding: 1rem;
+        padding: 2rem;
     }
     .Redes-ul{
         flex-flow: row nowrap;
@@ -139,18 +200,10 @@
         opacity: .8;
     }
 }
-@media (max-width:767px){
-    .Imagen-wrapper{
-        width: 80%;
+@media (max-width: 767px){
+    .Perfil-wrapper{
+        padding: 8rem 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
-    .Redes-a p{
-        display: none;
-    }
-    .Redes-icon{
-        margin-bottom: 1.5rem;
-    }
-    .Info-wrapper{
-        padding: 1rem;
-    }
-
 }

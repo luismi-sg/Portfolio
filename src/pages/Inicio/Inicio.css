@@ -1,7 +1,7 @@
 .Inicio{
     width: 100%;
     height: 100vh;
-    color: #fff;
+    color: #e2ddd6;
     min-width: 22.5rem;
 }
 .Inicio-wrapper{
@@ -14,24 +14,25 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left top, #09001270 , #1b004c);
-    mix-blend-mode:hard-light;
+    background-image: linear-gradient(to left top, #05010870 , #11032c);
     text-align: center;
 }
 .Inicio-h1{
+    pointer-events: none;
     color: #b027ff;
     font-size: 18em;
     line-height: .9em;
     opacity: .8;
     font-weight: 300;
+    mix-blend-mode:hard-light;
 }
 .Inicio-h2{
-    color: #eee;
+    pointer-events: none;
+    color: #e2ddd6;
     font-size: 2em;
     opacity: .7;
     line-height: .8em;
     font-weight: 400;
-    mix-blend-mode:hard-light;
 }
 
 @media (max-width: 1023px){

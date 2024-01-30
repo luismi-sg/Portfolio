@@ -1,17 +1,18 @@
 .Trabajos{
     width: 100%;
     min-height: 100vh;
-    color: #fff;
+    color: #e2ddd6;
     min-width: 22.5rem;
 }
 .Trabajos-wrapper{
+    margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 3em 0;
+    padding: 6rem 0 0;
     position: relative;
 }
 .Tabs-container{
@@ -37,23 +38,23 @@
 .Button-tabs{
     width: 150px;
     padding: 0.5rem 1rem;
-    border: 2px solid #1a1a1a;
+    border: 2px solid #b027ff;
     background-color: none;
     cursor: pointer;
-    color: #1a1a1a;
+    color: #b027ff;
     font-weight: 600;
-    border-radius: 12px;
+    border-radius: 8px;
     transition: all .5s ease;
     opacity: .5;
 }
 .Button-tabs:hover{
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #b027ff;
+    color: #e2ddd6;
     opacity: 1;
 }
 .tab-isActive{
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #b027ff;
+    color: #e2ddd6;
     opacity: 1;
 }
 .Tabs-content{
@@ -74,20 +75,25 @@
 }
 .Trabajos-article{
     max-width: 360px;
+    margin: 0 auto;
     padding: 1rem;
-    background-color: #1a1a1add;
-    border-radius: 1.5rem;
+    background-color: #1a1a1aaa;
+    border-radius: 20px;
     opacity: 0;
     transition: all .5s ease;
     animation: aparecer .5s ease ;
-    animation-delay: .5s;
     animation-fill-mode: forwards;
+}
+.Trabajos-a{
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
 }
 .Trabajos-img{
     opacity: .7;
     filter: grayscale(100%);
     transition: all .5s ease;
-    border-radius: 16px;
+    border-radius: 12px;
     object-fit: cover;
     aspect-ratio: 4/3;
 }
@@ -116,6 +122,7 @@
     opacity: .4;
 }
 .Trabajos-article:hover{
+    outline: 1px solid #b027ff;
     box-shadow: 0px 0px 12px #1a1a1a55;
 }
 
@@ -124,8 +131,15 @@
 .Trabajos-article:hover .Trabajos-rrss{
     filter: grayscale(0%);
     opacity: 1;
+    color: #b027ff;
 }
-
+.Trabajos-article:hover .Trabajos-img{
+    transform: scale(1.1);
+}
+.Trabajos-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
 @keyframes aparecer {
     from{
         opacity: 0;
@@ -147,7 +161,7 @@
     .Trabajos-wrapper{
         justify-content: flex-start;
         padding: 2rem 0 6rem;
-        background-image: linear-gradient(to left top , #120b3c , #8949ff);
+        background-image: linear-gradient(to left top , #2b2b2b , #160d49);
         min-height: 100vh;
     }
     .Trabajos-Tabs-wrapper{

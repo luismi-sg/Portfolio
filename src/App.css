@@ -21,7 +21,7 @@ body{
     width: 40%;
     min-height: 48px;
     box-shadow: 0px 0px 8px 0px#1a1a1a33;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #1a1a1a66;
     backdrop-filter: blur(10px);
 }
@@ -33,7 +33,7 @@ body{
     
 }
 .Header-li{
-    color: #b027ff;
+    color: #838383;
     font-weight: 600;
     letter-spacing: 2px;
     font-size: .9em;
@@ -42,14 +42,21 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    transition: all .5s ease;
 }
 .Header-li:hover{
-    color: #f1f1f1;
+    color: #b027ff;
 }
 .Header-svg{
     margin: .5rem 0 ;
     width: 3rem;
     height: 3rem;
+    transition: all 1s ease;
+    filter: grayscale(1);
+}
+.Header-svg:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
 }
 @media (max-width:1024px){
     .Header-ul{
@@ -92,6 +99,6 @@ body{
         justify-content: center;
     }
     .Header-li:hover{
-        color: #eee;
+        color: #e2ddd6;
     }
 }
