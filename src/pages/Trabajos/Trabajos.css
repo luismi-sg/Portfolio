@@ -139,7 +139,12 @@
 .Trabajos-icon{
     width: 1.5rem;
     height: 1.5rem;
+    transition: transform .5s ease;
 }
+.Trabajos-icon:hover{
+    transform: scale(1.1);
+}
+
 @keyframes aparecer {
     from{
         opacity: 0;

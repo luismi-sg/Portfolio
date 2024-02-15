@@ -114,15 +114,15 @@ export const Trabajos = () => {
                         <section className='Trabajos-grid'>
                             { uxuiLm && uxuiLm.map( ({id , img , alt , titulo , gitUrl , webUrl}) => 
                                 <article key = { id } className='Trabajos-article' >
-                                <a href={webUrl} target='_blank' title={titulo} className='Trabajos-a'>
+                                <a href={webUrl} title={titulo} className='Trabajos-a'>
                                     <img className='Trabajos-img' src={ img } alt={ alt } loading='lazy'/>
                                 </a>
                                 <div className="Trabajos-info">
                                     <h3 className='Trabajos-h3'>{titulo}</h3>
                                     <div className="Trabajos-rrss">
                                         { webUrl &&
-                                        <a className='Redes-a' href={webUrl} target='_blank' title='WebPage'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="Redes-icon" viewBox="0 0 16 16">
+                                        <a className='Redes-a' href={webUrl} title='WebPage'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="Trabajos-icon" viewBox="0 0 16 16">
                                                 <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
                                             </svg>
                                         </a>}

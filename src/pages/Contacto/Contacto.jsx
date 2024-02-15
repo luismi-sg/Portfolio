@@ -14,7 +14,7 @@ export const Contacto = () => {
                                 <h3 className='Info-h3'>Luis Miguel SG</h3>
                                 <h4 className='Info-h4'>FrontEnd Developer & UXUI Designer</h4>
                                 <ul>
-                                    <li className='Info-li'>Título Superior en Desarrollo y Diseño Web en CEI - Centro de Estudios de Innovación</li>
+                                    <li className='Info-li'>Título Superior en Desarrollo y Diseño Web en CEI - Madrid</li>
                                     <li className='Info-li'>Experiencia basada en el desarrollo de interfaces & SaaS.</li>
                                     <li className='Info-li'>React, JavaScript, HTML, CSS, Figma, Wordpress, Client First, Metodología BEM, Pixel Perfect, Atomic Design.</li>
                                 </ul>
