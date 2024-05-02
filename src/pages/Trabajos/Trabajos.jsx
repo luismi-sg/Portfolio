@@ -12,25 +12,31 @@ export const Trabajos = () => {
     const proyectosLm = [
         {
             id: "0",
-            type: "web",
-            img : "/assets/web-netflix.webp",
-            alt : "Miniature Netflix App",
-            titulo : "Netflix-project",
-            gitUrl : "https://github.com/luismi-sg/Netflix-proyecto",
-            webUrl : "https://netflix-proyecto.vercel.app/"
+            type: ["UX/UI" , "APP"],
+            img : "/assets/uxui-beatscene.webp",
+            alt : "Miniature BeatScene App",
+            titulo : "BeatScene App",
+            webUrl : "/beatscene"
         },
         {
             id: "1",
-            type: "web",
-            img : "/assets/web-spotify.webp",
-            alt : "Miniature Spotify App",
-            titulo : "Spotify-project",
-            gitUrl : "https://github.com/luismi-sg/APP-Spotify",
-            webUrl : "https://spotify-proyecto.vercel.app/"
+            type: ["UX/UI" , "WEB"],
+            img : "/assets/web-thespecialone.webp",
+            alt : "The Special One | Football Blog",
+            titulo : "The Special One",
+            webUrl : "https://thespecialone.pro/"
         },
         {
             id: "2",
-            type: "web",
+            type: ["WEB"],
+            img : "/assets/web-beapolo.webp",
+            alt : "Miniature Web BeApolo",
+            titulo : "BeApolo",
+            webUrl : "https://beapolo.io/"
+        },
+        {
+            id: "3",
+            type: ["WEB"],
             img : "/assets/web-pinkfloyd.webp",
             alt : "Miniature Web Pink Floyd",
             titulo : "Pink Floyd",
@@ -38,30 +44,29 @@ export const Trabajos = () => {
             webUrl : "https://atom-mother-web.netlify.app/"
         },
         {
-            id: "3",
-            type: "web",
-            img : "/assets/web-thespecialone.webp",
-            alt : "The Special One | Football Blog",
-            titulo : "The Special One",
-            webUrl : "https://thespecialone.pro/"
-        }
-        
-    ]
-    const uxuiLm = [
-        {
             id: "4",
-            type: "uxui",
-            img : "/assets/uxui-beatscene.webp",
-            alt : "Miniature BeatScene App",
-            titulo : "BeatScene App",
-            webUrl : "/beatscene"
+            type: ["WEB" , "APP"],
+            img : "/assets/web-netflix.webp",
+            alt : "Miniature Netflix App",
+            titulo : "Netflix-project",
+            gitUrl : "https://github.com/luismi-sg/Netflix-proyecto",
+            webUrl : "https://netflix-proyecto.vercel.app/"
+        },
+        {
+            id: "5",
+            type: ["WEB" , "APP"],
+            img : "/assets/web-spotify.webp",
+            alt : "Miniature Spotify App",
+            titulo : "Spotify-project",
+            gitUrl : "https://github.com/luismi-sg/APP-Spotify",
+            webUrl : "https://spotify-proyecto.vercel.app/"
         }
     ]
     return( 
         <div className='Trabajos'>
             <div className='Trabajos-wrapper'>
                 <div className='Tabs-container'>
-                    <div className='Trabajos-Tabs-wrapper'>
+                    {/* <div className='Trabajos-Tabs-wrapper'>
                         <div
                         className={ toggleState === 1 ? "Button-tabs tab-isActive" : "Button-tabs"}
                         onClick={() => toggleTab(1)}
@@ -80,15 +85,20 @@ export const Trabajos = () => {
                         >
                             <p>Design</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='Tabs-wrapper'>
                         <div className={ toggleState === 1 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <section className='Trabajos-grid'>
                             { proyectosLm && proyectosLm.map( ({id , type, img , alt , titulo , gitUrl , webUrl}) => 
                                 <article key = { id } className='Trabajos-article' >
+                                    
                                     <a href={webUrl} target='_blank' title={titulo} className='Trabajos-a'>
                                         <img className='Trabajos-img' src={ img } alt={ alt } loading='lazy'/>
                                     </a>
+                                    <div className='Trabajos-pills'>
+                                        { type.map((item , index) => 
+                                        <span key = { index } className='Trabajos-pill'> { item } </span>)}
+                                    </div>
                                     <div className="Trabajos-info">
                                         <h3 className='Trabajos-h3'>{titulo}</h3>
                                         <div className="Trabajos-rrss">
@@ -110,7 +120,7 @@ export const Trabajos = () => {
                             ) }
                             </section>
                         </div>
-                        <div className={ toggleState === 2 ? "Tabs-content content-isActive" : "Tabs-content"}>
+                        {/* <div className={ toggleState === 2 ? "Tabs-content content-isActive" : "Tabs-content"}>
                         <section className='Trabajos-grid'>
                             { uxuiLm && uxuiLm.map( ({id , img , alt , titulo , gitUrl , webUrl}) => 
                                 <article key = { id } className='Trabajos-article' >
@@ -134,7 +144,7 @@ export const Trabajos = () => {
                         </div>
                         <div className={ toggleState === 3 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <p>Graphic Design Under Construction...</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 

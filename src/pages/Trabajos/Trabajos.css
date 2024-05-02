@@ -68,6 +68,7 @@
 }
 .Trabajos-grid{
     width: 100%;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
     gap: 3em;
@@ -89,16 +90,39 @@
     overflow: hidden;
     border-radius: 12px;
 }
+.Trabajos-pills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+.Trabajos-pill{
+    padding: 8px 16px;
+    font-size: .8rem;
+    line-height: 1em;
+    background-color: #1a1a1aaa;
+    border: 1px solid #e2ddd6;
+    border-radius: 32px;
+    font-weight: 500;
+}
+.Trabajos-pill:hover{
+    border: 1px solid #b027ff;
+    background-color: #b027ff;
+    color: #2b2b2b;
+    
+}
 .Trabajos-img{
     opacity: .7;
     filter: grayscale(100%);
     transition: all .5s ease;
     border-radius: 12px;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
 }
 .Trabajos-info{
-    margin-top: 1.25rem;
+    margin-top: .5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
