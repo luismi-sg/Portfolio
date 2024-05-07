@@ -92,7 +92,7 @@ export const Trabajos = () => {
                             { proyectosLm && proyectosLm.map( ({id , type, img , alt , titulo , gitUrl , webUrl}) => 
                                 <article key = { id } className='Trabajos-article' >
                                     
-                                    <a href={webUrl} target='_blank' title={titulo} className='Trabajos-a'>
+                                    <a href={webUrl} title={titulo} className='Trabajos-a'>
                                         <img className='Trabajos-img' src={ img } alt={ alt } loading='lazy'/>
                                     </a>
                                     <div className='Trabajos-pills'>

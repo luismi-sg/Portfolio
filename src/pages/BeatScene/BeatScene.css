@@ -201,6 +201,49 @@ to {
     width: 100%;
     background-color: #b027ff;
     min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-image: url('/assets/fondo-beatscene-banner.webp');
+    padding: 1rem;
+}
+.Banner-info{
+    margin: 0 auto;
+    max-width: 80rem;
+    background-color: #1a1a1aaa;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    color: #e2ddd6;
+}
+.info-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-h2{
+    font-size: 2rem;
+    font-weight:700 ;
+    line-height: 1.1em;
+}
+.info-button a{
+    background-color: #b027ff;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    color: #e2ddd6;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: .5s all ease;
+}
+.info-button a:hover{
+    transform: scale(1.1);
+    background-color: #1a1a1a;
+    color: #b027ff;
 }
 @media (max-width:767px){
     .Interna-wrapper{
@@ -217,9 +260,28 @@ to {
     .Interna-img{
         border-radius: 1rem;
     }
+    .info-h2{
+        font-size: 1.6rem;
+        line-height: 1.1em;
+        text-align: center;
+
+    }
+    .info-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Interna-Banner{
+        background-image: url('/assets/fondo-beatscene-banner-mobile.webp');
+    }
     .Interna-titulo{
         border-radius: 1rem;
         padding: 2rem;
+    }
+    .Interna-info.proceso{
+        flex-flow: column-reverse nowrap;
     }
     .Interna-h1{
         line-height: 90%;

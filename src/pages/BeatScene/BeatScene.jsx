@@ -72,16 +72,27 @@ export const BeatScene = () => {
             </div>
             <div className='Interna-Banner'>
                 <div className="Banner-wrapper">
-                    <div className="Banner-works">
+                    {/* <div className="Banner-works">
                         <div className="work-prev">
 
                         </div>
                         <div className="work-next">
                             
                         </div>
-                    </div>
+                    </div> */}
                     <div className="Banner-info">
-                        
+                        <div className="info-wrapper">
+                            <div className="info-info">
+                                <h2 className="info-h2">Si sientes que podemos trabajar juntos, conversemos.</h2>
+                            </div>
+                            <div className="info-button">
+                                <a href='/contacto'>Contáctame 
+                                <svg xmlns="http://www.w3.org/2000/svg" className="Trabajos-icon" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -177,12 +177,17 @@ to {
     line-height: 1.6rem;
 }
 .Redes-ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    gap: 2rem;
 }
-.Redes-a{
+.Redes-a.contacto{
+    width: 100%;
+    border: 1px solid #b027ff;
+    padding: 2rem;
+    border-radius: 16px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
