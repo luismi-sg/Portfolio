@@ -12,7 +12,8 @@
 /* Aquí definimos las Custom properties */
 :root {
   --negro: #1a1a1a;
-  --lila:#b027ff;
+  --lila:#5d27ff;
+  --blanco:#e4dacc;
   /* Tipografía */
   font-family: 'Jost', sans-serif;
 }

@@ -1,7 +1,7 @@
 .Contacto{
     width: 100%;
     min-height: 100vh;
-    color: #e2ddd6;
+    color: var(--blanco);
     min-width: 22.5rem;
 }
 .Contacto-wrapper{
@@ -125,7 +125,7 @@ animation: moveReverse 16s linear infinite alternate;
 }
 .grid-container:hover .grid-span:nth-child(1),
 .grid-container:hover .grid-span:nth-child(3){
-color: #b027ff;
+color: var(--lila);
 }
 
 @keyframes move {
@@ -161,18 +161,18 @@ to {
     padding: 3rem;    
 }
 .Info-h3{
-    color: #b027ff;
+    color: var(--lila);
     font-weight: 700;
     font-size: 3em;
     margin-bottom: .5em;
 }
 .Info-h4{
-    color: #e2ddd6;
+    color: var(--blanco);
     font-size: 1.4em;
     margin-bottom: 1.5em;
 }
 .Info-li{
-    color: #e2ddd6;
+    color: var(--blanco);
     margin-bottom: .5em;
     line-height: 1.6rem;
 }
@@ -185,21 +185,38 @@ to {
 }
 .Redes-a.contacto{
     width: 100%;
-    border: 1px solid #b027ff;
-    padding: 2rem;
+    height: 7rem;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--lila);
+    padding: 1rem;
     border-radius: 16px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
+
 .Redes-li{
-    text-align: right;
+    text-align: center;
     opacity: .3;
     font-size: 1.5em;
     line-height: 2em;
     transition: all .5s ease;
+}
+.Icon-svg{
+    width: auto;
+    height: 3.5rem;
+    transform: rotate(-30deg);
+    animation: handwave 2s ease-in-out infinite alternate;
+}
+@keyframes handwave {
+    from{
+        transform: rotate(-30deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
 }
 .Redes-icon{
     width: 2.5rem;
@@ -207,7 +224,10 @@ to {
 }
 .Redes-li:hover{
     opacity: 1;
-    color: #b027ff;
+    color: var(--lila);
+}
+.Redes-li.hand{
+    opacity: 1;
 }
 @media (max-width: 1023px){
     .Contacto-wrapper{

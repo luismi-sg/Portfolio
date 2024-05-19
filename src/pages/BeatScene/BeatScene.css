@@ -32,14 +32,14 @@
     font-size: 1rem;
     line-height: 1em;
     background-color: #1a1a1aaa;
-    border: 1px solid #b027ff;
-    color: #b027ff;
+    border: 1px solid var(--lila);
+    color: var(--lila);
     border-radius: 32px;
     font-weight: 500;
 }
 .Interna-pill:hover{
-    border: 1px solid #b027ff;
-    background-color: #b027ff;
+    border: 1px solid var(--lila);
+    background-color: var(--lila);
     color: #2b2b2b;
 }
 .Interna-img{
@@ -60,14 +60,14 @@
     display: block;
     font-size: 4rem;
     font-weight: 600;
-    color: #e2ddd6;
+    color: var(--blanco);
 }
 .Color-lila{
-    color: #b027ff;
+    color: var(--lila);
 }
 .Interna-h2{
     font-size: 1.5rem;
-    color: #e2ddd6;
+    color: var(--blanco);
 }
 .Interna-info{
     display: flex;
@@ -103,11 +103,11 @@
     font-size: 2em;
     line-height: 103%;
     margin-bottom: .5em;
-    color: #e2ddd6;
+    color: var(--blanco);
     z-index: 1;
 }
 .Interna-p{
-    color: #e2ddd6;
+    color: var(--blanco);
     z-index: 1;
 }
 .Interna-grid{
@@ -137,7 +137,7 @@
     z-index: 0;
 }
 .Grid-article:nth-child(1){
-    background-color: #b027ff;
+    background-color: var(--lila);
 }
 .flex-center{
     justify-content: center;
@@ -145,6 +145,7 @@
 }
 .Grid-logo{
     max-width: 10rem;
+    animation: handwave 2s ease-in-out infinite alternate;
 }
 .Grid-article.autoSlide{
     overflow: hidden;
@@ -159,7 +160,7 @@
     transform: rotate(7deg);
 }
 .autoSlide-span {
-    color: #b027ff;
+    color: var(--lila);
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.2em;
@@ -176,7 +177,7 @@ color: #0BF16C;
 }
 .grid-container:hover .autoSlide-span:nth-child(1),
 .grid-container:hover .autoSlide-span:nth-child(3){
-color: #b027ff;
+color: var(--lila);
 }
 
 @keyframes move {
@@ -199,14 +200,26 @@ to {
 }
 .Interna-Banner{
     width: 100%;
-    background-color: #b027ff;
+    background-color: var(--lila);
     min-height: 500px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
     background-image: url('/assets/fondo-beatscene-banner.webp');
+    background-size: cover;
+    background-position: center center;
     padding: 1rem;
+    position: relative;
+}
+.Interna-Banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a77;
+    width: 100%;
+    min-height: 500px;
 }
 .Banner-info{
     margin: 0 auto;
@@ -214,7 +227,9 @@ to {
     background-color: #1a1a1aaa;
     padding: 4rem 3rem;
     border-radius: 2rem;
-    color: #e2ddd6;
+    color: var(--blanco);
+    position: relative;
+    z-index: 1;
 }
 .info-wrapper{
     display: flex;
@@ -228,10 +243,10 @@ to {
     line-height: 1.1em;
 }
 .info-button a{
-    background-color: #b027ff;
+    background-color: var(--lila);
     padding: 12px 24px;
     font-size: 1.5rem;
-    color: #e2ddd6;
+    color: var(--blanco);
     border-radius: 12px;
     display: flex;
     flex-flow: row nowrap;
@@ -241,9 +256,9 @@ to {
     transition: .5s all ease;
 }
 .info-button a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #1a1a1a;
-    color: #b027ff;
+    color: var(--lila);
 }
 @media (max-width:767px){
     .Interna-wrapper{

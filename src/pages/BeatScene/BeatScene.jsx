@@ -32,12 +32,12 @@ export const BeatScene = () => {
                         <p className='Interna-p'>Proyecto UX/UI Mobile</p>
                         <img className='Grid-image-fondo' src="/assets/beatscene_fondo1.webp" alt="" />
                     </article>
+                    <article className='Grid-article flex-center'>
+                        <img className="Grid-logo" src="/assets/beatscene_logo.png" alt="Logo BeatScene" />
+                    </article>
                     <article className='Grid-article'>
                         <h3 className='Interna-h3'>"Me encanta ir a conciertos y conocer gente nueva"</h3>
                         <p className='Interna-p'><span className='Color-lila'>Dayana Villaizan - Raver</span></p>
-                    </article>
-                    <article className='Grid-article flex-center'>
-                        <img className="Grid-logo" src="/assets/beatscene_logo.png" alt="Logo BeatScene" />
                     </article>
                     <article className='Grid-article autoSlide'>
                         <div className='autoSlide-wrapper'>
@@ -54,13 +54,13 @@ export const BeatScene = () => {
                     </div>
                     <div className="Info-container izquierda">
                         <h3 className="Interna-h3"><span className='Color-lila'>PROCESO:</span> El Diseño</h3>
-                        <p className="Interna-p"> Es una App donde puedes compartir la experiencia de vivir tu evento músical favorito con quien tu quieras o tener la posibilidad de conocer nuevas personas con tus mismos gustos musicales y vivirla juntos.</p>
+                        <p className="Interna-p"> El proceso para diseñar la app empezó con un estudio completo e investigación en la experiencia de usuario, para luego seguir con los pasos necesarios para diseñar la interfaz. Desarrollando un sistema de diseño solido, con wireframes y una estructura enfocada en la interactividad del usuario con la app.</p>
                     </div>
                 </section>
                 <section className="Interna-info resultado">
                     <div className="Info-container izquierda">
                         <h3 className="Interna-h3"><span className='Color-lila'>RESULTADO FINAL:</span> BeatScene</h3>
-                        <p className="Interna-p"> Es una App donde puedes compartir la experiencia de vivir tu evento músical favorito con quien tu quieras o tener la posibilidad de conocer nuevas personas con tus mismos gustos musicales y vivirla juntos.</p>
+                        <p className="Interna-p"> La App fue enteramente diseñada en Figma, el prototipo fue testeado con la herramienta Maze y se hicieron cambios dentro del interfaz según el feedback de los constantes testeos y feedbacks de los posibles usuarios.</p>
                     </div>
                     <div className="Info-container derecha">
                         <video className='Interna-img' preload='yes' autoPlay='on' loop='on' muted data-object-fit="cover" playsInline controls='on'> 

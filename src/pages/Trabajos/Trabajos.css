@@ -1,7 +1,7 @@
 .Trabajos{
     width: 100%;
     min-height: 100vh;
-    color: #e2ddd6;
+    color: var(--blanco);
     min-width: 22.5rem;
 }
 .Trabajos-wrapper{
@@ -38,23 +38,23 @@
 .Button-tabs{
     width: 150px;
     padding: 0.5rem 1rem;
-    border: 2px solid #b027ff;
+    border: 2px solid var(--lila);
     background-color: none;
     cursor: pointer;
-    color: #b027ff;
+    color: var(--lila);
     font-weight: 600;
     border-radius: 8px;
     transition: all .5s ease;
     opacity: .5;
 }
 .Button-tabs:hover{
-    background-color: #b027ff;
-    color: #e2ddd6;
+    background-color: var(--lila);
+    color: var(--blanco);
     opacity: 1;
 }
 .tab-isActive{
-    background-color: #b027ff;
-    color: #e2ddd6;
+    background-color: var(--lila);
+    color: var(--blanco);
     opacity: 1;
 }
 .Tabs-content{
@@ -103,15 +103,17 @@
     font-size: .8rem;
     line-height: 1em;
     background-color: #1a1a1aaa;
-    border: 1px solid #e2ddd6;
+    border: 1px solid var(--blanco);
     border-radius: 32px;
     font-weight: 500;
+    transition: .5s ease all;
+    opacity: .5;
 }
 .Trabajos-pill:hover{
-    border: 1px solid #b027ff;
-    background-color: #b027ff;
-    color: #2b2b2b;
-    
+    border: 1px solid var(--lila);
+    background-color: var(--lila);
+    color: var(--blanco);
+    opacity: 1;
 }
 .Trabajos-img{
     opacity: .7;
@@ -146,7 +148,7 @@
     opacity: .4;
 }
 .Trabajos-article:hover{
-    outline: 1px solid #b027ff;
+    outline: 1px solid var(--lila);
     box-shadow: 0px 0px 12px #1a1a1a55;
 }
 
@@ -155,7 +157,7 @@
 .Trabajos-article:hover .Trabajos-rrss{
     filter: grayscale(0%);
     opacity: 1;
-    color: #b027ff;
+    color: var(--lila);
 }
 .Trabajos-article:hover .Trabajos-img{
     transform: scale(1.1);

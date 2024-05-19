@@ -24,7 +24,7 @@ export const Trabajos = () => {
             img : "/assets/web-thespecialone.webp",
             alt : "The Special One | Football Blog",
             titulo : "The Special One",
-            webUrl : "https://thespecialone.pro/"
+            webUrl : "/thespecialone"
         },
         {
             id: "2",

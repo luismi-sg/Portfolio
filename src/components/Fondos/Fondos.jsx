@@ -23,6 +23,9 @@ export const Fondos = () => {
             case '/beatscene':
                 setsIsActive(3)
                 break;
+            case '/thespecialone':
+                setsIsActive(3)
+                break;
         }
 
     },[ location ])

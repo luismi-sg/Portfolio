@@ -1,0 +1,35 @@
+.Thespecialone{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.color-thespecialone{
+    color: #FF5325;
+}
+.background-thespecialone{
+    background-color: #FF5325 !important;
+}
+.Interna-Banner.thespecialone-banner{
+    background-image: url('/assets/fondo-thespecialone-banner.webp');
+}
+.info-button .button-thespecialone{
+    background-color: #FF5325;
+}
+.info-button .button-thespecialone:hover{
+    transform: scale(1.05);
+    background-color: #1a1a1a;
+    color: #FF5325;
+}
+.Grid-article.color-thespecialone{
+    background-color: #FF5325;
+}
+.autoSlide-span.color-white{
+    color: var(--blanco);
+}
+.color-thespecialone .Interna-pill{
+    color: #FF5325;
+    border-color: #FF5325;
+}
+.color-thespecialone .Interna-pill:hover{
+    background-color: var(--blanco);
+}
