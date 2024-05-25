@@ -9,7 +9,7 @@ export const Contacto = () => {
                         <div className='Imagen-wrapper grid-container'>
                             <img className='Imagen-img' src="/assets/luismi-sovero-foto.webp" alt="" />
                         </div>
-                        <div className="grid-container">
+                        <div className="grid-container mobile">
                             <div className='Info-wrapper'>
                                 <h3 className='Info-h3'>Luis Miguel SG</h3>
                                 <h4 className='Info-h4'>FrontEnd Developer & UXUI Designer</h4>

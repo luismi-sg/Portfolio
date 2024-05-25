@@ -253,6 +253,9 @@ to {
     .grid-container{
         aspect-ratio: 1 / 1;
     }
+    .grid-container.mobile{
+        aspect-ratio: 2 / 3;
+    }
     .Info-h3{
         font-size: 2.5rem;
         line-height: 1.3em;
