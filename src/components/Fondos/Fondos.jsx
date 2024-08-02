@@ -14,11 +14,11 @@ export const Fondos = () => {
             case '/':
                 setsIsActive(0)
                 break;
-            case '/trabajos':
-                setsIsActive(2)
-                break;
             case '/contacto':
                 setsIsActive(1)
+                break;
+            case '/trabajos':
+                setsIsActive(2)
                 break;
             case '/beatscene':
                 setsIsActive(3)
