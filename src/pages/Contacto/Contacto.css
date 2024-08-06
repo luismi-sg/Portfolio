@@ -3,210 +3,89 @@
     min-height: 100vh;
     color: var(--blanco);
     min-width: 22.5rem;
+    padding: 7.5rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (max-width: 920px){
+        padding: 8.5rem 1rem 1rem;
+        background-image: linear-gradient(to left top , #2d2035 , #090427 );
+    }
 }
 .Contacto-wrapper{
-    margin: 0 auto;
-    min-height: 100vh;
-    max-width: 100rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.grid-wrapper{
+    width: 100%;
+    min-height: 80vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 8rem 3rem 3rem;
-}
-.Perfil-wrapper{
-    width: 100%;
-    max-width: 1440px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-    overflow: hidden;
-}
-.grid-container{
-    border-radius: 24px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.grid-container:nth-child(1){
-    grid-column: span 2;
-    grid-row: span 2;
-    transition: all .5s ease;
-    animation: aparecer-right 1s ease;
-    animation-delay: .5s;
-    animation-fill-mode: both;
-}
-.grid-container:nth-child(2){
-    grid-column: span 2;
-    grid-row: span 1;
     align-items: flex-start;
-    animation: aparecer-left 1s ease;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-}
-.grid-container:nth-child(3),
-.grid-container:nth-child(4){
-    animation: aparecer-top 1s ease;
-    animation-delay: 1.5s;
-    animation-fill-mode: both;
-}
-.grid-container:nth-child(4){
-    animation-delay: 2s;
-}
+    gap: 4rem;
 
-.grid-container:nth-child(4),
-.grid-container:nth-child(2),
-.grid-container:nth-child(3){
-    background-color: #1a1a1aaa;
-}
-@keyframes aparecer-right {
-    from{
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
+    @media(max-width: 920px){
+        padding: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        min-height: auto;
+        
     }
 }
-@keyframes aparecer-left {
-    from{
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes aparecer-top {
-    from{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.grid-enlace{
-    height: 100%;
+.Contacto-info{
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 12px;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-    transform: rotate(7deg);
-}
-.grid-span {
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1.2em;
-    animation: move 16s linear infinite alternate;
-    animation-play-state: running;
-    word-break: keep-all;
-    white-space: nowrap;
-    transition: all .5s ease;
-}
-.grid-span:nth-child(1),
-.grid-span:nth-child(3){
-animation: moveReverse 16s linear infinite alternate;
-}
-.grid-container:hover .grid-span:nth-child(1),
-.grid-container:hover .grid-span:nth-child(3){
-color: var(--lila);
-}
-
-@keyframes move {
-from {
-    transform: translateX(0);
-}
-
-to {
-    transform: translateX(-42%);
-}
-}
-@keyframes moveReverse {
-from {
-    transform: translateX(-42%);
-}
-
-to {
-    transform: translateX(0%);
-}
-}
-.Imagen-wrapper{
-    width: 100%; 
-    overflow: hidden;
-}
-.Imagen-img{
-    border-radius: 24px;
-    transition: all 2s ease ;
-}
-.Imagen-img:hover{
-    transform: scale(1.05);
-}
-.Info-wrapper{
-    padding: 3rem;    
-}
-.Info-h3{
-    color: var(--lila);
-    font-weight: 700;
-    font-size: 3em;
-    margin-bottom: .5em;
-}
-.Info-h4{
-    color: var(--blanco);
-    font-size: 1.4em;
-    margin-bottom: 1.5em;
-}
-.Info-li{
-    color: var(--blanco);
-    margin-bottom: .5em;
-    line-height: 1.6rem;
-}
-.Redes-ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
+    align-items: flex-start;
     gap: 2rem;
-}
-.Redes-a.contacto{
-    width: 100%;
-    height: 7rem;
-    aspect-ratio: 1 / 1;
-    border: 1px solid var(--lila);
-    padding: 1rem;
-    border-radius: 16px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+    background-color: #8f8f8f0c;
+    position: relative;
 
-.Redes-li{
-    text-align: center;
-    opacity: .3;
-    font-size: 1.5em;
-    line-height: 2em;
-    transition: all .5s ease;
+    @media (max-width: 920px){
+        padding: 3rem 2rem;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: transparent;
+    }
+}
+.Contacto-info.noBackground{
+    background-color: transparent;
+}
+.Contacto-info h1{
+    color: var(--lila);
+    font-size: 8rem;
+    line-height: 8rem;
+
+    @media(max-width: 920px){
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+.Contacto-info h2{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.Contacto-hand{
+    width: 11rem;
+    height: auto;
+    position: absolute;
+    bottom: 48px;
+    right: 32px;
+
+    @media (max-width: 920px){
+        position: static;
+    }
 }
 .Icon-svg{
+    margin: 0 auto;
     width: auto;
-    height: 3.5rem;
+    height: 11rem;
     transform: rotate(-30deg);
     animation: handwave 2s ease-in-out infinite alternate;
 }
@@ -218,68 +97,66 @@ to {
         transform: rotate(30deg);
     }
 }
-.Redes-icon{
-    width: 2.5rem;
-    height: 2.5rem;
+.Redes-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #000;
+    border-radius: 12px;
+
+    @media(max-width: 920px){
+        padding: 1rem;
+        gap: 1rem;
+        background-color: transparent;
+    }
 }
-.Redes-li:hover{
+.Contacto-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    @media(max-width: 920px){
+        flex-flow: column nowrap;
+        align-items: stretch;
+        gap: 1rem;
+    }
+}
+.Redes-a svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.Redes-a.contacto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    gap: 0.5rem;
+}
+.Contacto-li{
+    opacity: 0.5;
+
+    font-size: 1.2em;
+    line-height: 2em;
+    transition: all .5s ease;
+
+    @media(max-width: 920px){
+        background-color: #000;
+        border-radius: 12px;
+        padding: 0 1rem ;
+        font-size: 1rem;
+
+    }
+}
+.Contacto-li:hover{
     opacity: 1;
+}
+.Contacto-li:hover{
     color: var(--lila);
-}
-.Redes-li.hand{
-    opacity: 1;
-}
-@media (max-width: 1023px){
-    .Contacto-wrapper{
-        background-image: linear-gradient(to left top , #2d2035 , #160d49 );
-    }
-    .grid-wrapper{
-        padding: 0;
-        width: 100%;
-    }
-    .Perfil-wrapper{
-        padding: 10rem 2rem 2rem;
-        grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
-        grid-template-rows: repeat(auto-fill , minmax(300px , 1fr));
-    }
-    .Perfil-wrapper :nth-child(1){
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    .Perfil-wrapper :nth-child(2){
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    .grid-container{
-        aspect-ratio: 1 / 1;
-    }
-    .grid-container.mobile{
-        aspect-ratio: 2 / 3;
-    }
-    .Info-h3{
-        font-size: 2.5rem;
-        line-height: 1.3em;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-    }
-    .Info-p{
-        color: #000;
-        font-size: .9em;
-    }
-    .Info-wrapper{
-        padding: 2rem;
-    }
-    .Redes-ul{
-        flex-flow: row nowrap;
-    }
-    .Redes-li{
-        opacity: .8;
-    }
-}
-@media (max-width: 767px){
-    .Perfil-wrapper{
-        padding: 8rem 1rem;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-    }
 }

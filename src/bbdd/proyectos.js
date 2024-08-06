@@ -1,7 +1,7 @@
 export const proyectos = [
     {
         id: "0",
-        type: ["UX/UI" , "APP"],
+        pills: ["UX/UI" , "App"],
         img : "/assets/uxui-beatscene.webp",
         alt : "Miniature BeatScene App",
         titulo : "BeatScene App",
@@ -9,7 +9,7 @@ export const proyectos = [
     },
     {
         id: "1",
-        type: ["UX/UI" , "WEB"],
+        pills: ["UX/UI" , "App"],
         img : "/assets/web-thespecialone.webp",
         alt : "The Special One | Football Blog",
         titulo : "The Special One",
@@ -17,7 +17,7 @@ export const proyectos = [
     },
     {
         id: "2",
-        type: ["WEB"],
+        pills: ["Web"],
         img : "/assets/web-beapolo.webp",
         alt : "Miniature Web BeApolo",
         titulo : "BeApolo",
@@ -25,7 +25,7 @@ export const proyectos = [
     },
     {
         id: "3",
-        type: ["WEB"],
+        pills: ["Web"],
         img : "/assets/web-pinkfloyd.webp",
         alt : "Miniature Web Pink Floyd",
         titulo : "Pink Floyd",
@@ -34,7 +34,7 @@ export const proyectos = [
     },
     {
         id: "4",
-        type: ["WEB" , "APP"],
+        pills: ["Web" , "App"],
         img : "/assets/web-netflix.webp",
         alt : "Miniature Netflix App",
         titulo : "Netflix-project",
@@ -43,7 +43,7 @@ export const proyectos = [
     },
     {
         id: "5",
-        type: ["WEB" , "APP"],
+        pills: ["Web" , "App"],
         img : "/assets/web-spotify.webp",
         alt : "Miniature Spotify App",
         titulo : "Spotify-project",

@@ -8,27 +8,29 @@ export const Fondos = () => {
     const { pathname } = location
     
     useEffect(()=>{
-        // console.log( pathname )
-
         switch ( pathname ) {
-            case '/':
+            case '/' :
                 setsIsActive(0)
                 break;
-            case '/contacto':
-                setsIsActive(1)
-                break;
-            case '/trabajos':
+            case '/contacto' :
                 setsIsActive(2)
                 break;
-            case '/beatscene':
+            case '/sobremi' :
+                setsIsActive(1)
+                break;
+            case '/trabajos' :
+                setsIsActive(2)
+                break;
+            case '/thespecialone' :
                 setsIsActive(3)
                 break;
-            case '/thespecialone':
+            case '/beatscene' :
                 setsIsActive(3)
                 break;
         }
 
-    },[ location ])
+    }, [ location ])
+    
     const [ isActive, setsIsActive ] = useState(0)
 
     return( 

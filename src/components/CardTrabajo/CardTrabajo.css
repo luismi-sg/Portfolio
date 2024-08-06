@@ -1,0 +1,134 @@
+.Trabajos-article{
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #1a1a1aaa;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all .5s ease;
+    animation: aparecer .5s ease ;
+    animation-fill-mode: forwards;
+
+    @media (max-width: 920px){
+        background-color: #00000099;
+    }
+}
+.Trabajos-a{
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.Trabajos-pills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+.Trabajos-pill{
+    padding: 8px 16px;
+    font-size: .8rem;
+    line-height: 1em;
+    background-color: #1a1a1aaa;
+    border: 1px solid var(--blanco);
+    border-radius: 32px;
+    font-weight: 500;
+    transition: .5s ease all;
+    opacity: .5;
+    
+    @media(max-width: 920px){
+        font-size: .8rem;
+    }
+}
+.Trabajos-pill:hover{
+    border: 1px solid var(--lila);
+    background-color: var(--lila);
+    color: var(--blanco);
+    opacity: 1;
+}
+.Trabajos-img{
+    opacity: .7;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+
+    @media (max-width: 920px){
+        filter: grayscale(50%);
+        opacity: 1;        
+    }
+}
+.Trabajos-info{
+    margin-top: .5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.Trabajos-h3{
+    display: block;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: .4;
+    transition: all .5s ease;
+
+    @media(max-width: 920px){
+        font-size: 1.5rem;
+        opacity: 1;
+    }
+}
+.Trabajos-rrss .Trabajos-icon{
+    @media (max-width: 920px){
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+.Trabajos-rrss{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    transition: all .5s ease;
+    opacity: .4;
+
+    @media (max-width: 920px){
+        opacity: 1;
+    }
+}
+.Trabajos-article:hover{
+    outline: 1px solid var(--lila);
+    box-shadow: 0px 0px 12px #1a1a1a55;
+}
+
+.Trabajos-article:hover .Trabajos-img,
+.Trabajos-article:hover .Trabajos-h3,
+.Trabajos-article:hover .Trabajos-rrss{
+    filter: grayscale(0%);
+    opacity: 1;
+    color: var(--lila);
+}
+.Trabajos-article:hover .Trabajos-img{
+    transform: scale(1.1);
+}
+.Trabajos-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform .5s ease;
+}
+.Trabajos-icon:hover{
+    transform: scale(1.1);
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

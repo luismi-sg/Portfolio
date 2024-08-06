@@ -1,11 +1,18 @@
 .Inicio{
     width: 100%;
     height: 100vh;
-    color: #e2ddd6;
+    color: var(--blanco);
     min-width: 22.5rem;
     position: relative;
+    padding: 7.5rem 2rem 2rem ;
+
+    @media(max-width: 920px){
+        padding: 8.5rem 1rem 1rem;
+    }
 }
 .Inicio-wrapper{
+    border: 1px solid #3b354d77;
+    border-radius: 12px;
     position: relative;
     top: 0;
     left: 0;
@@ -13,19 +20,40 @@
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-image: linear-gradient(to left top, #05010870 , #11032c);
+    background-image: linear-gradient(to left top, #090114ff , #06032c55);
     text-align: center;
+
+    @media (max-width: 920px){
+        border: none;
+        padding: 1rem;
+        justify-content: center;
+        gap: 4rem;
+        background-image: none;
+    }
+}
+.Inicio-wrapper main{
+    @media (max-width: 920px){
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 .Inicio-h1{
     pointer-events: none;
     color: #b027ff;
-    font-size: 18em;
+    font-size: 18rem;
     line-height: .9em;
     opacity: .8;
     font-weight: 300;
     mix-blend-mode:hard-light;
+
+    @media (max-width: 920px){
+        font-size: 8rem;
+    }
 }
 .Inicio-h2{
     pointer-events: none;
@@ -34,18 +62,82 @@
     opacity: .7;
     line-height: .8em;
     font-weight: 400;
-}
 
-@media (max-width: 1023px){
-    .Inicio-h1{
-        font-size: 14em;
+    @media (max-width: 920px){
+        width: 70%;
+        font-size: 1.5em;
+        line-height: 1.2em;
     }
 }
-@media (max-width:767px) {
-    .Inicio-h1{
-        font-size: 7em;
+.Inicio-span{
+    background-color: #8f8f8f0c;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    position: relative;
+
+    @media (max-width: 920px){
+        padding: 1rem;
+        background-color: #1a1a1a77;
     }
-    .Inicio-h2{
-        font-size: 1em;
+}
+.Inicio-span:nth-child(2){
+    @media(max-width: 920px){
+        display: none;
+    }
+}
+.Inicio-span svg{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #090114ff;
+    fill: var(--lila);
+    transition: all .5s ease;
+    
+    &:hover{
+        background-color: var(--lila);
+        fill: var(--blanco);
+    }
+
+    @media (max-width: 920px){
+        background-color: #1a1a1a;
+        fill: var(--blanco);
+    }
+}
+.Inicio-span button strong{
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+    top: 16px;
+    right:-100px;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #1d1d1d;
+    z-index: 2;
+
+    &.isActive{
+        opacity: 1;
+    }
+
+    @media(max-width: 920px){
+        right: 0px;
+        top: 60px;
+    }
+}
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    place-items: center;
+    gap: 1rem;
+
+    @media (max-width: 767px){
+        flex-flow: column nowrap;
     }
 }
