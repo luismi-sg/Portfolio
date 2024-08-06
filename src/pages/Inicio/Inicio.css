@@ -53,11 +53,12 @@
 
     @media (max-width: 920px){
         font-size: 8rem;
+        color: var(--lila);
     }
 }
 .Inicio-h2{
     pointer-events: none;
-    color: #e2ddd6;
+    color: var(--blanco);
     font-size: 2em;
     opacity: .7;
     line-height: .8em;
