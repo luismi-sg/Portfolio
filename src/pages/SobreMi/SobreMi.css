@@ -5,7 +5,7 @@
     min-width: 22.5rem;
     position: relative;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         padding: 8.5rem 1rem 1rem;
         background-image: linear-gradient(to left top , #2d2035 , #090427 );
     }
@@ -13,48 +13,41 @@
 .Sobremi-wrapper{
     margin: 0 auto;
     min-height: 100vh;
-    max-width: 100rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.grid-wrapper{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 8rem 3rem 3rem;
+    padding: 6.5rem 0 0 0;
 
-    @media (max-width: 920px){
+    @media screen and (max-width: 57.5rem){
         padding: 0rem;
     }
 }
 .Perfil-wrapper{
     width: 100%;
-    max-width: 1440px;
+    max-width: 90%;
+    max-height: 80vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     overflow: hidden;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
+        max-height: 100%;
     }
 }
 .grid-container{
-    border-radius: 24px;
+    border-radius: 12px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         border-radius: 12px;
     }
 }
@@ -66,28 +59,46 @@
     animation-delay: .5s;
     animation-fill-mode: both;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         grid-column: span 1;
         grid-row: span 1;        
     }
 }
 .grid-container:nth-child(2){
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
     align-items: flex-start;
     animation: aparecer-left 1s ease;
     animation-delay: 1s;
     animation-fill-mode: both;
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         grid-column: span 1;
         grid-row: span 1;        
     }
 }
-.grid-container:nth-child(3),
+.grid-container:nth-child(3){
+    grid-column: span 3;
+    grid-row: span 1;
+    align-items: flex-start;
+    animation: aparecer-left 1s ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    @media (max-width: 57.5rem){
+        grid-column: span 1;
+        grid-row: span 1;        
+    }
+}
+.grid-container:nth-child(5),
 .grid-container:nth-child(4){
+    grid-column: span 2;
+    grid-row: span 1;
     animation: aparecer-top 1s ease;
     animation-delay: 1.5s;
     animation-fill-mode: both;
+    @media (max-width: 57.5rem){
+        grid-column: span 1;
+        grid-row: span 1;        
+    }
 }
 .grid-container:nth-child(4){
     animation-delay: 2s;
@@ -95,10 +106,12 @@
 
 .grid-container:nth-child(4),
 .grid-container:nth-child(2),
-.grid-container:nth-child(3){
+.grid-container:nth-child(3),
+.grid-container:nth-child(5)
+{
     background-color: #1a1a1aaa;
 
-    @media screen and (max-width: 920px){
+    @media screen and (max-width: 57.5rem){
         background-color: #00000099;
     }
 }
@@ -153,11 +166,11 @@
 }
 .grid-span:nth-child(1),
 .grid-span:nth-child(3){
-animation: moveReverse 16s linear infinite alternate;
+    animation: moveReverse 16s linear infinite alternate;
 }
 .grid-container:hover .grid-span:nth-child(1),
 .grid-container:hover .grid-span:nth-child(3){
-color: var(--lila);
+    color: var(--lila);
 }
 
 @keyframes move {
@@ -183,10 +196,12 @@ to {
     overflow: hidden;
 }
 .Imagen-img{
-    border-radius: 24px;
-    transition: all 2s ease ;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 2s ease;
+    object-fit: cover;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         border-radius: 12px;
     }
 }
@@ -194,28 +209,71 @@ to {
     transform: scale(1.05);
 }
 .Info-wrapper{
-    padding: 3rem;
+    padding: 2rem;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         padding: 2rem 1rem;
         border-radius: 12px;
     }
 }
-.Info-h3{
+.Logo-wrapper{
+    margin: 0 auto;
+}
+.Info-wrapper img{
+    @media (max-width: 57.5rem){
+        width: 12rem;
+        height: auto;
+    }
+}
+.Info-wrapper.Pills-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.Pills-wrapper p{
+    margin-bottom: 1rem;
+}
+.Pills-wrapper ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem;
+}
+.Stack-pill{
+    padding: 8px 16px;
+    font-size: .8rem;
+    line-height: 1em;
+    border: 1px solid var(--lila);
+    border-radius: 32px;
+    font-weight: 500;
+    transition: .5s ease all;
+    opacity: 1;
+    
+    @media(max-width: 920px){
+        font-size: .8rem;
+    }
+}
+.Info-h1{
     color: var(--lila);
     font-weight: 700;
     font-size: 3em;
     margin-bottom: .5em;
     line-height: 1em;
 
-    @media(max-width: 920px){
-        font-size: 2em;
+    @media(max-width: 57.5rem){
+        font-size: 3em;
     }
 }
-.Info-h4{
+.Info-h2{
     color: var(--blanco);
     font-size: 1.4em;
     margin-bottom: 1.5em;
+}
+.Info-h3{
+    color: var(--blanco);
+    font-size: 1.5em;
+    margin-bottom: 0;
 }
 .Info-li{
     color: var(--blanco);

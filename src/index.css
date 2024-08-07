@@ -15,8 +15,9 @@
   --lila:#5d27ff;
   --blanco:#e2d8ad;
   /* Tipografía */
-  font-family: 'Jost', sans-serif;
+  font-family: "Space Grotesk", sans-serif; 
 }
+
 
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {

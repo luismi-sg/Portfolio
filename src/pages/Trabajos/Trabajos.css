@@ -6,11 +6,15 @@
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 7.5rem 2rem 2rem;
+    padding: 2rem;
 
-    @media (max-width: 920px){
+    @media (max-width: 95rem){
+        padding: 8.5rem 1rem 1rem;
+    }
+
+    @media (max-width: 57.5rem){
         padding: 8.5rem 1rem 1rem;
         background-image: linear-gradient(to left top , #2d2035 , #090427 );
     }
@@ -27,7 +31,7 @@
     overflow: hidden;
     padding: 2rem;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         padding: 2rem 1rem;
         background-color: transparent;
         
@@ -42,7 +46,7 @@
     gap: 3rem;
     padding: 1rem;
 
-    @media( max-width: 920px){
+    @media( max-width: 57.5rem){
         padding: 0;
     }
 }
@@ -54,7 +58,7 @@
     align-items: center;
     gap: 2rem;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         flex-flow: column nowrap;
         gap: 1rem;
     }
@@ -76,7 +80,7 @@
     transition: all .5s ease;
     opacity: .5;
 
-    @media (max-width: 920px){
+    @media (max-width: 57.5rem){
         min-width: 240px;
         border: 2px solid var(--blanco);
     }

@@ -54,6 +54,7 @@
     @media (max-width: 920px){
         font-size: 8rem;
         color: var(--lila);
+        mix-blend-mode: screen;
     }
 }
 .Inicio-h2{
