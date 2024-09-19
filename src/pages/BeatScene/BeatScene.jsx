@@ -15,7 +15,11 @@ export const BeatScene = () => {
                         <h1 className='Interna-h1'>BeatScene app<span className='Color-lila'>.</span></h1>
                         <h2 className='Interna-h2'>Diseño de aplicación para amantes de los conciertos y la música en vivo. </h2>
                     </div>
-                    <img className="Interna-img" src="/assets/beatscene_hero.webp" alt="BeatScene Hero App" />
+                    <picture>
+                        <source media="(max-width: 960px)" srcSet="/assets/beatscene_hero-mobile.webp" type="image/webp" />
+                        <img className="Interna-img" src="/assets/beatscene_hero.webp" alt="BeatScene Hero App" />
+                    </picture>
+                    
                 </section>
                 <section className="Interna-info">
                     <div className="Info-container izquierda">
@@ -50,7 +54,10 @@ export const BeatScene = () => {
                 </section>
                 <section className="Interna-info proceso">
                     <div className="Info-container derecha">
-                        <img className="Interna-img" src="/assets/BeatScene-sistemadiseno.webp" alt="Logo BeatScene" />
+                        <picture>
+                            <source media="(max-width: 960px)" srcSet="/assets/BeatScene-sistemadiseno-mobile.webp" type="image/webp" />
+                            <img className="Interna-img" src="/assets/BeatScene-sistemadiseno.webp" alt="Logo BeatScene" />
+                        </picture>
                     </div>
                     <div className="Info-container izquierda">
                         <h3 className="Interna-h3"><span className='Color-lila'>PROCESO:</span> El Diseño</h3>
@@ -63,7 +70,8 @@ export const BeatScene = () => {
                         <p className="Interna-p"> La App fue enteramente diseñada en Figma, el prototipo fue testeado con la herramienta Maze y se hicieron cambios dentro del interfaz según el feedback de los constantes testeos y feedbacks de los posibles usuarios.</p>
                     </div>
                     <div className="Info-container derecha">
-                        <video className='Interna-img' preload='yes' autoPlay='on' loop='on' muted data-object-fit="cover" playsInline controls='on'> 
+                        <video className='Interna-img' preload='yes' autoPlay='on' loop='on' muted data-object-fit="cover" playsInline controls='on'>
+                            <source media="(max-width: 960px)" autoPlay src='/assets/BeatScene-video-mobile.mp4' type="video/mp4"></source>
                             <source autoPlay src='/assets/BeatScene-video.mp4' type="video/mp4"></source>
                         </video>
                     </div>

@@ -292,6 +292,9 @@ to {
         border-radius: 12px;
     }
 }
+.Interna-info.proceso{
+    flex-flow: column-reverse nowrap;
+}
 .info-wrapper{
     display: flex;
     flex-flow: row nowrap;

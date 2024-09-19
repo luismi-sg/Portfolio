@@ -61,6 +61,11 @@
     font-size: 8rem;
     line-height: 8rem;
 
+    @media(max-width: 1200px){
+        font-size: 5.5rem;
+        line-height: 6rem;
+    }
+
     @media(max-width: 920px){
         font-weight: 600;
         font-size: 2.5rem;
@@ -88,6 +93,14 @@
     height: 11rem;
     transform: rotate(-30deg);
     animation: handwave 2s ease-in-out infinite alternate;
+
+    @media(max-width: 1200px){
+        height: 9rem;
+    }
+
+    @media(max-width: 920px){
+        height: 11rem;
+    }
 }
 @keyframes handwave {
     from{

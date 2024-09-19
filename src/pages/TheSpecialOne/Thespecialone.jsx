@@ -22,7 +22,10 @@ export const Thespecialone = () =>{
                             </a>
                         </div>
                     </div>
-                    <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
+                    <picture>
+                        <source media="(max-width: 960px)" srcSet="/assets/thespecialone_hero-mobile.webp" type="image/webp" />
+                        <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
+                    </picture>
                 </section>
                 <section className="Interna-info">
                     <div className="Info-container">
@@ -65,7 +68,10 @@ export const Thespecialone = () =>{
                 </section>
                 <section className="Interna-info proceso">
                     <div className="Info-container derecha">
-                        <img className="Interna-img" src="/assets/thespecialone-sistemadiseno.webp" alt="Logo BeatScene" />
+                        <picture>
+                            <source media="(max-width: 960px)" srcSet="/assets/thespecialone-sistemadiseno-mobile.webp" type="image/webp" />
+                            <img className="Interna-img" src="/assets/thespecialone-sistemadiseno.webp" alt="Logo BeatScene" />
+                        </picture>
                     </div>
                     <div className="Info-container izquierda">
                         <h3 className="Interna-h3"><span className='color-thespecialone'>RESULTADO FINAL:</span> La Web</h3>
