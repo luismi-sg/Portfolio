@@ -1,8 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 import { useState } from 'react'
 import { IconCopy, IconGithub, IconLinkedin } from '../../utils/icons'
 import './Inicio.css'
 
 export const Inicio = () => {
+
+    const { t } = useTranslation();
 
     const emailText = 'lmsg1191@gmail.com'
     const [ toolTip , setToolTip ] = useState(false)
@@ -21,15 +25,15 @@ export const Inicio = () => {
         <div className='Inicio'>
             <div className='Inicio-wrapper'>
                 <main>
-                    <h1 className='Inicio-h1'> LuisMi </h1>
-                    <h2 className='Inicio-h2'>FrontEnd Developer & UX/UI Designer</h2>
+                    <h1 className='Inicio-h1'> LuisMi</h1>
+                    <h2 className='Inicio-h2'>{t('position')}</h2>
                 </main>
                 <footer>
                     <span className='Inicio-span'>
-                        <a href='https://github.com/luismi-sg' target='_blank' title='Ir a Perfil Github'>
+                        <a href='https://github.com/luismi-sg' target='_blank' title='Go to Github'>
                             <IconGithub/>
                         </a>
-                        <a href='https://www.linkedin.com/in/luismisg/' target='_blank' title='Ir a Perfil de Linkedin'>
+                        <a href='https://www.linkedin.com/in/luismisg/' target='_blank' title='Go to Linkedin'>
                             <IconLinkedin/>
                         </a>
                     </span>
@@ -37,7 +41,7 @@ export const Inicio = () => {
                         <strong>{emailText}</strong>
                         <button onClick={ handleClick }>
                             <IconCopy/>
-                            <strong className={ toolTip ? 'isActive' : '' }>{"Email copiado"}</strong>
+                            <strong className={ toolTip ? 'isActive' : '' }> {t('mailCopy')} </strong>
                         </button>
                     </span>
                 </footer>

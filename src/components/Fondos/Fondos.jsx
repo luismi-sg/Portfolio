@@ -27,6 +27,9 @@ export const Fondos = () => {
             case '/beatscene' :
                 setsIsActive(3)
                 break;
+            case '/webworks' :
+                setsIsActive(3)
+                break;
         }
 
     }, [ location ])

@@ -12,6 +12,7 @@
 
     @media (max-width: 95rem){
         padding: 8.5rem 1rem 1rem;
+        background-image: linear-gradient(to left top , #2d2035 , #090427 );
     }
 
     @media (max-width: 57.5rem){

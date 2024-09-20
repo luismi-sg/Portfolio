@@ -9,10 +9,19 @@ import { Fondos } from './components/Fondos/Fondos'
 import { BeatScene } from './pages/BeatScene/BeatScene'
 import { Thespecialone } from './pages/TheSpecialOne/Thespecialone'
 import { SobreMi } from './pages/SobreMi/SobreMi'
+import { WebWorks } from './pages/WebWorks/WebWorks'
+
+import { useTranslation } from 'react-i18next';
+import './i18n';
 
 
 function App() {
 
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    document.documentElement.setAttribute('lang', lng);  // Cambiar el atributo lang en el HTML
+  };
   return (
     <BrowserRouter>
       <div className="App">
@@ -22,10 +31,14 @@ function App() {
               <img className="Header-svg" src="/assets/Logo-luismi.svg" alt="Logo LuisMi Sovero" />
             </NavLink>
             <ul className='Header-ul'>
-              <NavLink to={ '/trabajos' }>  <li className='Header-li'>Proyectos</li>  </NavLink>
-              <NavLink to={ '/sobremi' }>   <li className='Header-li'> Sobre mi </li> </NavLink>
-              <NavLink to={ '/contacto' }>  <li className='Header-li'> Contacto </li> </NavLink>
+              <NavLink to={ '/trabajos' }>  <li className='Header-li'>{t('projects')}</li>  </NavLink>
+              <NavLink to={ '/sobremi' }>   <li className='Header-li'>{t('about')}</li> </NavLink>
+              <NavLink to={ '/contacto' }>  <li className='Header-li'>{t('contact')}</li> </NavLink>
             </ul>
+            <div>
+              <button onClick={() => changeLanguage('en')}>English</button>
+              <button onClick={() => changeLanguage('es')}>Español</button>
+            </div>
           </nav>
         </header>
         
@@ -38,6 +51,7 @@ function App() {
           <Route path='/contacto' element={ <Contacto /> } />
           <Route path='/beatscene' element={ <BeatScene /> } />
           <Route path='/thespecialone' element={ <Thespecialone /> } />
+          <Route path='/webworks' element={ <WebWorks titulo="titulo"/> } />
         </Routes>
       </div>
     </BrowserRouter>
