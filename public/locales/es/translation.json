@@ -14,5 +14,48 @@
     "aboutStackTitle":"Stack de desarrollo",
     "aboutExperience": "Mi experiencia me ha dotado de habilidades sólidas en diseño digital y creación de sistemas de diseño innovadores, siempre buscando la formación continua, las mejores herramientas y tendencias actuales.",
     "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
-    "aboutDownload": "Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV"
+    "aboutDownload": "Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV",
+
+    "projectsTitleDev": "Desarrollo FrontEnd",
+    "projectsTitleDesign": "Diseño UX/UI",
+
+    "beatsceneTitle": "BeatScene",
+    "beatsceneExcerpt": "Diseño de aplicación para amantes de los conciertos y la música en vivo.",
+
+    "projectObjective": "OBJETIVO",
+    "beatsceneWhatIs": "¿Qué es BeatScene?",
+    "beatsceneWhatIsText": "Es una App donde puedes compartir la experiencia de vivir tu evento músical favorito con quien tu quieras o tener la posibilidad de conocer nuevas personas con tus mismos gustos musicales y vivirla juntos.",
+
+    "beatsceneSubtitle": "Proyecto UX/UI Mobile",
+    "beatscenePhrase": "Me encanta ir a conciertos y conocer gente nueva",
+    "beatsceneslide1": "BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene",
+    "beatsceneslide2": "Comparte tu música y disfruta de conciertos Comparte tu música y disfruta de conciertos",
+
+    "projectProcess": "PROCESO",
+    "beatsceneProcessTitle": "El diseño",
+    "beatsceneProcessText": "El proceso para diseñar la app empezó con un estudio completo e investigación en la experiencia de usuario, para luego seguir con los pasos necesarios para diseñar la interfaz. Desarrollando un sistema de diseño solido, con wireframes y una estructura enfocada en la interactividad del usuario con la app.",
+
+    "projectResult": "RESULTADO FINAL",
+    "beatsceneResultText": "La App fue enteramente diseñada en Figma, el prototipo fue testeado con la herramienta Maze y se hicieron cambios dentro del interfaz según el feedback de los constantes testeos y feedbacks de los posibles usuarios.",
+
+    "infoContact": "Contáctame",
+    "infoContactText": "Si sientes que podemos trabajar juntos, conversemos.",
+
+    "specialTitle": "The Special One",
+    "specialText": "Diseño y Desarrollo de Web Magazine sobre Futbol y actualidad.",
+    "projectVisit": "Visita la web",
+
+    "specialWhatIs": "¿Qué es The Special One?",
+    "specialWhatIsText": "Es una web Magazine enfocada en la actualidad y las últimas noticias del mundo del fútbol, desarrollada con el fin de compartir uno de mis más grandes intereses como es el fútbol. El tono de voz de la web está basada en la actitud y personalidad de Mourinho, un referente como entrenedor y conocedor del deporte rey. ",
+
+    "specialDesign": "El Diseño y Desarrollo",
+    "specialDesignText": "La Interfaz de la web está diseñada en Figma, utilicé un sistema de diseño y los principios del Diseño Atómico. Para el Desarrollo de la web utilice la combinación del CMS Wordpress y el builder Elementor PRO, ya que es lo más optimo para este tipo de Blog/Magazine el cual recibirá entradas y contenido constantemente.",
+
+    "specialSubtitle": "Proyecto Blog Web",
+    "specialTools": "Herramientas",
+    "specialslide1": "The Special One The Special One The Special One The Special One The Special One",
+    "specialslide2": "Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía.",
+
+    "specialResultTitle": "La web",
+    "specialResultText": "El diseño moderno y la funcionalidad del CMS permiten que la web sea manejable por EDITORES o CREADORES de contenido. La idea del proyecto es conseguir tráfico web y en un futuro utilizarla para agregarle MEDIA ADS, para ello se ha aplicado una estrategia SEO en la web que permita optimizarla en cara a los buscadores actuales."
   }

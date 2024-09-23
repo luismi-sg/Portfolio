@@ -35,9 +35,9 @@ function App() {
               <NavLink to={ '/sobremi' }>   <li className='Header-li'>{t('about')}</li> </NavLink>
               <NavLink to={ '/contacto' }>  <li className='Header-li'>{t('contact')}</li> </NavLink>
             </ul>
-            <div>
-              <button onClick={() => changeLanguage('en')}>English</button>
-              <button onClick={() => changeLanguage('es')}>Español</button>
+            <div className='Button-wrapper'>
+              <button className='Header-button' onClick={() => changeLanguage('en')}>EN</button>
+              <button className='Header-button' onClick={() => changeLanguage('es')}>ES</button>
             </div>
           </nav>
         </header>

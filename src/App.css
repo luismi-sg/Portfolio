@@ -100,3 +100,39 @@ body{
 .Header-li:hover{
     background-color: var(--lila);
 }
+.Button-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    @media(max-width: 920px){
+        gap: 12px;
+    }
+}
+.Header-button{
+    padding: 4px 8px;
+    border: 2px solid var(--blanco);
+    border-radius: 6px;
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: .8em;
+    transition: all .5s ease;
+    cursor: pointer;
+    opacity: .5;
+
+    &:hover{
+        background-color: var(--lila);
+        opacity: 1;
+        border: 2px solid var(--lila);
+    }
+    &:active{
+        transform: scale(.95);
+    }
+
+    @media(max-width: 920px){
+        padding: 4px 12px;
+        font-size: .8em;
+    }
+}

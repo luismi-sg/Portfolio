@@ -13,7 +13,50 @@
   "aboutStackTitle":" Development Stack",
   "aboutExperience": "My experience has given me solid skills in digital design and the creation of innovative design systems, always seeking continuous training, the best tools and current trends.",
   "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
-  "aboutDownload": "Download CV Download CV Download CV Download CV Download CV Download CV Download CV Download CV"
+  "aboutDownload": "Download CV Download CV Download CV Download CV Download CV Download CV Download CV Download CV",
+
+  "projectsTitleDev": "FrontEnd Development",
+  "projectsTitleDesign": "UX/UI Design",
+
+  "beatsceneTitle": "BeatScene",
+  "beatsceneExcerpt": "Application design for concert and live music lovers.",
+
+  "projectObjective": "OBJECTIVE",
+  "beatsceneWhatIs": "What is BeatScene?",
+  "beatsceneWhatIsText": "It is an App where you can share the experience of living your favorite music event with whoever you want or have the possibility of meeting new people with your same musical tastes and living it together.",
+
+  "beatsceneSubtitle": "Mobile UX/UI Project",
+  "beatscenePhrase": "I love going to concerts and meeting new people",
+  "beatsceneslide1": "BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene",
+  "beatsceneslide2": "Share your music and enjoy concerts Share your music and enjoy concerts",
+
+  "projectProcess": "PROCESS",
+  "beatsceneProcessTitle": "The design",
+  "beatsceneProcessText": "The process to design the app started with a complete study and research on the user experience, to then follow the necessary steps to design the interface. Developing a solid design system, with wireframes and a structure focused on the user's interactivity with the app.",
+
+  "beatsceneResult": "FINAL RESULT",
+  "beatsceneResultText": "The App was entirely designed in Figma, the prototype was tested with the Maze tool and changes were made within the interface according to the feedback from the constant tests and feedback from the possible users.",
+
+  "infoContact": "Contact me",
+  "infoContactText": "If you feel we can work together, let's talk.",
+
+  "specialTitle": "The Special One",
+  "specialText": "Design and Development of Web Magazine about Football and current affairs.",
+  "projectVisit": "Visit the website",
+
+  "specialWhatIs": "What is The Special One?",
+  "specialWhatIsText": "It is a web Magazine focused on the current affairs and the latest news in the world of football, developed with the aim of sharing one of my greatest interests such as football. The tone of voice of the web is based on the attitude and personality of Mourinho, a reference as a coach and connoisseur of the king sport.",
+
+  "specialDesign": "Design and Development",
+  "specialDesignText": "The Interface of the web is designed in Figma, I used a design system and the principles of Atomic Design. For the Development of the web I used the combination of the CMS Wordpress and the builder Elementor PRO, as it is the most optimal for this type of Blog/Magazine which will receive entries and content constantly.",
+
+  "specialSubtitle": "Web Blog Project",
+  "specialTools": "Tools",
+  "specialslide1": "The Special One The Special One The Special One The Special One The Special One",
+  "specialslide2": "We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy.",
+
+  "specialResultTitle": "The web",
+  "specialResultText": "The modern design and the functionality of the CMS allow the web to be manageable by EDITORS or CONTENT CREATORS. The idea of the project is to get web traffic and in the future use it to add MEDIA ADS, for this, an SEO strategy has been applied to the web that allows it to be optimized in the face of current search engines."
 
   
 }

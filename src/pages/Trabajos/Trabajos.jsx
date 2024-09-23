@@ -3,9 +3,12 @@ import './Trabajos.css'
 import { proyectos } from '../../bbdd/proyectos'
 import { IconGithub, IconNavegar } from '../../utils/icons'
 import { CardTrabajo } from '../../components/CardTrabajo/CardTrabajo'
+import { useTranslation } from 'react-i18next';
 
 
 export const Trabajos = () => {
+
+    const { t } = useTranslation();
 
     const [ toggleState, setToggleState] = useState(1)
 
@@ -22,13 +25,13 @@ export const Trabajos = () => {
                         className={ toggleState === 1 ? "Button-tabs tab-isActive" : "Button-tabs"}
                         onClick={() => toggleTab(1)}
                         >
-                            <strong>Desarrollo FrontEnd</strong>
+                            <strong>{t('projectsTitleDev')}</strong>
                         </div>
                         <div
                         className={ toggleState === 2 ? "Button-tabs tab-isActive" : "Button-tabs"}
                         onClick={() => toggleTab(2)}
                         >
-                            <strong>Diseño UX/UI</strong>
+                            <strong>{t('projectsTitleDesign')}</strong>
                         </div>
                     </div>
                     <div className='Tabs-wrapper'>
