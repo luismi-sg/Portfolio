@@ -4,14 +4,16 @@
     "about": "Sobre mi",
     "contact": "Contacto",
 
-    "position": "Desarrollador FrontEnd y Diseñador UX/UI",
+    "position": "Diseñador UX/UI y Desarrollador FrontEnd",
     "mailCopy": "Correo copiado",
 
     "contactTitle" : "Conversamos?",
     "contactText": "Si te gusta mi perfil no dudes en contactarme.",
 
-    "aboutDescription": "Me llaman LuisMi. Soy desarrollador enfocado en el FrontEnd y diseñador UX/UI con más de diez años de experiencia en la industria del diseño y dos años en la creación y desarrollo de interfaces web. Mi habilidad para combinar diseño visual y funcionalidad técnica me permite desarrollar soluciones digitales estéticamente agradables y altamente usables.",
-    "aboutStackTitle":"Stack de desarrollo",
+    "aboutDescription": "Me llaman LuisMi. Soy diseñador UX/UI y desarrollador enfocado en el FrontEnd, con ocho años de experiencia en la industria del diseño digital y dos años en la ideación, creación y desarrollo de interfaces web y apps. Mi habilidad para combinar diseño visual y funcionalidades técnicas me permite desarrollar soluciones digitales estéticamente agradables y altamente usables.",
+    "aboutStackTitle":"Stack de herramientas",
+    "aboutTitleDesigner": "Como Diseñador",
+    "aboutTitleDeveloper": "Como Desarrollador",
     "aboutExperience": "Mi experiencia me ha dotado de habilidades sólidas en diseño digital y creación de sistemas de diseño innovadores, siempre buscando la formación continua, las mejores herramientas y tendencias actuales.",
     "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
     "aboutDownload": "Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV",

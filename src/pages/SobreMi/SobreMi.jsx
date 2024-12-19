@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 export const SobreMi = () => {
 
     const { t } = useTranslation();
-    const stackFront = [ 'HTML', 'CSS', 'JavaScript', 'React' ]
-    const stackBack = [ 'MongoDB', 'NodeJS', 'Express' ]
+    const stackFront = [ 'Figma', 'FigJam', 'Illustrator', 'Photoshop', 'After Effects' ]
+    const stackBack = [ 'HTML', 'CSS/SASS', 'JavaScript', 'React', 'Astro' ]
 
     return( 
         <div className='Sobremi'>
@@ -31,11 +31,11 @@ export const SobreMi = () => {
                         <div className='Info-wrapper Pills-wrapper'>
                             <h3 className='Info-h3'>{t('aboutStackTitle')}</h3>
                             <p>{t('aboutExperience')}</p>
-                            <strong>FrontEnd</strong>
+                            <strong>{t('aboutTitleDesigner')}</strong>
                             <ul>
                                 { stackFront.map( (item, index) => <li className='Stack-pill' key={ index }>{ item }</li> ) }
                             </ul>
-                            <strong>BackEnd</strong>
+                            <strong>{t('aboutTitleDeveloper')}</strong>
                             <ul>
                                 { stackBack.map( (item, index) => <li className='Stack-pill' key={ index }>{ item }</li> ) }
                             </ul>

@@ -33,13 +33,15 @@ function App() {
       <div className="App">
         <header className='Header'>
           <nav className='Header-nav'>
+            <div className='Button-wrapper logo'>
             <NavLink to={ '/' }>
               <img className="Header-svg" src="/assets/Logo-luismi.svg" alt="Luis Miguel Sovero Logo" />
             </NavLink>
+            </div>
             <ul className='Header-ul'>
               <NavLink to={ '/trabajos' }>  <li className='Header-li'>{t('projects')}</li>  </NavLink>
-              <NavLink to={ '/sobremi' }>   <li className='Header-li'>{t('about')}</li> </NavLink>
-              <NavLink to={ '/contacto' }>  <li className='Header-li'>{t('contact')}</li> </NavLink>
+              <NavLink to={ '/sobremi' }>   <li className='Header-li'>{t('about')}</li>     </NavLink>
+              <NavLink to={ '/contacto' }>  <li className='Header-li'>{t('contact')}</li>   </NavLink>
             </ul>
             <div className='Button-wrapper'>
               <button className='Header-button' onClick={() => changeLanguage('en')}>EN</button>

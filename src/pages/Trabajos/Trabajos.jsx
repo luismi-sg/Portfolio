@@ -25,20 +25,20 @@ export const Trabajos = () => {
                         className={ toggleState === 1 ? "Button-tabs tab-isActive" : "Button-tabs"}
                         onClick={() => toggleTab(1)}
                         >
-                            <strong>{t('projectsTitleDev')}</strong>
+                            <strong>{t('projectsTitleDesign')}</strong>
                         </div>
                         <div
                         className={ toggleState === 2 ? "Button-tabs tab-isActive" : "Button-tabs"}
                         onClick={() => toggleTab(2)}
                         >
-                            <strong>{t('projectsTitleDesign')}</strong>
+                            <strong>{t('projectsTitleDev')}</strong>
                         </div>
                     </div>
                     <div className='Tabs-wrapper'>
                         <div className={ toggleState === 1 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <section className='Trabajos-grid'>
                                 { proyectos.map(( {id , pills, img , alt , titulo , gitUrl , webUrl} ) => {
-                                        if(pills.includes('Web')){
+                                        if(pills.includes('UX/UI')){
                                             return(
                                                 <CardTrabajo
                                                 key={id} 
@@ -56,7 +56,7 @@ export const Trabajos = () => {
                         <div className={ toggleState === 2 ? "Tabs-content content-isActive" : "Tabs-content"}>
                             <section className='Trabajos-grid'>
                                 { proyectos.map(( {id , pills, img , alt , titulo , gitUrl , webUrl} ) => {
-                                        if(pills.includes('UX/UI')){
+                                        if(pills.includes('Web')){
                                             return(
                                                 <CardTrabajo
                                                 key={id} 

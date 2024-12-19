@@ -26,7 +26,7 @@ body{
 }
 .Header-nav{
     min-width: 360px;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 12px;
     width: 100%;
     display: flex;
@@ -118,12 +118,19 @@ body{
 .Button-wrapper{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    min-width: 100px;
     gap: 12px;
 
     @media(max-width: 920px){
         display: none;
+    }
+}
+.Button-wrapper.logo{
+    justify-content: flex-start;
+    @media(max-width: 920px){
+        display: flex;
     }
 }
 .Header-button{

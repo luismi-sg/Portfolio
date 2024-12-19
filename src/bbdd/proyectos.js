@@ -1,7 +1,7 @@
 export const proyectos = [
     {
         id: "0",
-        pills: ["UX/UI" , "App"],
+        pills: ["UX/UI", "Figma", "App"],
         img : "/assets/uxui-beatscene.webp",
         alt : "Miniature BeatScene App",
         titulo : "BeatScene App",
@@ -9,7 +9,7 @@ export const proyectos = [
     },
     {
         id: "1",
-        pills: ["UX/UI" , "App"],
+        pills: ["UX/UI", "Figma", "Wordpress"],
         img : "/assets/web-thespecialone.webp",
         alt : "The Special One | Football Blog",
         titulo : "The Special One",
@@ -49,5 +49,13 @@ export const proyectos = [
         titulo : "Spotify-project",
         gitUrl : "https://github.com/luismi-sg/APP-Spotify",
         webUrl : "https://spotify-proyecto.vercel.app/"
-    }
+    },
+    /*{
+        id: "6",
+        pills: ["UX/UI", "Adobe Tools", "Figma" ],
+        img : "/assets/web-thespecialone.webp",
+        alt : "Universidad de Lima",
+        titulo : "Universidad de Lima",
+        webUrl : "/thespecialone"
+    },*/
 ]
