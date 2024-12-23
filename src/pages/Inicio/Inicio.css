@@ -4,7 +4,7 @@
     color: var(--blanco);
     min-width: 22.5rem;
     position: relative;
-    padding: 7.5rem 2rem 2rem;
+    padding: 8.5rem 2rem 2rem;
 
     @media(max-width: 920px){
         padding: 8.5rem 1rem 1rem;
@@ -117,7 +117,7 @@
     transition: all .5s ease;
     position: absolute;
     top: 16px;
-    right:-100px;
+    right:-110px;
     font-size: 12px;
     padding: 8px 12px;
     border-radius: 6px;

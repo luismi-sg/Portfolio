@@ -18,6 +18,7 @@ body{
     align-items: center;
     min-height: 72px;
     border-radius: 12px;
+    overflow: hidden;
 
     @media(max-width: 920px){
         top: 0;
@@ -101,10 +102,10 @@ body{
     border-radius: 6px;
 
     @media(max-width: 920px){
-        padding: 4px 12px;
+        font-size: 3rem;
+        padding: 12px 24px;
         justify-content: flex-end;
         text-align: right;
-        font-size: .8em;
     }
 
     @media(max-width: 520px){
@@ -114,6 +115,10 @@ body{
 }
 .Header-li:hover{
     background-color: var(--lila);
+
+    @media(max-width: 520px){
+        background-color: transparent;
+    }
 }
 .Button-wrapper{
     display: flex;
@@ -177,7 +182,11 @@ body{
     gap: 24px;
     padding: 1rem;
     border-radius: 0;
-    transition: all .5s ease-in-out;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+}
+.Header-nav.mobile.isActive{
+    transform: translateX(0%);
 }
 .Header-ul-mobile{
     padding: 8px 8px;

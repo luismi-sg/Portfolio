@@ -1,5 +1,5 @@
 .Trabajos-article{
-    max-width: 420px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
     background-color: #1a1a1aaa;
@@ -53,11 +53,14 @@
     transition: all .5s ease;
     border-radius: 12px;
     object-fit: cover;
-    aspect-ratio: 3/2;
+    aspect-ratio: 16/9;
 
     @media (max-width: 920px){
         filter: grayscale(50%);
-        opacity: 1;        
+        opacity: 1;   
+    }
+    @media (max-width: 560px){
+        aspect-ratio: 4/3;       
     }
 }
 .Trabajos-info{
