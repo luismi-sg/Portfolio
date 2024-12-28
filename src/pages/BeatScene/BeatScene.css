@@ -56,7 +56,7 @@
     color: #2b2b2b;
 }
 .Interna-img{
-    border-radius: 32px;
+    border-radius: 24px;
     display: block;
     
     @media(max-width: 920px){
@@ -253,6 +253,19 @@ from {
 to {
     transform: translateX(0%);
 }
+}
+.Info-iframe{
+    width: 100%;
+    min-height: 700px;
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 920px){
+        border-radius: 8px;
+        min-height: 300px;
+    }
 }
 .Interna-Banner{
     width: 100%;

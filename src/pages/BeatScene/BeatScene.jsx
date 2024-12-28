@@ -58,10 +58,11 @@ export const BeatScene = () => {
                 </section>
                 <section className="Interna-info proceso">
                     <div className="Info-container derecha">
-                        <picture>
+                        <iframe className="Info-iframe" src="https://embed.figma.com/proto/O3tz9wXZ4tAj85Nm0DTgRi/Proyecto-Final?page-id=6%3A2&node-id=30-310&p=f&viewport=577%2C1509%2C0.2&scaling=contain&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+                        {/* <picture>
                             <source media="(max-width: 960px)" srcSet="/assets/BeatScene-sistemadiseno-mobile.webp" type="image/webp" />
                             <img className="Interna-img" src="/assets/BeatScene-sistemadiseno.webp" alt="Logo BeatScene" />
-                        </picture>
+                        </picture> */}
                     </div>
                     <div className="Info-container izquierda">
                         <h3 className="Interna-h3"><span className='Color-lila'>{t('projectProcess')}:</span> {t('beatsceneProcessTitle')}</h3>
