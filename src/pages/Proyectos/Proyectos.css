@@ -1,7 +1,8 @@
-.BeatScene{
+.Interna-container{
     width: 100%;
     min-height: 100vh;
     position: relative;
+    background-image: linear-gradient(to left top , #000000 , #030110);
 }
 .Interna-wrapper{
     padding: 8rem 0;
@@ -45,6 +46,7 @@
     color: var(--lila);
     border-radius: 32px;
     font-weight: 500;
+    transition: all .5s ease;
 
     @media(max-width: 920px){
         font-size: .8rem;
@@ -53,11 +55,12 @@
 .Interna-pill:hover{
     border: 1px solid var(--lila);
     background-color: var(--lila);
-    color: #2b2b2b;
+    color: var(--blanco)
 }
 .Interna-img{
     border-radius: 24px;
     display: block;
+    width: 100%;
     
     @media(max-width: 920px){
         border-radius: 12px;
@@ -70,7 +73,7 @@
     justify-content: center;
     gap: 3rem;
     padding: 3rem;
-    background-color: #000;
+    background-color: #1a1a1a;
     border-radius: 32px;
     
     @media (max-width: 920px){
@@ -85,10 +88,10 @@
     line-height: 1em;
     font-weight: 600;
     color: var(--blanco);
+    margin-bottom: -20px;
 
     @media (max-width: 920px){
         font-size: 2.5rem;
-        
     }
 }
 .Color-lila{
@@ -96,6 +99,7 @@
 }
 .Interna-h2{
     font-size: 1.5rem;
+    line-height: 1.5em;
     color: var(--blanco);
 
     @media (max-width: 920px){
@@ -123,17 +127,24 @@
     gap: 1rem;   
 }
 .Info-container{
-    background-color: black;
+    background-color: #1a1a1a;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
+    flex: 1;
     padding: 3rem;
     border-radius: 32px;
 
     @media (max-width: 920px){
         padding: 2rem 1rem ;
         border-radius: 12px;
+    }
+}
+.izquierda{
+    max-width: calc(50% - .5rem);
+    @media (max-width: 920px){
+        max-width: 100%;
     }
 }
 .derecha{
@@ -148,8 +159,8 @@
 }
 .Interna-h3{
     font-weight: 500;
-    font-size: 2em;
-    line-height: 103%;
+    font-size: 1.6em;
+    line-height: 1.2em;
     margin-bottom: .5em;
     color: var(--blanco);
     z-index: 1;
@@ -164,7 +175,7 @@
     gap: 16px;
 }
 .Grid-article{
-    background-color: #000;
+    background-color: #1a1a1a;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -229,7 +240,7 @@
 .autoSlide-span:nth-child(1),
 .autoSlide-span:nth-child(3){
 animation: moveReverse 16s linear infinite alternate;
-color: #0BF16C;
+color: var(--blanco);
 }
 .grid-container:hover .autoSlide-span:nth-child(1),
 .grid-container:hover .autoSlide-span:nth-child(3){
@@ -293,10 +304,10 @@ to {
 .Banner-info{
     margin: 0 auto;
     max-width: 80rem;
-    background-color: #1a1a1aaa;
+    background-color: #1a1a1aee;
     padding: 4rem 3rem;
     border-radius: 2rem;
-    color: var(--blanco);
+    color: var(--lila);
     position: relative;
     z-index: 1;
 
@@ -320,8 +331,8 @@ to {
     }
 }
 .info-h2{
-    font-size: 2rem;
-    font-weight:700 ;
+    font-size: 1.6rem;
+    font-weight:600 ;
     line-height: 1.1em;
 
     @media screen and (max-width: 920px){
@@ -330,8 +341,8 @@ to {
     }
 }
 .info-button a{
-    background-color: var(--lila);
     padding: 12px 24px;
+    border: 2px solid var(--lila);
     font-size: 1.5rem;
     color: var(--blanco);
     border-radius: 12px;
@@ -341,6 +352,7 @@ to {
     align-items: center;
     gap: 2rem;
     transition: .5s all ease;
+    opacity: 0.5;
 
     @media (max-width: 920px){
         font-size: 1.2rem;
@@ -348,7 +360,15 @@ to {
     }
 }
 .info-button a:hover{
-    transform: scale(1.05);
-    background-color: #1a1a1a;
-    color: var(--lila);
+    background-color: var(--lila);
+    color: var(--blanco);
+    opacity: 1;
+}
+
+/*DIFERENTES BANNERS PARA EL FOOTER*/
+.Interna-Banner.thespecialone-banner{
+    background-image: url('/assets/fondo-thespecialone-banner.webp');
+}
+.Interna-Banner.ulima-banner{
+    background-image: url('/assets/Ulima-banner.webp');
 }

@@ -30,8 +30,9 @@
 }
 .Perfil-wrapper{
     width: 100%;
-    max-width: 90%;
+    max-width: 1920px;
     max-height: 80vh;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -43,6 +44,7 @@
         grid-template-rows: repeat(3, 1fr);
         gap: 1rem;
         max-height: fit-content;
+        padding: 0;
     }
 
     @media(max-width: 57.5rem){
@@ -53,7 +55,7 @@
     }
 }
 .grid-container{
-    border-radius: 16px;
+    border-radius: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -69,7 +71,6 @@
     grid-row: span 2;
     transition: all .5s ease;
     animation: aparecer-right 1s ease;
-    animation-delay: .5s;
     animation-fill-mode: both;
 
     @media (max-width: 57.5rem){
@@ -82,7 +83,7 @@
     grid-row: span 1;
     align-items: flex-start;
     animation: aparecer-left 1s ease;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: both;
     @media(max-width: 75rem){
         grid-column: span 2;
@@ -98,7 +99,7 @@
     grid-row: span 1;
     align-items: flex-start;
     animation: aparecer-left 1s ease;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: both;
 
     @media(max-width: 75rem){
@@ -116,7 +117,7 @@
     grid-column: span 2;
     grid-row: span 1;
     animation: aparecer-top 1s ease;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-fill-mode: both;
     @media (max-width: 57.5rem){
         grid-column: span 1;
@@ -124,7 +125,7 @@
     }
 }
 .grid-container:nth-child(4){
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .grid-container:nth-child(4),
@@ -232,7 +233,7 @@ to {
     transform: scale(1.05);
 }
 .Info-wrapper{
-    padding: 2rem;
+    padding: 2.5rem;
 
     @media (max-width: 57.5rem){
         padding: 2rem 1rem;
@@ -269,17 +270,17 @@ to {
     font-size: .8rem;
     line-height: 1em;
     border: 1px solid var(--lila);
+    color: var(--lila);
     border-radius: 32px;
     font-weight: 500;
     transition: .5s ease all;
-    opacity: 1;
+    opacity: .8;
     
     @media(max-width: 920px){
         font-size: .8rem;
     }
 }
 .Stack-pill:hover{
-    border: 1px solid var(--blanco);
     background-color: var(--lila);
     color: var(--blanco);
     opacity: 1;
@@ -306,7 +307,10 @@ to {
 .Info-h3{
     color: var(--blanco);
     font-size: 1.5em;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+.Stack-ul{
+    margin-bottom: 10px;
 }
 .Info-li{
     color: var(--blanco);

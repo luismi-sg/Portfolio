@@ -20,9 +20,12 @@
 
     "projectsTitleDev": "Desarrollo",
     "projectsTitleDesign": "Diseño",
+    
+    "NotFoundtext" : "¿Perdido?",
+    "NotFoundButton" : "Vuelve al inicio",
 
     "beatsceneTitle": "BeatScene",
-    "beatsceneExcerpt": "Diseño de aplicación para amantes de los conciertos y la música en vivo.",
+    "beatsceneExcerpt": "Diseño de producto. App para amantes de los conciertos y la música en vivo.",
 
     "projectObjective": "OBJETIVO",
     "beatsceneWhatIs": "¿Qué es BeatScene?",
@@ -34,7 +37,7 @@
     "beatsceneslide2": "Comparte tu música y disfruta de conciertos Comparte tu música y disfruta de conciertos",
 
     "projectProcess": "PROCESO",
-    "beatsceneProcessTitle": "El diseño",
+    "beatsceneProcessTitle": "La investigación y el sistema de diseño",
     "beatsceneProcessText": "El proceso para diseñar la app empezó con un estudio completo e investigación en la experiencia de usuario, para luego seguir con los pasos necesarios para diseñar la interfaz. Desarrollando un sistema de diseño solido, con wireframes y una estructura enfocada en la interactividad del usuario con la app.",
 
     "projectResult": "RESULTADO FINAL",
@@ -59,5 +62,25 @@
     "specialslide2": "Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía.",
 
     "specialResultTitle": "La web",
-    "specialResultText": "El diseño moderno y la funcionalidad del CMS permiten que la web sea manejable por EDITORES o CREADORES de contenido. La idea del proyecto es conseguir tráfico web y en un futuro utilizarla para agregarle MEDIA ADS, para ello se ha aplicado una estrategia SEO en la web que permita optimizarla en cara a los buscadores actuales."
+    "specialResultText": "El diseño moderno y la funcionalidad del CMS permiten que la web sea manejable por EDITORES o CREADORES de contenido. La idea del proyecto es conseguir tráfico web y en un futuro utilizarla para agregarle MEDIA ADS, para ello se ha aplicado una estrategia SEO en la web que permita optimizarla en cara a los buscadores actuales.",
+
+    "ulimaTitle": "Universidad de Lima",
+    "ulimaText": "Diseñador Gráfico. Creación de piezas digitales e impresas, producción audiovisual y diseño de la interfaz web para el área Comercial de Posgrado.",
+
+    "ulimaPosition": "CARGO",
+    "ulimaWhatIs": "Diseñador del área de Comercial de Posgrado",
+    "ulimaWhatIsText": "El cargo consiste en el diseño de piezas gráficas digitales e impresas para la promoción tanto interna como externa de los programas de Posgrado de la Universidad de Lima, producción y creación audiovisual para artes gráficas necesaria para los distintos canales multiplataforma y convecionales, además de el diseño de la interfaz de la web de la Escuela de Posgrado.",
+
+    "ulimaResponsabilities": "DISEÑO",
+    "ulimaDesign": "Digital, audiovisual e impreso",
+    "ulimaDesignText": "El diseño de las piezas respeta un manual de marca, el cual fue desarrollado por una empresa de diseño colaboradora de la Universidad de Lima, el diseño de las piezas digitales se realizo en Figma y Adobe Suite, para las piezas impresas se utilizo Adobe Suite y para la producción audiovisual multiplataforma se utilizo Adobe Premiere y After Effects.",
+
+    "ulimaSubtitle": "Diseñador Sr. encargado del área Comercial",
+    "ulimaTools": "Herramientas",
+    "ulimaslide1": "Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima",
+    "ulimaslide2": "Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado",
+
+    "ulimaHighlight": "WEB",
+    "ulimaResultTitle": "Diseño de interfaz web",
+    "ulimaResultText": "La web debe mostrar una imagen moderna, seria y profesional de la Universidad de Lima, por lo que el diseño de la web debe ser atractivo y funcional para los usuarios, en su mayoria adultos, que buscan información sobre los programas de Posgrado. Se realizo la investigacón previa con la colaboración de distintos Stakeholders, tras varias etapas de prototipado y testeo, se realizo un sistema de diseño con Figma a partir de el manual de marca, el cual se respeto durante todo el diseño final y para la implementación en colaboración con el equipo de desarrolladores. La web es totalmente manejable por los editores de contenido y esta optimizada para los motores de búsqueda actuales."
   }

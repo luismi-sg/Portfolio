@@ -20,8 +20,11 @@
   "projectsTitleDev": "Development",
   "projectsTitleDesign": "Design",
 
+  "NotFoundtext" : "Lost?",
+  "NotFoundButton" : "Back to home",
+
   "beatsceneTitle": "BeatScene",
-  "beatsceneExcerpt": "Application design for concert and live music lovers.",
+  "beatsceneExcerpt": "Product design. App for concert and live music lovers.",
 
   "projectObjective": "OBJECTIVE",
   "beatsceneWhatIs": "What is BeatScene?",
@@ -33,7 +36,7 @@
   "beatsceneslide2": "Share your music and enjoy concerts Share your music and enjoy concerts",
 
   "projectProcess": "PROCESS",
-  "beatsceneProcessTitle": "The design",
+  "beatsceneProcessTitle": "Research and design system",
   "beatsceneProcessText": "The process to design the app started with a complete study and research on the user experience, to then follow the necessary steps to design the interface. Developing a solid design system, with wireframes and a structure focused on the user's interactivity with the app.",
 
   "beatsceneResult": "FINAL RESULT",
@@ -58,7 +61,25 @@
   "specialslide2": "We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy.",
 
   "specialResultTitle": "The web",
-  "specialResultText": "The modern design and the functionality of the CMS allow the web to be manageable by EDITORS or CONTENT CREATORS. The idea of the project is to get web traffic and in the future use it to add MEDIA ADS, for this, an SEO strategy has been applied to the web that allows it to be optimized in the face of current search engines."
+  "specialResultText": "The modern design and the functionality of the CMS allow the web to be manageable by EDITORS or CONTENT CREATORS. The idea of the project is to get web traffic and in the future use it to add MEDIA ADS, for this, an SEO strategy has been applied to the web that allows it to be optimized in the face of current search engines.",
 
-  
+  "ulimaTitle": "Universidad de Lima",
+  "ulimaText": "Graphic Designer. Creation of digital and printed pieces, audiovisual production and web interface design for the Postgraduate Commercial area.",
+
+  "ulimaPosition": "POSITION",
+  "ulimaWhatIs": "Commercial Designer of Postgraduate area",	
+  "ulimaWhatIsText": "The main objective of the position is to design and develop digital and printed pieces for the Postgraduate area of the University of Lima, as well as the production of audiovisual pieces for the promotion of the programs. The design of the web interface for the Postgraduate area is also part of the responsibilities of the position.",
+
+  "ulimaResponsabilities": "DESIGN",
+  "ulimaDesign": "Digital, audiovisual and printed",
+  "ulimaDesignText": "The design of the pieces adheres to a brand manual developed by a design company collaborating with the University of Lima. The design of digital pieces was carried out using Figma and Adobe Suite, printed materials were created with Adobe Suite, and multiplatform audiovisual production was done using Adobe Premiere and After Effects.",
+
+  "ulimaSubtitle": "Senior Designer in charge of the Commercial Area",
+  "ulimaTools": "Tools",
+  "ulimaslide1": "Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima",
+  "ulimaslide2": "Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado",
+
+  "ulimaHighlight": "WEB",
+  "ulimaResultTitle": "Web Interface Design",
+  "ulimaResultText": "The website must present a modern, serious, and professional image of the University of Lima. Therefore, its design should be both attractive and functional for users, mostly adults, seeking information about Postgraduate programs. Preliminary research was conducted in collaboration with various stakeholders. After several stages of prototyping and testing, a design system was created in Figma based on the brand manual, which was strictly followed throughout the final design process and its implementation in collaboration with the development team. The website is fully manageable by content editors and optimized for current search engines."
 }

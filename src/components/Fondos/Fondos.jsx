@@ -27,7 +27,7 @@ export const Fondos = () => {
             case '/beatscene' :
                 setsIsActive(3)
                 break;
-            case '/webworks' :
+            case '/universidad-de-lima' :
                 setsIsActive(3)
                 break;
         }

@@ -6,10 +6,12 @@ import { Contacto } from './pages/Contacto/Contacto'
 import { Inicio } from './pages/Inicio/Inicio'
 import { Trabajos } from './pages/Trabajos/Trabajos'
 import { Fondos } from './components/Fondos/Fondos'
-import { BeatScene } from './pages/BeatScene/BeatScene'
-import { Thespecialone } from './pages/TheSpecialOne/Thespecialone'
 import { SobreMi } from './pages/SobreMi/SobreMi'
-import { WebWorks } from './pages/WebWorks/WebWorks'
+import { NotFound } from './pages/404/NotFound'
+
+import { BeatScene } from './pages/Proyectos/BeatScene'
+import { Thespecialone } from './pages/Proyectos/Thespecialone'
+import { Ulima } from './pages/Proyectos/Ulima'
 
 import { useTranslation } from 'react-i18next';
 import './i18n';
@@ -32,7 +34,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className='Header'>
-          <nav className='Header-nav'>
+          <nav className='Header-nav desktop'>
             <div className='Button-wrapper logo'>
             <NavLink to={ '/' }>
               <img className="Header-svg" src="/assets/Logo-luismi.svg" alt="Luis Miguel Sovero Logo" />
@@ -84,7 +86,8 @@ function App() {
           <Route path='/contacto' element={ <Contacto /> } />
           <Route path='/beatscene' element={ <BeatScene /> } />
           <Route path='/thespecialone' element={ <Thespecialone /> } />
-          <Route path='/webworks' element={ <WebWorks titulo="titulo"/> } />
+          <Route path='/universidad-de-lima' element={ <Ulima /> } />
+          <Route path='*' element={ <NotFound /> } />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,0 +1,65 @@
+.NotFound{
+    width: 100%;
+    height: 100vh;
+    color: var(--blanco);
+    min-width: 22.5rem;
+    position: relative;
+    padding: 2rem;
+
+    @media(max-width: 920px){
+        padding: 2rem;
+    }
+}
+.NotFound-wrapper{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+
+    @media (max-width: 920px){
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+.NotFound-h1{
+    pointer-events: none;
+    color: #b027ff;
+    font-size: 12rem;
+    line-height: .9em;
+    opacity: .8;
+    font-weight: 300;
+    mix-blend-mode:hard-light;
+
+    @media (max-width: 920px){
+        font-size: 5rem;
+        color: var(--lila);
+        mix-blend-mode: screen;
+    }
+}
+.NotFound-button{
+    padding: 12px 24px;
+    border: 2px solid var(--lila);
+    font-size: 1.5rem;
+    color: var(--blanco);
+    border-radius: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: .5s all ease;
+    opacity: 0.5;
+
+    @media (max-width: 920px){
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+}
+.NotFound-button:hover{
+    background-color: var(--lila);
+    color: var(--blanco);
+    opacity: 1;
+}

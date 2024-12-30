@@ -32,7 +32,7 @@ export const SobreMi = () => {
                             <h3 className='Info-h3'>{t('aboutStackTitle')}</h3>
                             <p>{t('aboutExperience')}</p>
                             <strong>{t('aboutTitleDesigner')}</strong>
-                            <ul>
+                            <ul className='Stack-ul'>
                                 { stackFront.map( (item, index) => <li className='Stack-pill' key={ index }>{ item }</li> ) }
                             </ul>
                             <strong>{t('aboutTitleDeveloper')}</strong>

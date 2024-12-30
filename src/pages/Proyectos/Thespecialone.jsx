@@ -1,4 +1,4 @@
-import './Thespecialone.css'
+import './Proyectos.css'
 import { useTranslation } from 'react-i18next';
 
 export const Thespecialone = () =>{
@@ -6,17 +6,17 @@ export const Thespecialone = () =>{
     const { t } = useTranslation();
 
     return(
-        <div className="Thespecialone">
+        <div className="Interna-container">
             <div className="Interna-wrapper">
                 <section className="Interna-hero">
                     <div className="Interna-titulo">
-                        <div className='Interna-pills'>
-                            <span className='Interna-pill'> UX/UI </span>
-                            <span className='Interna-pill'> WEB </span>
-                            <span className='Interna-pill'> BLOG </span>
-                            <span className='Interna-pill'> MAGAZINE </span>
-                        </div>
-                        <h1 className='Interna-h1'>{t('specialTitle')}<span className='color-thespecialone'>.</span></h1>
+                        <ul className='Interna-pills'>
+                            <li className='Interna-pill'> UX/UI </li>
+                            <li className='Interna-pill'> WEB </li>
+                            <li className='Interna-pill'> BLOG </li>
+                            <li className='Interna-pill'> MAGAZINE </li>
+                        </ul>
+                        <h1 className='Interna-h1'>{t('specialTitle')}<span className='Color-lila'>.</span></h1>
                         <h2 className='Interna-h2'>{t('specialText')}</h2>
                         <div className="info-button">
                             <a href='https://thespecialone.top/' target='blank' title='Web The Special One'>{t('projectVisit')}
@@ -26,23 +26,25 @@ export const Thespecialone = () =>{
                             </a>
                         </div>
                     </div>
-                    <picture>
-                        <source media="(max-width: 960px)" srcSet="/assets/thespecialone_hero-mobile.webp" type="image/webp" />
-                        <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
-                    </picture>
+                    <div className="Info-container derecha">
+                        <picture>
+                            <source media="(max-width: 960px)" srcSet="/assets/thespecialone_hero-mobile.webp" type="image/webp" />
+                            <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
+                        </picture>
+                    </div>
                 </section>
                 <section className="Interna-info">
                     <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='color-thespecialone'>{t('projectObjective')}:</span> {t('specialWhatIs')}</h3>
+                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectObjective')}:</span> {t('specialWhatIs')}</h3>
                         <p className="Interna-p">{t('specialWhatIsText')} </p>
                     </div>
                     <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='color-thespecialone'>{t('projectProcess')}:</span> {t('specialDesign')}</h3>
+                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectProcess')}:</span> {t('specialDesign')}</h3>
                         <p className="Interna-p">{t('specialDesignText')}</p>
                     </div>
                 </section>
                 <section className='Interna-grid'>
-                    <article className='Grid-article color-thespecialone'>
+                    <article className='Grid-article Color-lila'>
                         <h3 className='Interna-h3'>{t('specialTitle')}</h3>
                         <p className='Interna-p'>{t('specialSubtitle')}</p>
                         <img className='Grid-image-fondo' src="/assets/thespecialone_fondo1.webp" alt="" />
@@ -52,7 +54,7 @@ export const Thespecialone = () =>{
                     </article>
                     <article className='Grid-article'>
                         <h3 className='Interna-h3'>{t('specialTools')}</h3>
-                        <div className='Interna-pills color-thespecialone'>
+                        <div className='Interna-pills Color-lila'>
                             <span className='Interna-pill'> ILLUSTRATOR </span>
                             <span className='Interna-pill'> FIGMA </span>
                             <span className='Interna-pill'> WORDPRESS </span>
@@ -64,9 +66,9 @@ export const Thespecialone = () =>{
                     <article className='Grid-article autoSlide'>
                         <div className='autoSlide-wrapper'>
                             <span className='autoSlide-span color-white'>{t('specialslide1')}</span>
-                            <span className='autoSlide-span color-thespecialone'>{t('specialslide2')}</span>
+                            <span className='autoSlide-span Color-lila'>{t('specialslide2')}</span>
                             <span className='autoSlide-span color-white'>{t('specialslide1')}</span>
-                            <span className='autoSlide-span color-thespecialone'>{t('specialslide2')}</span>
+                            <span className='autoSlide-span Color-lila'>{t('specialslide2')}</span>
                         </div>
                     </article>
                 </section>
@@ -77,8 +79,8 @@ export const Thespecialone = () =>{
                             <img className="Interna-img" src="/assets/thespecialone-sistemadiseno.webp" alt="Logo BeatScene" />
                         </picture>
                     </div>
-                    <div className="Info-container izquierda">
-                        <h3 className="Interna-h3"><span className='color-thespecialone'>{t('projectResult')}:</span> {t('specialResultTitle')}</h3>
+                    <div className="Info-container">
+                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectResult')}:</span> {t('specialResultTitle')}</h3>
                         <p className="Interna-p"> {t('specialResultText')} </p>
                     </div>
                     

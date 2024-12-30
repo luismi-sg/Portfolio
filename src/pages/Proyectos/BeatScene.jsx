@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './BeatScene.css'
+import './Proyectos.css'
 import { useTranslation } from 'react-i18next';
 
 export const BeatScene = () => {
@@ -7,23 +7,25 @@ export const BeatScene = () => {
     const { t } = useTranslation();
 
     return(
-        <div className='BeatScene'>
+        <div className='Interna-container'>
             <div className="Interna-wrapper">
                 <section className="Interna-hero">
                     <div className="Interna-titulo">
-                        <div className='Interna-pills'>
-                            <span className='Interna-pill'> UX/UI </span>
-                            <span className='Interna-pill'> APP </span>
-                            <span className='Interna-pill'> MOBILE </span>
-                        </div>
-                        <h1 className='Interna-h1'>{t('beatsceneTitle')} App<span className='Color-lila'>.</span></h1>
+                        <ul className='Interna-pills'>
+                            <li className='Interna-pill'> UX/UI </li>
+                            <li className='Interna-pill'> APP </li>
+                            <li className='Interna-pill'> DESIGN SYSTEM </li>
+                            <li className='Interna-pill'> FIGMA </li>
+                        </ul>
+                        <h1 className='Interna-h1'>{t('beatsceneTitle')}<span className='Color-lila'>.</span></h1>
                         <h2 className='Interna-h2'>{t('beatsceneExcerpt')}</h2>
                     </div>
-                    <picture>
-                        <source media="(max-width: 960px)" srcSet="/assets/beatscene_hero-mobile.webp" type="image/webp" />
-                        <img className="Interna-img" src="/assets/beatscene_hero.webp" alt="BeatScene Hero App" />
-                    </picture>
-                    
+                    <div className="Info-container derecha">
+                        <picture>
+                            <source media="(max-width: 960px)" srcSet="/assets/beatscene_hero-mobile.webp" type="image/webp" />
+                            <img className="Interna-img" src="/assets/beatscene_hero.webp" alt="BeatScene Hero App" />
+                        </picture>
+                    </div>
                 </section>
                 <section className="Interna-info">
                     <div className="Info-container izquierda">
@@ -59,19 +61,15 @@ export const BeatScene = () => {
                 <section className="Interna-info proceso">
                     <div className="Info-container derecha">
                         <iframe className="Info-iframe" src="https://embed.figma.com/proto/O3tz9wXZ4tAj85Nm0DTgRi/Proyecto-Final?page-id=6%3A2&node-id=30-310&p=f&viewport=577%2C1509%2C0.2&scaling=contain&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
-                        {/* <picture>
-                            <source media="(max-width: 960px)" srcSet="/assets/BeatScene-sistemadiseno-mobile.webp" type="image/webp" />
-                            <img className="Interna-img" src="/assets/BeatScene-sistemadiseno.webp" alt="Logo BeatScene" />
-                        </picture> */}
                     </div>
-                    <div className="Info-container izquierda">
+                    <div className="Info-container">
                         <h3 className="Interna-h3"><span className='Color-lila'>{t('projectProcess')}:</span> {t('beatsceneProcessTitle')}</h3>
                         <p className="Interna-p">{t('beatsceneProcessText')}</p>
                     </div>
                 </section>
                 <section className="Interna-info resultado">
-                    <div className="Info-container izquierda">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectResult')}:</span> {t('beatsceneTitle')}</h3>
+                    <div className="Info-container">
+                        <h3 className="Interna-h3"><span className='Color-lila'>{t('beatsceneResult')}:</span> {t('beatsceneTitle')}</h3>
                         <p className="Interna-p"> {t('beatsceneResultText')}</p>
                     </div>
                     <div className="Info-container derecha">
