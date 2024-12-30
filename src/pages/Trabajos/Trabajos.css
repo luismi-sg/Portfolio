@@ -30,7 +30,6 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     padding: 2rem;
 
     @media (max-width: 57.5rem){
@@ -112,18 +111,20 @@
     display: flex;
 }
 .Trabajos-grid{
-    width: 100%;
-    max-width: 1800px;
+    max-width: 100%;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit , minmax(720px , 1fr));
-    gap: 3em;
-    justify-content: center;
     @media (max-width: 57.5rem){
         grid-template-columns: repeat(auto-fit , minmax(720px , 1fr));
-        gap: 2em;
+        gap: 2rem;
+    }
+    @media (max-width: 720px){
+        grid-template-columns: repeat(auto-fit , minmax(480px , 1fr));
+        gap: 2rem;
     }
     @media (max-width: 560px){
         grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
-        gap: 2em;
+        gap: 2rem;
     }
 }

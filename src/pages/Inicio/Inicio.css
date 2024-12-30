@@ -80,6 +80,7 @@
     transition: all 1s ease;
     animation: h2-animation 1s ease-in-out both;
     animation-delay: 1s;
+    white-space: break-spaces;
 
     @media (max-width: 920px){
         width: 70%;

@@ -1,5 +1,5 @@
 .Trabajos-article{
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
     background-color: #1a1a1aaa;
@@ -114,7 +114,7 @@
     color: var(--lila);
 }
 .Trabajos-article:hover .Trabajos-img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .Trabajos-icon{
     width: 1.5rem;
