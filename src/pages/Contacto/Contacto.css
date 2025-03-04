@@ -11,7 +11,7 @@
     align-items: center;
     background-image: linear-gradient(to left top , #191919 , #000000 );
     @media (max-width: 920px){
-        padding: 8.5rem 1rem 1rem;
+        padding: 6.5rem 1rem 1rem;
     }
 }
 .Contacto-wrapper{
@@ -48,8 +48,8 @@
     animation-delay: 0s;
     animation-fill-mode: both;
 
-    @media (max-width: 920px){
-        padding: 3rem 2rem;
+    @media (max-width: 48rem){
+        padding: 2rem;
         text-align: center;
         align-items: center;
         gap: 1rem;
@@ -98,12 +98,14 @@
     transform: rotate(-30deg);
     animation: handwave 2s ease-in-out infinite alternate;
 
-    @media(max-width: 1200px){
+    @media(max-width: 80rem){
         height: 9rem;
     }
-
-    @media(max-width: 920px){
-        height: 11rem;
+    @media(max-width: 64rem){
+        height: 7rem;
+    }
+    @media(max-width: 48rem){
+        height: 6rem;
     }
 }
 @keyframes handwave {
@@ -152,7 +154,7 @@
     @media(max-width: 920px){
         flex-flow: column nowrap;
         align-items: stretch;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 }
 .Redes-a svg{
@@ -177,10 +179,10 @@
     transition: all .5s ease;
     padding: 0 0.5rem ;
 
-    @media(max-width: 920px){
-        background-color: #000;
-        border-radius: 12px;
-        padding: 0 1rem ;
+    @media(max-width: 48rem){
+        background-color: #ffffff1a;
+        border-radius: 8px;
+        padding: 4px 1.5rem ;
         font-size: 1rem;
 
     }

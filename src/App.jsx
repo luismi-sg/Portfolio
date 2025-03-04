@@ -1,6 +1,6 @@
 import './App.css'
 
-import { BrowserRouter , Routes , Route , NavLink } from 'react-router-dom'
+import { BrowserRouter , Routes , Route , NavLink, useLocation } from 'react-router-dom'
 
 import { Contacto } from './pages/Contacto/Contacto'
 import { Inicio } from './pages/Inicio/Inicio'
@@ -14,10 +14,20 @@ import { Ulima } from './pages/Proyectos/Ulima'
 
 import { useTranslation } from 'react-i18next';
 import './i18n';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
+
+  const ScrollToTop = () => {
+    const location = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+  
+    return null;
+  };
 
   const [isActive, setIsActive] = useState(false);
   const toggleMenu = () => {
@@ -31,6 +41,7 @@ function App() {
   };
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="App">
         <header className='Header'>
           <nav className='Header-nav desktop'>
