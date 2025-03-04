@@ -120,13 +120,15 @@ body{
     @media(max-width: 64rem){
         font-size: 3rem;
         padding: 12px 24px;
-        justify-content: flex-end;
         text-align: right;
     }
 
     @media(max-width: 48rem){
-        font-size: 2rem;
+        font-size: 1.25rem;
         text-align: center;
+        border-radius: 8px;
+        width: 100%;
+        background-color: #ffffff1a;
     }
 }
 .Header-li:hover{
@@ -175,11 +177,11 @@ body{
 
     @media(max-width: 64rem){
         padding: 4px 12px;
-        font-size: .8em;
+        font-size: 0.8em;
     }
     @media(max-width: 48rem){
         font-size: 1.2rem;
-        padding: 8px 24px;
+        padding: 8px 20px;
     }
 }
 .Header-nav.mobile{
@@ -188,13 +190,12 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: var(--negro);
+    height: 100dvh;
+    background-color: #191919;
     z-index: 2;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 24px;
+    justify-content: center;
+    gap: 4rem;
     padding: 1rem;
     border-radius: 0;
     transform: translateX(100%);
@@ -204,12 +205,25 @@ body{
     transform: translateX(0%);
 }
 .Header-ul-mobile{
+    width: 80%;
     padding: 8px 8px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 48px;
+    gap: 32px;
+}
+.Header-svg.mobile{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+.Header-ul-mobile a{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .Button-wrapper-mobile{
     display: flex;
@@ -217,6 +231,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 32px;
+}
+.Button-wrapper-mobile .Header-button{
+    @media (max-width: 48rem){
+        background-color: #ffffff1a;
+        padding: 0.5rem 1.5rem;
+        border-radius: 8px;
+    }
 }
 .Toggle-menu.mobile{
     position: absolute;
@@ -230,8 +251,4 @@ body{
 }
 .Toggle-menu.mobile svg{
     fill: var(--blanco);
-}
-.Header-svg.mobile{
-    width: 5rem;
-    height: 5rem;
 }
