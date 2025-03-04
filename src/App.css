@@ -1,52 +1,53 @@
 body{
     width: 100%;
     min-height: 100vh;
-    font-family: 'Jost', sans-serif;
     min-width: 360px;
-    background-color: #1a1a1a;
+    background-color: #191919;
 }
 
 .Header{
     width: 100%;
     padding: 0 2rem;
     position: fixed;
-    top: 16px;
+    top: 1rem;
+    height: 5rem;
     z-index: 3;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: stretch;
     align-items: center;
-    min-height: 72px;
     border-radius: 12px;
     overflow: hidden;
 
-    @media(max-width: 920px){
-        top: 0;
-        padding: 1rem;
+    @media(max-width: 64rem){
+        top: 1rem;
+        padding: 0 1rem;
     }
 }
 .Header-nav{
     min-width: 360px;
-    padding: 1rem 2rem;
-    border-radius: 12px;
     width: 100%;
+    min-height: 5rem;
+    padding: 12px 2rem;
+    border-radius: 12px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #8f8f8f0c;
+    background-color: #ffffff1a;
     backdrop-filter: blur(10px);
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         gap: 1rem;
         padding: 1rem;
-        background-color: #8f8f8f22;
     }
 }
 
 .Header-nav.desktop{
     animation: nav-animation 1s ease-in-out both;
     animation-delay: 1s;
+    height: 100%;
+    min-height: 80px;
 }
 @keyframes nav-animation{
     0%{
@@ -64,7 +65,7 @@ body{
     transition: all 1s ease;
     filter: grayscale(1);
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         filter: grayscale(0);
     }
 }
@@ -74,16 +75,16 @@ body{
 }
 .Header-ul{
     padding: 8px 8px;
-    /* border: 1px solid var(--blanco); */
+    min-width: 32rem;
     border-radius: 12px;
-    background-color: #000000;
+    background-color: #191919;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 48px;
 
-    @media (max-width: 920px) {
+    @media (max-width: 64rem) {
         display: none;
     }
     
@@ -93,7 +94,7 @@ body{
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         display: block;
     }
 }
@@ -106,8 +107,8 @@ body{
     color: var(--blanco);
     padding: 8px 24px;
     font-weight: 400;
-    letter-spacing: 2px;
-    font-size: .9em;
+    letter-spacing: 1px;
+    font-size: 1rem;
     min-width: 80px;
     margin: 0 auto;
     display: flex;
@@ -116,14 +117,14 @@ body{
     transition: all .5s ease;
     border-radius: 6px;
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         font-size: 3rem;
         padding: 12px 24px;
         justify-content: flex-end;
         text-align: right;
     }
 
-    @media(max-width: 520px){
+    @media(max-width: 48rem){
         font-size: 2rem;
         text-align: center;
     }
@@ -131,7 +132,7 @@ body{
 .Header-li:hover{
     background-color: var(--lila);
 
-    @media(max-width: 520px){
+    @media(max-width: 48rem){
         background-color: transparent;
     }
 }
@@ -143,41 +144,40 @@ body{
     min-width: 100px;
     gap: 12px;
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         display: none;
     }
 }
 .Button-wrapper.logo{
     justify-content: flex-start;
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         display: flex;
     }
 }
 .Header-button{
-    padding: 4px 8px;
-    border: 1px solid var(--blanco);
+    padding: 8px 12px;
+    background-color: #191919;
+    border: 1px solid transparent;
     border-radius: 6px;
     color: var(--blanco);
     font-weight: 400;
     font-size: .8em;
     transition: all .5s ease;
     cursor: pointer;
-    opacity: .5;
 
     &:hover{
         background-color: var(--lila);
-        opacity: 1;
         border: 1px solid var(--lila);
     }
     &:active{
         transform: scale(.95);
     }
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         padding: 4px 12px;
         font-size: .8em;
     }
-    @media(max-width: 520px){
+    @media(max-width: 48rem){
         font-size: 1.2rem;
         padding: 8px 24px;
     }

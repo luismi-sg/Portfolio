@@ -9,15 +9,15 @@
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-
+    background-image: linear-gradient(to left top , #191919 , #000000 );
     @media (max-width: 920px){
         padding: 8.5rem 1rem 1rem;
-        background-image: linear-gradient(to left top , #2d2035 , #090427 );
     }
 }
 .Contacto-wrapper{
     width: 100%;
     min-height: 80vh;
+    max-width: 1440px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -35,14 +35,14 @@
 }
 .Contacto-info{
     padding: 2rem 2rem 3rem 2rem;
-    border-radius: 12px;
+    border-radius: 16px;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    background-color: #8f8f8f0c;
+    background-color: #ffffff1a;
     position: relative;
     animation: aparecer-bottom 1s ease;
     animation-delay: 0s;
@@ -63,6 +63,7 @@
     color: var(--lila);
     font-size: 8rem;
     line-height: 8rem;
+    margin-left: -8px;
 
     @media(max-width: 1200px){
         font-size: 5.5rem;
@@ -128,8 +129,8 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5rem 2rem;
-    background-color: #000;
+    padding: 1rem;
+    background-color: #ffffff1a;
     border-radius: 12px;
     animation: aparecer-top 1s ease;
     animation-delay: .5s;
@@ -146,7 +147,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 2rem;
 
     @media(max-width: 920px){
         flex-flow: column nowrap;
@@ -165,8 +166,8 @@
     align-items: center;
     width: 100%;
     padding: 0.5rem;
-    border-radius: 6px;
-    gap: 0.5rem;
+    border-radius: 8px;
+    gap: 1rem;
 }
 .Contacto-li{
     opacity: 0.5;
@@ -174,6 +175,7 @@
     font-size: 1.2em;
     line-height: 2em;
     transition: all .5s ease;
+    padding: 0 0.5rem ;
 
     @media(max-width: 920px){
         background-color: #000;
@@ -183,9 +185,14 @@
 
     }
 }
-.Contacto-li:hover{
-    opacity: 1;
+.Contacto-li span{
+    line-height: 1em;
 }
 .Contacto-li:hover{
-    color: var(--lila);
+    opacity: 1;
+    background-color: var(--lila);
+    border-radius: 8px;
+}
+.Contacto-li:hover{
+    color: var(--blanco);
 }

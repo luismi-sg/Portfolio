@@ -5,7 +5,6 @@ import { BrowserRouter , Routes , Route , NavLink } from 'react-router-dom'
 import { Contacto } from './pages/Contacto/Contacto'
 import { Inicio } from './pages/Inicio/Inicio'
 import { Trabajos } from './pages/Trabajos/Trabajos'
-import { Fondos } from './components/Fondos/Fondos'
 import { SobreMi } from './pages/SobreMi/SobreMi'
 import { NotFound } from './pages/404/NotFound'
 
@@ -78,7 +77,7 @@ function App() {
         </header>
         
         
-        <Fondos/>
+        
         <Routes>
           <Route path='/' element={ <Inicio /> }/>
           <Route path='/trabajos' element={ <Trabajos /> }/>

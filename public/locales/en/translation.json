@@ -1,85 +1,187 @@
 {
-  "projects": "Projects",
-  "about": "About me",
-  "contact": "Contact",
+    "projects": "Projects",
+    "about": "About me",
+    "contact": "Contact",
+    "position": "UX/UI Designer & Web Developer",
+    "background": "Designing since 2013. I'm a UX/UI Developer living in Madrid. I have a background in graphic design and in my spare time I take care of my plants and drawing some sketches.",
+    "getintouch": "Let's get in touch.",
+    "mailCopy": "Email copied",
 
-  "position": "UX/UI Designer & FrontEnd Developer",
-  "mailCopy": "Email copied",
+    "sliderName1": "Music App BeatScene",
+    "description1": "Product design. App for concert and live music lovers.",
+    "sliderName2": "Blog | The Special One",
+    "description2": "Design and Development of Web Magazine about Football.",
+    "sliderName3": "BeApolo",
+    "description3": "Development of a landing web page for a digital agency.",
 
-  "contactTitle": "Let's talk?",
-  "contactText": "If you like my profile, don't hesitate to contact me.",
-  
-  "aboutDescription": "They call me LuisMi. I am a UX/UI designer and developer focused on FrontEnd, with eight years of experience in the digital design industry and two years in the ideation, creation and development of web/apps interfaces. My ability to combine visual design and technical functionalities allows me to develop aesthetically pleasing and highly usable digital solutions.",	
-  "aboutStackTitle": "Stack of tools",
-  "aboutTitleDesigner": "As Designer",
-  "aboutTitleDeveloper": "As FrontEnd",
-  "aboutExperience": "My experience has given me solid skills in digital design and the creation of innovative design systems, always seeking continuous training, the best tools and current trends.",
-  "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
-  "aboutDownload": "Download CV Download CV Download CV Download CV Download CV Download CV Download CV Download CV",
+    "workingOn": "Working on",
+    "workingOnText": "Currently, I am a freelancer working with various clients, designing and developing websites. Previously, I worked at AU Consultores, a marketing agency, where I built websites from scratch (0 → 1) using Figma, WordPress, HTML, CSS, Astro, React, and more.",
+    "workingOnButton": "Know me better",
 
-  "projectsTitleDev": "Development",
-  "projectsTitleDesign": "Design",
-
-  "NotFoundtext" : "Lost?",
-  "NotFoundButton" : "Back to home",
-
-  "beatsceneTitle": "BeatScene",
-  "beatsceneExcerpt": "Product design. App for concert and live music lovers.",
-
-  "projectObjective": "OBJECTIVE",
-  "beatsceneWhatIs": "What is BeatScene?",
-  "beatsceneWhatIsText": "It is an App where you can share the experience of living your favorite music event with whoever you want or have the possibility of meeting new people with your same musical tastes and living it together.",
-
-  "beatsceneSubtitle": "Mobile UX/UI Project",
-  "beatscenePhrase": "I love going to concerts and meeting new people",
-  "beatsceneslide1": "BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene",
-  "beatsceneslide2": "Share your music and enjoy concerts Share your music and enjoy concerts",
-
-  "projectProcess": "PROCESS",
-  "beatsceneProcessTitle": "Research and design system",
-  "beatsceneProcessText": "The process to design the app started with a complete study and research on the user experience, to then follow the necessary steps to design the interface. Developing a solid design system, with wireframes and a structure focused on the user's interactivity with the app.",
-
-  "beatsceneResult": "FINAL RESULT",
-  "beatsceneResultText": "The App was entirely designed in Figma, the prototype was tested with the Maze tool and changes were made within the interface according to the feedback from the constant tests and feedback from the possible users.",
-
-  "infoContact": "Contact me",
-  "infoContactText": "If you feel we can work together, let's talk.",
-
-  "specialTitle": "The Special One",
-  "specialText": "Design and Development of Web Magazine about Football and current affairs.",
-  "projectVisit": "Visit the website",
-
-  "specialWhatIs": "What is The Special One?",
-  "specialWhatIsText": "It is a web Magazine focused on the current affairs and the latest news in the world of football, developed with the aim of sharing one of my greatest interests such as football. The tone of voice of the web is based on the attitude and personality of Mourinho, a reference as a coach and connoisseur of the king sport.",
-
-  "specialDesign": "Design and Development",
-  "specialDesignText": "The Interface of the web is designed in Figma, I used a design system and the principles of Atomic Design. For the Development of the web I used the combination of the CMS Wordpress and the builder Elementor PRO, as it is the most optimal for this type of Blog/Magazine which will receive entries and content constantly.",
-
-  "specialSubtitle": "Web Blog Project",
-  "specialTools": "Tools",
-  "specialslide1": "The Special One The Special One The Special One The Special One The Special One",
-  "specialslide2": "We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy.",
-
-  "specialResultTitle": "The web",
-  "specialResultText": "The modern design and the functionality of the CMS allow the web to be manageable by EDITORS or CONTENT CREATORS. The idea of the project is to get web traffic and in the future use it to add MEDIA ADS, for this, an SEO strategy has been applied to the web that allows it to be optimized in the face of current search engines.",
-
-  "ulimaTitle": "Universidad de Lima",
-  "ulimaText": "Graphic Designer. Creation of digital and printed pieces, audiovisual production and web interface design for the Postgraduate Commercial area.",
-
-  "ulimaPosition": "POSITION",
-  "ulimaWhatIs": "Commercial Designer of Postgraduate area",	
-  "ulimaWhatIsText": "The main objective of the position is to design and develop digital and printed pieces for the Postgraduate area of the University of Lima, as well as the production of audiovisual pieces for the promotion of the programs. The design of the web interface for the Postgraduate area is also part of the responsibilities of the position.",
-
-  "ulimaResponsabilities": "DESIGN",
-  "ulimaDesign": "Digital, audiovisual and printed",
-  "ulimaDesignText": "The design of the pieces adheres to a brand manual developed by a design company collaborating with the University of Lima. The design of digital pieces was carried out using Figma and Adobe Suite, printed materials were created with Adobe Suite, and multiplatform audiovisual production was done using Adobe Premiere and After Effects.",
-
-  "ulimaSubtitle": "Senior Designer in charge of the Commercial Area",
-  "ulimaTools": "Tools",
-  "ulimaslide1": "Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima",
-  "ulimaslide2": "Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado",
-
-  "ulimaHighlight": "WEB",
-  "ulimaResultTitle": "Web Interface Design",
-  "ulimaResultText": "The website must present a modern, serious, and professional image of the University of Lima. Therefore, its design should be both attractive and functional for users, mostly adults, seeking information about Postgraduate programs. Preliminary research was conducted in collaboration with various stakeholders. After several stages of prototyping and testing, a design system was created in Figma based on the brand manual, which was strictly followed throughout the final design process and its implementation in collaboration with the development team. The website is fully manageable by content editors and optimized for current search engines."
+    "contactTitle": "Let's talk?",
+    "contactText": "If you like my profile, don't hesitate to contact me.",
+    "aboutDescription1": "They call me LuisMi. I am a UX/UI designer and developer focused on FrontEnd, with eight years of experience in the digital design industry and two years in the ideation, creation and development of web/apps interfaces.",
+    "aboutDescription2": "My ability to combine visual design and technical functionalities allows me to develop aesthetically pleasing and highly usable digital solutions.",
+    "aboutPhrase": "Design is a plan to arrange elements in the best possible way to achieve a particular purpose",
+    "aboutStackTitle": "Stack of tools",
+    "aboutTitleDesigner": "As Designer",
+    "aboutTitleDeveloper": "As FrontEnd",
+    "aboutExperience": "My experience",
+    "Experience1": "UX/UI Designer, web layout and development, working with design systems and components for various clients in the healthcare sector.",
+    "Experience2": "360 Designer in the Commercial Marketing area, responsible for creating digital and print assets, web design, and audiovisual pieces.",
+    "Experience3": "Multimedia Designer, supporting and leading Digital Marketing projects, website redesigns, and related activities.",
+    "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
+    "aboutDownload": "Download CV Download CV Download CV Download CV Download CV Download CV Download CV Download CV",
+    "aboutExtra": "Luismi outside work:",
+    "aboutExtraText": "Traveling, Football, photography, drawing, my plants, reading, gastronomy, and cocktails, among others.",
+    "projectsTitleDev": "Development",
+    "projectsTitleDesign": "Design",
+    "NotFoundtext": "Lost?",
+    "NotFoundButton": "Back to home",
+    "beatsceneTitle": "BeatScene",
+    "beatsceneExcerpt": "Product design. App for concert and live music lovers.",
+    "projectObjective": "OBJECTIVE",
+    "beatsceneWhatIs": "What is BeatScene?",
+    "beatsceneWhatIsText": "It is an App where you can share the experience of living your favorite music event with whoever you want or have the possibility of meeting new people with your same musical tastes and living it together.",
+    "beatsceneSubtitle": "Mobile UX/UI Project",
+    "beatscenePhrase": "I love going to concerts and meeting new people",
+    "beatsceneslide1": "BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene",
+    "beatsceneslide2": "Share your music and enjoy concerts Share your music and enjoy concerts",
+    "projectProcess": "PROCESS",
+    "beatsceneProcessTitle": "Research and design system",
+    "beatsceneProcessText": "The process to design the app started with a complete study and research on the user experience, to then follow the necessary steps to design the interface. Developing a solid design system, with wireframes and a structure focused on the user's interactivity with the app.",
+    "beatsceneResult": "FINAL RESULT",
+    "beatsceneResultText": "The App was entirely designed in Figma, the prototype was tested with the Maze tool and changes were made within the interface according to the feedback from the constant tests and feedback from the possible users.",
+    "infoContact": "Contact me",
+    "infoContactText": "If you feel we can work together, let's talk.",
+    "specialTitle": "The Special One",
+    "specialText": "Design and Development of Web Magazine about Football and current affairs.",
+    "projectVisit": "Visit the website",
+    "specialWhatIs": "What is The Special One?",
+    "specialWhatIsText": "It is a web Magazine focused on the current affairs and the latest news in the world of football, developed with the aim of sharing one of my greatest interests such as football. The tone of voice of the web is based on the attitude and personality of Mourinho, a reference as a coach and connoisseur of the king sport.",
+    "specialDesign": "Design and Development",
+    "specialDesignText": "The Interface of the web is designed in Figma, I used a design system and the principles of Atomic Design. For the Development of the web I used the combination of the CMS Wordpress and the builder Elementor PRO, as it is the most optimal for this type of Blog/Magazine which will receive entries and content constantly.",
+    "specialSubtitle": "Web Blog Project",
+    "specialTools": "Tools",
+    "specialslide1": "The Special One The Special One The Special One The Special One The Special One",
+    "specialslide2": "We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy. We are Haters. Zero Hypocrisy.",
+    "specialResultTitle": "The web",
+    "specialResultText": "The modern design and the functionality of the CMS allow the web to be manageable by EDITORS or CONTENT CREATORS. The idea of the project is to get web traffic and in the future use it to add MEDIA ADS, for this, an SEO strategy has been applied to the web that allows it to be optimized in the face of current search engines.",
+    "ulimaTitle": "Universidad de Lima",
+    "ulimaText": "Graphic Designer. Creation of digital and printed pieces, audiovisual production and web interface design for the Postgraduate Commercial area.",
+    "ulimaPosition": "POSITION",
+    "ulimaWhatIs": "Commercial Designer of Postgraduate area",
+    "ulimaWhatIsText": "The main objective of the position is to design and develop digital and printed pieces for the Postgraduate area of the University of Lima, as well as the production of audiovisual pieces for the promotion of the programs. The design of the web interface for the Postgraduate area is also part of the responsibilities of the position.",
+    "ulimaResponsabilities": "DESIGN",
+    "ulimaDesign": "Digital, audiovisual and printed",
+    "ulimaDesignText": "The design of the pieces adheres to a brand manual developed by a design company collaborating with the University of Lima. The design of digital pieces was carried out using Figma and Adobe Suite, printed materials were created with Adobe Suite, and multiplatform audiovisual production was done using Adobe Premiere and After Effects.",
+    "ulimaSubtitle": "Senior Designer in charge of the Commercial Area",
+    "ulimaTools": "Tools",
+    "ulimaslide1": "Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima Universidad de Lima",
+    "ulimaslide2": "Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado Escuela de Posgrado",
+    "ulimaHighlight": "WEB",
+    "ulimaResultTitle": "Web Interface Design",
+    "ulimaResultText": "The website must present a modern, serious, and professional image of the University of Lima. Therefore, its design should be both attractive and functional for users, mostly adults, seeking information about Postgraduate programs. Preliminary research was conducted in collaboration with various stakeholders. After several stages of prototyping and testing, a design system was created in Figma based on the brand manual, which was strictly followed throughout the final design process and its implementation in collaboration with the development team. The website is fully manageable by content editors and optimized for current search engines.",
+    "listProjects": [
+        {
+            "id": "0",
+            "pills": [
+                "UX/UI",
+                "Figma",
+                "App"
+            ],
+            "img": "/assets/uxui-beatscene.webp",
+            "alt": "Miniature BeatScene App",
+            "titulo": "BeatScene App",
+            "description": "BeatScene is an app for purchasing concert tickets, created using the double diamond methodology. Research was conducted in FigJam, followed by prototyping and final design in Figma, optimizing the user experience.",
+            "webUrl": "/beatscene"
+        },
+        {
+            "id": "1",
+            "pills": [
+                "UX/UI",
+                "Design",
+                "Adobe Tools",
+                "Figma"
+            ],
+            "img": "/assets/Ulima-design.webp",
+            "alt": "Universidad de Lima",
+            "titulo": "Universidad de Lima",
+            "description": "I designed digital pieces and UI for the Graduate School at the University of Lima, applying communication and teamwork skills. I implemented a collaborative design system with developers, optimizing the website and other digital products.",
+            "webUrl": "/universidad-de-lima"
+        },
+        {
+            "id": "2",
+            "pills": [
+                "UX/UI",
+                "Figma",
+                "Wordpress"
+            ],
+            "img": "/assets/web-thespecialone.webp",
+            "alt": "The Special One | Football Blog",
+            "titulo": "The Special One",
+            "description": "I designed a football-themed web magazine, applying Atomic Design principles in Figma and developing it with WordPress and Elementor PRO. I highlight my autonomy, creativity, and SEO strategy to optimize traffic, ensuring efficient content management.",
+            "webUrl": "/thespecialone"
+        },
+        {
+            "id": "3",
+            "pills": [
+                "Web",
+                "HTML",
+                "CSS",
+                "JS",
+                "Swiper JS"
+            ],
+            "img": "/assets/web-beapolo.webp",
+            "alt": "Miniature Web BeApolo",
+            "titulo": "BeApolo",
+            "description": "In the development of BeApolo, I applied organizational skills and attention to detail, using HTML, CSS, and JavaScript. I implemented the BEM methodology for a clear code structure and used Atomic Design for reusable components, achieving an efficient and scalable interface.",
+            "webUrl": "https://beapolo.io/"
+        },
+        {
+            "id": "4",
+            "pills": [
+                "Web",
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "img": "/assets/web-pinkfloyd.webp",
+            "alt": "Miniature Web Pink Floyd",
+            "titulo": "Pink Floyd",
+            "description": "I developed my first website, Atom Mother, using HTML, CSS, and JavaScript, applying web design and front-end development fundamentals. This project strengthened my problem-solving, organizational, and attention-to-detail skills.",
+            "gitUrl": "https://github.com/luismi-sg/atom-mother-web",
+            "webUrl": "https://atom-mother-web.netlify.app/"
+        },
+        {
+            "id": "5",
+            "pills": [
+                "Web",
+                "App",
+                "React",
+                "CSS"
+            ],
+            "img": "/assets/web-netflix.webp",
+            "alt": "Miniature Netflix App",
+            "titulo": "Netflix-project",
+            "description": "In the Fullstack development of the Netflix Clone project, I used React with CSS for a dynamic interface, MongoDB for data management, and ExpressJS for server routes. These tools reflect my ability to integrate technologies and my focus on scalable solutions.",
+            "gitUrl": "https://github.com/luismi-sg/Netflix-proyecto",
+            "webUrl": "https://netflix-proyecto.vercel.app/"
+        },
+        {
+            "id": "6",
+            "pills": [
+                "Web",
+                "App",
+                "React",
+                "CSS"
+            ],
+            "img": "/assets/web-spotify.webp",
+            "alt": "Miniature Spotify App",
+            "titulo": "Spotify-project",
+            "description": "Front-end development of the Spotify Clone project",
+            "gitUrl": "https://github.com/luismi-sg/APP-Spotify",
+            "webUrl": "https://spotify-proyecto.vercel.app/"
+        }
+    ]
 }

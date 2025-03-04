@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: linear-gradient(to left top , #000000 , #030110);
+    background-image: linear-gradient(to left top , #191919 , #000000 );
 }
 .Interna-wrapper{
     padding: 8rem 0;
@@ -73,7 +73,7 @@
     justify-content: center;
     gap: 3rem;
     padding: 3rem;
-    background-color: #1a1a1a;
+    background-color: #ffffff1a;
     border-radius: 32px;
     
     @media (max-width: 920px){
@@ -127,7 +127,7 @@
     gap: 1rem;   
 }
 .Info-container{
-    background-color: #1a1a1a;
+    background-color: #ffffff1a;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -151,7 +151,7 @@
     padding: 1rem;
 }
 .derecha img{
-    border-radius: 24px;
+    border-radius: 16px;
 
     @media(max-width: 920px){
         border-radius: 8px;
@@ -175,7 +175,7 @@
     gap: 16px;
 }
 .Grid-article{
-    background-color: #1a1a1a;
+    background-color: #ffffff1a;
     display: flex;
     flex-flow: column;
     justify-content: space-between;

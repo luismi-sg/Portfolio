@@ -1,63 +1,317 @@
 .Inicio{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--blanco);
     min-width: 22.5rem;
-    position: relative;
-    padding: 8.5rem 2rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(to left top , #191919 , #000000 );
 
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         padding: 8.5rem 1rem 1rem;
     }
 }
 .Inicio-wrapper{
-    border-radius: 12px;
-    position: relative;
-    top: 0;
-    left: 0;
+    margin: 0 auto;
+    max-width: 1440px;
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
     align-items: center;
-    text-align: center;
-
-    @media (max-width: 920px){
-        border: none;
+    justify-content: flex-end;
+    gap: 2rem;
+    @media (max-width: 80rem){
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    @media (max-width: 64rem) {
+        flex-flow: column nowrap;
+    }
+    @media (max-width: 48rem){
         padding: 1rem;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 4rem;
         background-image: none;
     }
 }
+
 .Inicio-wrapper main{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 12px;
+    gap: 1rem;
+    @media (max-width: 64rem) {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    @media (max-width: 48rem){
+        padding-top: 0rem;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+.Inicio-wrapper aside{
+    flex: 3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    animation: span-animation 1s ease-in-out both;
+    animation-delay: 2s;
+    @media (max-width: 64rem){
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 3rem;
+    }
+    @media (max-width: 48rem){
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+}
+.Works-slider{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    max-height: 85%;
+    padding-bottom: 4rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    @media (max-width: 64rem){
+        max-height: 100%;
+        height: 100%;
+    }
+    @media (max-width: 48rem){
+            padding-bottom: 0;
+    }
+}
+.Works-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.Works-article{
+    width: 100%;
+    margin-top: 120px;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff1a;
+    @media(max-width: 80rem){
+        margin-top: 80px;
+    }
+    @media (max-width: 64rem){
+        align-items: center;
+        margin-top: 120px;
+    }
+    @media (max-width: 48rem){
+        border-radius: 16px;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        gap: 1rem;
+        margin-top: 60px;
+        background-image: none;
+    }
+}
+.Works-wrapper:nth-child(2) .Works-article{
+    @media (max-width: 48rem){
+        flex-flow: column-reverse nowrap;
+    }
+}
+.Works-img{
+    width: 60%;
+    margin-top: -120px;
+    border-radius: 12px;
+    overflow: hidden;
+    @media(max-width: 80rem){
+        margin-top: -80px;
+    }
+    @media (max-width: 48rem){
+        width: 100%;
+        margin-top: -60px;
+    }
+}
+.Works-text{
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    @media (max-width: 80rem){
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    @media (max-width: 64rem){
+        padding: 2rem;
+        gap: 1rem;
+    }
+    @media (max-width: 48rem){
+        width: 100%;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+}
+.Works-article.more{
+    margin-top: 3rem;
+    @media (max-width: 48rem){
+        margin-top: 1rem;
+    }
+}
+.Works-more{
+    padding: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    @media (max-width: 80rem){
+        padding: 2rem;
+    }
+    @media (max-width: 48rem){
+        padding: 2rem 1rem;
+    }
+}
+.Works-icon svg{
+    width: 24px;
+    height: 24px;
+    transition: all .5s ease;
+}
+.Works-icon:hover svg{
+    fill: var(--lila);
+    transform: scale(1.1);
+}
+.Works-bar{
+    height: calc(85% - 120px);
+    @media(max-width: 64rem){
+        display: none;
+    }
+}
+.Works-navigation{
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+    @media (max-width: 64rem){
+        flex-flow: row nowrap;
+        width: 100%;
+        gap: 16px;
+    }
+    @media (max-width: 48rem){
+    }
+}
+.Works-dot{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ffffff1a;
+    transition: all .5s ease;
+}
+.Works-dot:hover{
+    background-color: var(--lila);
+}
+.Works-dot:hover img{
+    filter: grayscale(0);
+    opacity: 1;
+    transition: all .5s ease;
+}
+.Works-dot img{
+    opacity: 0.7;
+}
+.Works-logo{
+    width: 50px;
+    height: 50px;
+    @media(max-width: 80rem){
+        width: 40px;
+        height: 40px;
+    }
+}
+.Works-p span{
+    font-weight: 800;
+}
+.Works-h2{
+    width: 100%;
+    color: var(--blanco);
+    font-size: clamp(1.4rem, 1.1667rem + 1.037vw, 2.2rem);
+    line-height: 1.1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.Works-h3{
+    font-size: clamp(1.2rem, 1.1rem + 0.4444vw, 1.5rem);
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.Works-p{
+    font-size: 1rem;
+    line-height: 1.6em;
+    margin-bottom: 1rem;
+    @media (max-width: 80rem){
+        margin-bottom: .5rem;
+    }
+}
+.Works-footer{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1rem;
-
-    @media (max-width: 920px){
+}
+.Inicio-content{
+    width: 100%;
+    padding: 2rem 0;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    @media(max-width: 64rem){
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
     }
 }
 .Inicio-h1{
     pointer-events: none;
-    color: #b027ff;
-    font-size: 15rem;
-    line-height: .9em;
-    opacity: .8;
-    font-weight: 300;
-    mix-blend-mode:hard-light;
+    margin-left: -8px;
+    color: var(--blanco);
+    font-size: clamp(4rem, 2.5rem + 6.6667vw, 8.5rem);
+    line-height: 1em;
+    font-weight: 400;
     transition: all 1s ease;
     animation: h1-animation 1s ease-in-out both;
 
     @media (max-width: 920px){
-        font-size: 8rem;
-        color: var(--lila);
-        mix-blend-mode: screen;
+        margin-left: 0px;
     }
+}
+.Inicio-h1 .purple{
+    color: var(--lila);
 }
 @keyframes h1-animation{
     0%{
@@ -71,21 +325,24 @@
 }
 .Inicio-h2{
     pointer-events: none;
-    color: var(--blanco);
-    font-size: 2em;
-    opacity: .7;
-    line-height: 1em;
-    font-weight: 400;
+    color: var(--lila);
+    font-size: clamp(1.2rem, 1.1rem + 0.4444vw, 1.5rem);
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: all 1s ease;
     animation: h2-animation 1s ease-in-out both;
     animation-delay: 1s;
     white-space: break-spaces;
 
-    @media (max-width: 920px){
-        width: 70%;
-        font-size: 1.5em;
-        line-height: 1.2em;
+    @media (max-width: 64rem){
+        width: 100%;
+        text-align: center;
+    }
+    @media (max-width: 48rem){
+        width: 90%;
+        margin-bottom: 1rem;
     }
 }
 @keyframes h2-animation{
@@ -98,22 +355,28 @@
         opacity: 1;
     }
 }
+.Inicio-p{
+    max-width: 45ch;
+    line-height: 1.6em;
+    animation: span-animation 1s ease-in-out both;
+    animation-delay: 1.5s;
+}
+.Inicio-p.purple{
+    color: var(--lila);
+    font-weight: 800;
+}
 .Inicio-span{
-    background-color: #8f8f8f0c;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 12px;
+    gap: 1rem;
+    border-radius: 8px;
     position: relative;
     animation: span-animation 1s ease-in-out both;
     animation-delay: 1.5s;
-
-    @media (max-width: 920px){
-        padding: 1rem;
-        background-color: #1a1a1a77;
+    @media (max-width: 64rem){
+        justify-content: center;
     }
 }
 @keyframes span-animation{
@@ -126,59 +389,43 @@
         opacity: 1;
     }
 }
-.Inicio-span:nth-child(2){
-    @media(max-width: 920px){
-        display: none;
-    }
-}
 .Inicio-span svg{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 4px;
-    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    background-color: #090114ff;
-    fill: var(--lila);
+    fill: var(--blanco);
     transition: all .5s ease;
-    
-    &:hover{
-        background-color: var(--lila);
-        fill: var(--blanco);
-    }
-
-    @media (max-width: 920px){
-        background-color: #1a1a1a;
-        fill: var(--blanco);
-    }
+    opacity: .8;
+}
+.Works-dot:hover svg{
+    opacity: 1;
 }
 .Inicio-span button strong{
     opacity: 0;
+    width: 120px;
     transition: all .5s ease;
     position: absolute;
-    top: 16px;
-    right:-110px;
+    top: 50px;
+    right: 16px;
     font-size: 12px;
     padding: 8px 12px;
     border-radius: 6px;
-    background-color: #1d1d1d;
+    background-color: #ffffff1a;
     z-index: 2;
 
     &.isActive{
         opacity: 1;
     }
 
-    @media(max-width: 920px){
-        right: 0px;
-        top: 60px;
+    @media(max-width: 64rem){
+        right: 18px;
+        top: 50px;
     }
 }
-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    place-items: center;
-    gap: 1rem;
-
-    @media (max-width: 767px){
-        flex-flow: column nowrap;
+main footer p{
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    @media(max-width: 64rem){
+        text-align: center;
     }
 }

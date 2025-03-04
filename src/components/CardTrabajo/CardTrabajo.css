@@ -1,22 +1,71 @@
 .Trabajos-article{
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0 auto;
     padding: 1rem;
-    background-color: #1a1a1aaa;
+    background-color: #ffffff1a;
     border-radius: 20px;
     opacity: 0;
     transition: all .5s ease;
     animation: aparecer .5s ease ;
     animation-fill-mode: forwards;
+    outline: 2px solid transparent;
 
-    @media (max-width: 920px){
-        background-color: #00000099;
+    @media (max-width: 64rem){
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    @media(max-width: 48rem){
+        padding: 0.5rem;
     }
 }
+.Trabajos-article:first-child{
+    background-image: linear-gradient(45deg,  #C900D1, #221FBD);
+    @media screen and (max-width: 920px){
+        background-image: linear-gradient(-135deg,  #C900D1, #221FBD);
+    }
+}
+.Trabajos-article:first-child:hover .Trabajos-h3,
+.Trabajos-article:first-child:hover .Trabajos-rrss{
+    color: var(--blanco);
+    fill: var(--blanco);
+}
+.Trabajos-article:hover{
+    outline: 2px solid var(--lila);
+    box-shadow: 0px 0px 20px 0px #000;
+}
 .Trabajos-a{
+    flex: 3;
+    width: 70%;
     display: block;
     overflow: hidden;
     border-radius: 12px;
+    @media screen and (max-width: 64rem){
+        width: 100%;
+        flex: 2;
+    }
+}
+.Trabajos-content{
+    flex: 2;
+    width: 70%;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    @media screen and (max-width: 64rem){
+        width: 100%;
+        flex: 1;
+        padding: 1rem;
+    }
+    @media (max-width: 48rem){
+        padding: 0.5rem;
+    }
 }
 .Trabajos-pills{
     display: flex;
@@ -30,14 +79,12 @@
     padding: 8px 16px;
     font-size: .8rem;
     line-height: 1em;
-    background-color: #1a1a1aaa;
     border: 1px solid var(--blanco);
     border-radius: 32px;
     font-weight: 500;
     transition: .5s ease all;
-    opacity: .5;
     
-    @media(max-width: 920px){
+    @media(max-width: 64rem){
         font-size: .8rem;
     }
 }
@@ -48,35 +95,37 @@
     opacity: 1;
 }
 .Trabajos-img{
-    opacity: .7;
-    filter: grayscale(100%);
+    width: 100%;
+    max-width: 800px;
+    opacity: 1;
     transition: all .5s ease;
     border-radius: 12px;
     object-fit: cover;
     aspect-ratio: 16/9;
-
-    @media (max-width: 920px){
-        filter: grayscale(50%);
-        opacity: 1;   
+    @media(max-width: 64rem){
+        max-width: 100%;
     }
-    @media (max-width: 560px){
-        aspect-ratio: 4/3;       
-    }
+    
 }
 .Trabajos-info{
     margin-top: 1rem;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: .5rem;
+    gap: 1rem;
+    @media screen and (max-width: 64rem){
+        gap: 0.5rem;
+    }
 }
 .Trabajos-h3{
     display: block;
     letter-spacing: 1px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    opacity: .4;
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 500;
+    opacity: 1;
     transition: all .5s ease;
 
     @media(max-width: 920px){
@@ -84,8 +133,22 @@
         opacity: 1;
     }
 }
+.Trabajos-p{
+    text-wrap: balance;
+    line-height: 1.6em;
+    opacity: 1;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 80rem){
+        margin-bottom: 0;
+    }
+    @media (max-width: 48rem){
+        line-height: 1.4em;
+        margin-bottom: 0.5rem;
+    }
+}
 .Trabajos-rrss .Trabajos-icon{
-    @media (max-width: 920px){
+    @media (max-width: 64rem){
         margin-bottom: 0;
         opacity: 1;
     }
@@ -97,17 +160,12 @@
     transition: all .5s ease;
     opacity: .4;
 
-    @media (max-width: 920px){
+    @media (max-width: 64rem){
         opacity: 1;
     }
 }
-.Trabajos-article:hover{
-    outline: 1px solid var(--lila);
-    box-shadow: 0px 0px 12px #1a1a1a55;
-}
 
 .Trabajos-article:hover .Trabajos-img,
-.Trabajos-article:hover .Trabajos-h3,
 .Trabajos-article:hover .Trabajos-rrss{
     filter: grayscale(0%);
     opacity: 1;
@@ -120,9 +178,10 @@
     width: 1.5rem;
     height: 1.5rem;
     transition: transform .5s ease;
-}
-.Trabajos-icon:hover{
-    transform: scale(1.1);
+    @media(max-width: 48rem){
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 @keyframes aparecer {

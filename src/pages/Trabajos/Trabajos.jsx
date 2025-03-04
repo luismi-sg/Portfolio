@@ -1,79 +1,33 @@
-import { useState } from 'react'
 import './Trabajos.css'
-import { proyectos } from '../../bbdd/proyectos'
-import { IconGithub, IconNavegar } from '../../utils/icons'
 import { CardTrabajo } from '../../components/CardTrabajo/CardTrabajo'
 import { useTranslation } from 'react-i18next';
-
+import useListProjects  from '../../hooks/proyectos';
 
 export const Trabajos = () => {
 
+    const listProjects = useListProjects();
     const { t } = useTranslation();
-
-    const [ toggleState, setToggleState] = useState(1)
-
-    const toggleTab = (index) => {
-        setToggleState(index)
-    }
     
     return( 
         <div className='Trabajos'>
             <div className='Trabajos-wrapper'>
                 <div className='Tabs-container'>
-                    <div className='Trabajos-Tabs-wrapper'>
-                        <div
-                        className={ toggleState === 1 ? "Button-tabs tab-isActive" : "Button-tabs"}
-                        onClick={() => toggleTab(1)}
-                        >
-                            <strong>{t('projectsTitleDesign')}</strong>
-                        </div>
-                        <div
-                        className={ toggleState === 2 ? "Button-tabs tab-isActive" : "Button-tabs"}
-                        onClick={() => toggleTab(2)}
-                        >
-                            <strong>{t('projectsTitleDev')}</strong>
-                        </div>
-                    </div>
-                    <div className='Tabs-wrapper'>
-                        <div className={ toggleState === 1 ? "Tabs-content content-isActive" : "Tabs-content"}>
-                            <section className='Trabajos-grid'>
-                                { proyectos.map(( {id , pills, img , alt , titulo , gitUrl , webUrl} ) => {
-                                        if(pills.includes('UX/UI')){
-                                            return(
-                                                <CardTrabajo
-                                                key={id} 
-                                                pills={pills}
-                                                webUrl={webUrl}
-                                                titulo={titulo}
-                                                alt={alt}
-                                                img={img}
-                                                gitUrl={gitUrl}/>
-                                            )
-                                        }
-                                    })}
-                            </section>
-                        </div>
-                        <div className={ toggleState === 2 ? "Tabs-content content-isActive" : "Tabs-content"}>
-                            <section className='Trabajos-grid'>
-                                { proyectos.map(( {id , pills, img , alt , titulo , gitUrl , webUrl} ) => {
-                                        if(pills.includes('Web')){
-                                            return(
-                                                <CardTrabajo
-                                                key={id} 
-                                                pills={pills}
-                                                webUrl={webUrl}
-                                                titulo={titulo}
-                                                alt={alt}
-                                                img={img}
-                                                gitUrl={gitUrl}/>
-                                            )
-                                        }
-                                    })}
-                            </section>
-                        </div>
-                    </div>
+                    <section className='Trabajos-grid'>
+                        { listProjects.map(( {id, pills, img, alt, titulo, description, gitUrl , webUrl} ) => {
+                                return(
+                                    <CardTrabajo
+                                    key={id} 
+                                    pills={pills}
+                                    webUrl={webUrl}
+                                    titulo={titulo}
+                                    description={description}
+                                    alt={alt}
+                                    img={img}
+                                    gitUrl={gitUrl}/>
+                                )
+                            })}
+                    </section>
                 </div>
-                
             </div>
         </div>
     )

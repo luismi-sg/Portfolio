@@ -10,7 +10,7 @@ export const Fondos = () => {
     useEffect(()=>{
         switch ( pathname ) {
             case '/' :
-                setsIsActive(0)
+                setsIsActive(1)
                 break;
             case '/contacto' :
                 setsIsActive(2)

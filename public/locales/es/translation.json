@@ -1,22 +1,42 @@
-
 {
     "projects": "Proyectos",
     "about": "Sobre mi",
     "contact": "Contacto",
 
-    "position": "Diseñador UX/UI y Desarrollador FrontEnd",
+    "position": "Diseñador UX/UI y Desarrollador Web",
+    "background": "Diseñando desde 2013. Soy un Desarrollador UX/UI que vive en Madrid. Tengo formación en diseño gráfico y, en mi tiempo libre, cuido mis plantas y hago algunos bocetos.",
+    "getintouch": "Pongámonos en contacto.",
     "mailCopy": "Correo copiado",
+
+    "sliderName1": "Music App BeatScene",
+    "description1": "Diseño de producto. App para amantes de los conciertos y la música en vivo.",
+    "sliderName2": "Blog | The Special One",
+    "description2": "Diseño y Desarrollo de Web Magazine sobre Futbol y actualidad.",
+    "sliderName3": "BeApolo",
+    "description3": "Desarrollo de la web BeApolo, para una agencia de marketing digital.",
+
+    "workingOn": "Trabajando en",
+    "workingOnText": "Actualmente, soy freelancer y trabajo con diversos clientes diseñando y desarrollando sitios web. Anteriormente, trabajé en AU Consultores, una agencia de marketing, donde creé sitios web desde cero (0 → 1) utilizando Figma, WordPress, HTML, CSS, Astro, React y más.",
+    "workingOnButton": "Conóceme mejor",
 
     "contactTitle" : "Conversamos?",
     "contactText": "Si te gusta mi perfil no dudes en contactarme.",
 
-    "aboutDescription": "Me llaman LuisMi. Soy diseñador UX/UI y desarrollador enfocado en el FrontEnd, con ocho años de experiencia en la industria del diseño digital y dos años en la ideación, creación y desarrollo de interfaces web y apps. Mi habilidad para combinar diseño visual y funcionalidades técnicas me permite desarrollar soluciones digitales estéticamente agradables y altamente usables.",
+    "aboutDescription1": "Me llaman LuisMi. Soy diseñador UX/UI y desarrollador enfocado en el FrontEnd, con ocho años de experiencia en la industria del diseño digital y dos años en la ideación, creación y desarrollo de interfaces web y apps.",
+    "aboutDescription2": "Mi habilidad para combinar diseño visual y funcionalidades técnicas me permite desarrollar soluciones digitales estéticamente agradables y altamente usables.",
+    "aboutPhrase": "Diseñar es un plan para ordenar elementos de la mejor manera posible para lograr un propósito particular",
     "aboutStackTitle":"Stack de herramientas",
     "aboutTitleDesigner": "Como Diseñador",
     "aboutTitleDeveloper": "Como Desarrollador",
-    "aboutExperience": "Mi experiencia me ha dotado de habilidades sólidas en diseño digital y creación de sistemas de diseño innovadores, siempre buscando la formación continua, las mejores herramientas y tendencias actuales.",
+    "aboutExperience": "Mi experiencia",
+    "Experience1": "Diseñador UX, UI, maquetación y desarrollo Web, trabajando con sistemas de diseño y componentes para distintos clientes del área salud.",
+    "Experience2": "Diseñador 360, dentro del área de Marketing Comercial, responsable de la creación de piezas digitales e impresas, diseño web, piezas audiovisuales.",
+    "Experience3": "Diseñador multimedia, apoyando y liderando proyectos de Marketing Digital, rediseños Web, y actividades afines.",
     "aboutLuismi": "LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi LuisMi",
     "aboutDownload": "Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV Descargar CV",
+
+    "aboutExtra": "Luismi fuera del trabajo:",
+    "aboutExtraText": "Viajes, fútbol, fotografía, dibujo, mis plantas,  lectura, gastronomía y cockteles, entre otros.",
 
     "projectsTitleDev": "Desarrollo",
     "projectsTitleDesign": "Diseño",
@@ -82,5 +102,72 @@
 
     "ulimaHighlight": "WEB",
     "ulimaResultTitle": "Diseño de interfaz web",
-    "ulimaResultText": "La web debe mostrar una imagen moderna, seria y profesional de la Universidad de Lima, por lo que el diseño de la web debe ser atractivo y funcional para los usuarios, en su mayoria adultos, que buscan información sobre los programas de Posgrado. Se realizo la investigacón previa con la colaboración de distintos Stakeholders, tras varias etapas de prototipado y testeo, se realizo un sistema de diseño con Figma a partir de el manual de marca, el cual se respeto durante todo el diseño final y para la implementación en colaboración con el equipo de desarrolladores. La web es totalmente manejable por los editores de contenido y esta optimizada para los motores de búsqueda actuales."
+    "ulimaResultText": "La web debe mostrar una imagen moderna, seria y profesional de la Universidad de Lima, por lo que el diseño de la web debe ser atractivo y funcional para los usuarios, en su mayoria adultos, que buscan información sobre los programas de Posgrado. Se realizo la investigacón previa con la colaboración de distintos Stakeholders, tras varias etapas de prototipado y testeo, se realizo un sistema de diseño con Figma a partir de el manual de marca, el cual se respeto durante todo el diseño final y para la implementación en colaboración con el equipo de desarrolladores. La web es totalmente manejable por los editores de contenido y esta optimizada para los motores de búsqueda actuales.",
+    "listProjects": [
+    {
+      "id": "0",
+      "pills": ["UX/UI", "Figma", "App"],
+      "img" : "/assets/uxui-beatscene.webp",
+      "alt" : "Miniature BeatScene App",
+      "titulo" : "BeatScene App",
+      "description" : "BeatScene es una app para la compra de entradas a conciertos, creada con la metodología del doble diamante. Se realizó la investigación en FigJam, seguido de prototipado y diseño final en Figma, optimizando la experiencia del usuario.",
+      "webUrl" : "/beatscene"
+  },
+  {
+      "id": "1",
+      "pills": ["UX/UI", "Design", "Adobe Tools", "Figma" ],
+      "img" : "/assets/Ulima-design.webp",
+      "alt" : "Universidad de Lima",
+      "titulo" : "Universidad de Lima",
+      "description" : "Diseñe piezas digitales y UI para el área de Posgrado en la Universidad de Lima, aplicando habilidades de comunicación y trabajo en equipo. Implementé un sistema de diseño colaborativo con desarrolladores, optimizando la web y demás productos digitales.",
+      "webUrl" : "/universidad-de-lima"
+  },
+  {
+      "id": "2",
+      "pills": ["UX/UI", "Figma", "Wordpress"],
+      "img" : "/assets/web-thespecialone.webp",
+      "alt" : "The Special One | Football Blog",
+      "titulo" : "The Special One",
+      "description" : "Diseñe una web Magazine sobre fútbol, aplicando principios del Diseño Atómico en Figma y desarrollándose con WordPress y Elementor PRO. Destaco mi autonomía, creatividad y estrategia SEO para optimizar el tráfico, asegurando una gestión eficiente del contenido.",
+      "webUrl" : "/thespecialone"
+  },
+  {
+      "id": "3",
+      "pills": ["Web", "HTML", "CSS", "JS", "Swiper JS"],	
+      "img" : "/assets/web-beapolo.webp",
+      "alt" : "Miniature Web BeApolo",
+      "titulo" : "BeApolo",
+      "description" : "En el desarrollo de BeApolo, apliqué habilidades de organización y atención al detalle, empleando HTML, CSS y JavaScript. Implementé la metodología BEM para una estructura de código clara y utilicé el Diseño Atómico para componentes reutilizables, logrando una interfaz eficiente y escalable.",
+      "webUrl" : "https://beapolo.io/"
+  },
+  {
+      "id": "4",
+      "pills": ["Web", "HTML", "CSS", "JS"],
+      "img" : "/assets/web-pinkfloyd.webp",
+      "alt" : "Miniature Web Pink Floyd",
+      "titulo" : "Pink Floyd",
+      "description" : "Desarrollé mi primera web, Atom Mother, utilizando HTML, CSS y JavaScript, aplicando los fundamentos de diseño web y desarrollo front-end. Este proyecto fortaleció mis habilidades de resolución de problemas, organización y atención al detalle.",
+      "gitUrl" : "https://github.com/luismi-sg/atom-mother-web",
+      "webUrl" : "https://atom-mother-web.netlify.app/"
+  },
+  {
+      "id": "5",
+      "pills": ["Web", "App", "React", "CSS"],
+      "img" : "/assets/web-netflix.webp",
+      "alt" : "Miniature Netflix App",
+      "titulo" : "Netflix-project",
+      "description" : "En el desarrollo Fullstack del proyecto Netflix Clone, utilicé React con CSS para una interfaz dinámica, MongoDB para la gestión de datos y ExpressJS para las rutas del servidor. Estas herramientas reflejan mi capacidad para integrar tecnologías y mi enfoque en soluciones escalables.",
+      "gitUrl" : "https://github.com/luismi-sg/Netflix-proyecto",
+      "webUrl" : "https://netflix-proyecto.vercel.app/"
+  },
+  {
+      "id": "6",
+      "pills": ["Web" , "App", "React", "CSS"],
+      "img" : "/assets/web-spotify.webp",
+      "alt" : "Miniature Spotify App",
+      "titulo" : "Spotify-project",
+      "description" : "Front-end development of the Spotify Clone project",
+      "gitUrl" : "https://github.com/luismi-sg/APP-Spotify",
+      "webUrl" : "https://spotify-proyecto.vercel.app/"
+  }]
   }
