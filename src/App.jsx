@@ -27,7 +27,7 @@ function App() {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    document.documentElement.setAttribute('lang', lng);  // Cambiar el atributo lang en el HTML
+    document.documentElement.setAttribute('lang', lng);
   };
   return (
     <BrowserRouter>

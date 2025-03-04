@@ -97,7 +97,7 @@ export const Inicio = () => {
                                     <p className='Works-p'>{t('workingOnText')}</p>
                                     <div className='Works-footer'>
                                         <p className="Inicio-p purple">{t('workingOnButton')}</p>
-                                        <Link className='Works-icon' to='/sobremi' title='All Works'><IconNavegar/></Link>
+                                        <Link className='Works-icon' to='/sobremi' title='About me'><IconNavegar/></Link>
                                     </div>
                                 </div>
                             </div>
