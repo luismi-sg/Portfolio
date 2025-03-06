@@ -28,6 +28,34 @@ export const Trabajos = () => {
                             })}
                     </section>
                 </div>
+                {/* <div className='Misc-container'>
+                    <div className='Misc-header'>
+                        <h3>Otros trabajos</h3>
+                    </div>
+                    <section className='Misc-grid'>
+                        <div className='Misc-item' style={{gridArea: 'misc-1'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-2'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-3'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-4'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-5'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-6'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                        <div className='Misc-item' style={{gridArea: 'misc-7'}}>
+                            <img className='Misc-img' src="/assets/beatscene_info.webp"/>
+                        </div>
+                    </section>
+                </div> */}
             </div>
         </div>
     )

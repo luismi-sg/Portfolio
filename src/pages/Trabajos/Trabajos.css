@@ -49,6 +49,51 @@
         padding: 0;
     }
 }
+.Misc-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+.Misc-header{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6rem 0 2rem;
+}
+.Misc-header h3{
+    font-size: 2rem;
+}
+.Misc-grid{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(320px , 1fr)); */
+    gap: 1rem;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 240px;
+    grid-template-areas: 
+    "misc-1 misc-1 misc-1 misc-1 misc-1 misc-1 misc-2 misc-2 misc-2 misc-3 misc-3 misc-3"
+    "misc-1 misc-1 misc-1 misc-1 misc-1 misc-1 misc-4 misc-4 misc-4 misc-4 misc-4 misc-4"
+    "misc-5 misc-5 misc-5 misc-5 misc-6 misc-6 misc-6 misc-6 misc-7 misc-7 misc-7 misc-7"
+    ;
+}
+.Misc-item{
+    background-color: #ffffff1a;
+    width: 100%;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+.Misc-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
 .Trabajos-Tabs-wrapper{
     width: 100%;
     display: flex;

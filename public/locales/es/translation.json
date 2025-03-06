@@ -47,22 +47,35 @@
     "beatsceneTitle": "BeatScene",
     "beatsceneExcerpt": "Diseño de producto. App para amantes de los conciertos y la música en vivo.",
 
-    "projectObjective": "OBJETIVO",
-    "beatsceneWhatIs": "¿Qué es BeatScene?",
-    "beatsceneWhatIsText": "Es una App donde puedes compartir la experiencia de vivir tu evento músical favorito con quien tu quieras o tener la posibilidad de conocer nuevas personas con tus mismos gustos musicales y vivirla juntos.",
+    "projectObjective": "Objetivo e Investigación",
+    "beatsceneWhatIs": "Quiero conocer gente nueva e ir a conciertos con ellos. ¿Cómo puedo hacerlo?",
+    "beatsceneWhatIsText": "Esta fue la pregunta que dio inicio a la investigación para desarrollar el producto. Decidimos utilizar la metodología del doble diamante, comenzando con la fase de descubrimiento.",
+    "beatsceneWhatIsText2": "A través de entrevistas, encuestas y un detallado desk research, identificamos las principales necesidades de los usuarios: búsqueda rápida de eventos, una compra sin fricciones y un sistema seguro que generara confianza.",
 
     "beatsceneSubtitle": "Proyecto UX/UI Mobile",
     "beatscenePhrase": "Me encanta ir a conciertos y conocer gente nueva",
-    "beatsceneslide1": "BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene BeatScene",
-    "beatsceneslide2": "Comparte tu música y disfruta de conciertos Comparte tu música y disfruta de conciertos",
+    "beatsceneslide1": "typography fonts typography fonts typography fonts typography fonts typography fonts",
+    "beatsceneslide2": "Satoshi Sans Satoshi Sans Satoshi Sans Satoshi Sans Satoshi Sans",
 
-    "projectProcess": "PROCESO",
-    "beatsceneProcessTitle": "La investigación y el sistema de diseño",
-    "beatsceneProcessText": "El proceso para diseñar la app empezó con un estudio completo e investigación en la experiencia de usuario, para luego seguir con los pasos necesarios para diseñar la interfaz. Desarrollando un sistema de diseño solido, con wireframes y una estructura enfocada en la interactividad del usuario con la app.",
+    "projectProcess": "Definición",
+    "beatsceneProcessTitle": "Jerarquizar y refinar la información para empatizar con nuestros usuarios",
+    "beatsceneProcessText": "En esta etapa, sintetizamos la información recopilada para obtener datos de calidad enfocados en los usuarios. Analizamos sus necesidades y creamos un mapa de empatía para reflejar los datos clave en un User Persona. Con esta base, desarrollamos un User Journey y realizamos un estudio de Benchmarking, identificando soluciones alineadas con nuestro arquetipo de usuario.",
 
-    "beatsceneResult": "RESULTADO FINAL",
-    "beatsceneResultText": "La App fue enteramente diseñada en Figma, el prototipo fue testeado con la herramienta Maze y se hicieron cambios dentro del interfaz según el feedback de los constantes testeos y feedbacks de los posibles usuarios.",
+    "beatsceneDesign": "Diseñar",
+    "beatsceneDesignTitle": "Establecer un sistema de diseño y prototipado",
+    "beatsceneDesignText": "Antes del diseño, fue clave encontrar insights a partir del arquetipo de usuario. Para ello, elaboramos una matriz de usabilidad y viabilidad, filtramos los hallazgos por valor y los plasmamos en un Business Model Canvas. Esto nos permitió definir funcionalidades clave como filtros inteligentes, seguridad reforzada y recomendaciones personalizadas.",
+    "beatsceneDesignText2": "Avanzamos en la fase de diseño con un sitemap del producto, que luego tomamos como base para la creación de wireframes low-fi. Nos preparamos para la siguiente etapa con mapas de flujo, ya que el siguiente paso sería prototipar en alta fidelidad algunas pantallas clave, como la creación de cuenta y el inicio de sesión de nuevos usuarios.",
 
+    "beatsceneResult": "Solución y Resultado",
+    "beatsceneResultTitle": "Crear un prototipo funcional MVP y probar los flujos de usuario",
+    "beatsceneResultText": "Antes de la fase final, diseñamos un primer prototipo de alta fidelidad, basado en el sistema de diseño previamente establecido. Se realizaron pruebas de usuario para iterar y aplicar mejoras al prototipo.",
+    "beatsceneResultText2": "El resultado final se validó cuando las pruebas, enfocadas en usabilidad y accesibilidad, arrojaron resultados positivos tanto cuantitativos como cualitativos. Finalmente, el MVP fue presentado al equipo de desarrollo.",
+
+    "beatsceneConclusion": "Conclusión",
+    "beatsceneConclusionTitle": "Aprendizaje y Reflexión",
+    "beatsceneConclusionText": "El proyecto BeatScene me permitió aplicar mis conocimientos en UX/UI y diseño de producto. Disfruté mucho trabajar con equipos multidisciplinarios, con personas que no necesariamente compartían la misma visión y a quienes había que persuadir con nuevas ideas. Estos intercambios fueron siempre bidireccionales, lo que hizo que el aprendizaje fuera constante. Revisa la presentación completa del proyecto:",
+
+    "goToTop" : "Volver arriba",
     "infoContact": "Contáctame",
     "infoContactText": "Si sientes que podemos trabajar juntos, conversemos.",
 
@@ -80,8 +93,8 @@
     "specialTools": "Herramientas",
     "specialslide1": "The Special One The Special One The Special One The Special One The Special One",
     "specialslide2": "Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía. Somos Haters. Cero Hipocresía.",
-
-    "specialResultTitle": "La web",
+    "projectResult": "Resultado",
+    "specialResultTitle": "Una web moderna y funcional preparada para el contenido enfocado en tráfico web",
     "specialResultText": "El diseño moderno y la funcionalidad del CMS permiten que la web sea manejable por EDITORES o CREADORES de contenido. La idea del proyecto es conseguir tráfico web y en un futuro utilizarla para agregarle MEDIA ADS, para ello se ha aplicado una estrategia SEO en la web que permita optimizarla en cara a los buscadores actuales.",
 
     "ulimaTitle": "Universidad de Lima",

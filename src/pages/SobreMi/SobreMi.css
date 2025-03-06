@@ -300,7 +300,7 @@ hr{
 .Info-h1{
     color: var(--lila);
     font-weight: 700;
-    font-size: clamp(2rem, 1.6667rem + 1.4815vw, 3rem);
+    font-size: clamp(1.8rem, 1.5667rem + 1.4815vw, 3rem);
     margin-bottom: 1rem;
     margin-left: -3px;
     line-height: 1em;

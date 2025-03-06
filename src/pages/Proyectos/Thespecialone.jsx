@@ -10,14 +10,15 @@ export const Thespecialone = () =>{
             <div className="Interna-wrapper">
                 <section className="Interna-hero">
                     <div className="Interna-titulo">
+                        <img src="assets/logo-SpecialOne.png" className="Works-logo"/>
+                        <h1 className='Interna-h1'>{t('specialTitle')}<span className='Color-lila'>.</span></h1>
+                        <h2 className='Interna-h2'>{t('specialText')}</h2>
                         <ul className='Interna-pills'>
                             <li className='Interna-pill'> UX/UI </li>
                             <li className='Interna-pill'> WEB </li>
                             <li className='Interna-pill'> BLOG </li>
                             <li className='Interna-pill'> MAGAZINE </li>
                         </ul>
-                        <h1 className='Interna-h1'>{t('specialTitle')}<span className='Color-lila'>.</span></h1>
-                        <h2 className='Interna-h2'>{t('specialText')}</h2>
                         <div className="info-button">
                             <a href='https://thespecialone.top/' target='blank' title='Web The Special One'>{t('projectVisit')}
                                 <svg xmlns="http://www.w3.org/2000/svg" className="Trabajos-icon" viewBox="0 0 16 16">
@@ -26,21 +27,28 @@ export const Thespecialone = () =>{
                             </a>
                         </div>
                     </div>
-                    <div className="Info-container derecha">
-                        <picture>
-                            <source media="(max-width: 960px)" srcSet="/assets/thespecialone_hero-mobile.webp" type="image/webp" />
-                            <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
-                        </picture>
-                    </div>
                 </section>
                 <section className="Interna-info">
-                    <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectObjective')}:</span> {t('specialWhatIs')}</h3>
-                        <p className="Interna-p">{t('specialWhatIsText')} </p>
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('projectObjective')} -</span>
+                        <h3 className="Interna-h3">{t('specialWhatIs')}</h3>
                     </div>
-                    <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectProcess')}:</span> {t('specialDesign')}</h3>
-                        <p className="Interna-p">{t('specialDesignText')}</p>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('specialWhatIsText')}</p>
+                    </div>
+                </section>
+                <picture>
+                    <source media="(max-width: 960px)" srcSet="/assets/thespecialone_hero-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/thespecialone_hero.webp" alt="BeatScene Hero App" />
+                </picture>
+
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('projectProcess')} -</span>
+                        <h3 className="Interna-h3">{t('specialDesign')}</h3>
+                    </div>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('specialDesignText')}</p>
                     </div>
                 </section>
                 <section className='Interna-grid'>
@@ -54,13 +62,13 @@ export const Thespecialone = () =>{
                     </article>
                     <article className='Grid-article'>
                         <h3 className='Interna-h3'>{t('specialTools')}</h3>
-                        <div className='Interna-pills Color-lila'>
-                            <span className='Interna-pill'> ILLUSTRATOR </span>
-                            <span className='Interna-pill'> FIGMA </span>
-                            <span className='Interna-pill'> WORDPRESS </span>
+                        <div className='Interna-pills ulima'>
+                            <span className='Interna-pill'> Illustrator </span>
+                            <span className='Interna-pill'> Figma </span>
+                            <span className='Interna-pill'> Wordpress </span>
                             <span className='Interna-pill'> CSS </span>
-                            <span className='Interna-pill'> ELEMENTOR PRO </span>
-                            <span className='Interna-pill'> MAILCHIMP </span>
+                            <span className='Interna-pill'> Elementor Pro </span>
+                            <span className='Interna-pill'> Mailchimp </span>
                         </div>
                     </article>
                     <article className='Grid-article autoSlide'>
@@ -72,18 +80,32 @@ export const Thespecialone = () =>{
                         </div>
                     </article>
                 </section>
+                <picture>
+                    <source media="(max-width: 960px)" srcSet="/assets/thespecialone-sistemadiseno-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/thespecialone-sistemadiseno.webp" alt="Logo BeatScene" />
+                </picture>
+
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('projectResult')} -</span>
+                        <h3 className="Interna-h3">{t('specialResultTitle')}</h3>
+                    </div>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('specialResultText')}</p>
+                    </div>
+                </section>
+                <picture>
+                    <source media="(max-width: 960px)" srcSet="/assets/thespecialone-web-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/thespecialone-web.webp" alt="Logo BeatScene" />
+                </picture>
                 <section className="Interna-info proceso">
-                    <div className="Info-container derecha">
-                        <picture>
-                            <source media="(max-width: 960px)" srcSet="/assets/thespecialone-sistemadiseno-mobile.webp" type="image/webp" />
-                            <img className="Interna-img" src="/assets/thespecialone-sistemadiseno.webp" alt="Logo BeatScene" />
-                        </picture>
+                    <div className="info-button">
+                        <a href='#'>{t('goToTop')}
+                            <svg xmlns="http://www.w3.org/2000/svg" className="Trabajos-icon" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                            </svg>
+                        </a>
                     </div>
-                    <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectResult')}:</span> {t('specialResultTitle')}</h3>
-                        <p className="Interna-p"> {t('specialResultText')} </p>
-                    </div>
-                    
                 </section>
             </div>
             <div className='Interna-Banner thespecialone-banner'>

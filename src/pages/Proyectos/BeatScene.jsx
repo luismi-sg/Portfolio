@@ -11,43 +11,75 @@ export const BeatScene = () => {
             <div className="Interna-wrapper">
                 <section className="Interna-hero">
                     <div className="Interna-titulo">
-                        <ul className='Interna-pills'>
-                            <li className='Interna-pill'> UX/UI </li>
-                            <li className='Interna-pill'> APP </li>
-                            <li className='Interna-pill'> DESIGN SYSTEM </li>
-                            <li className='Interna-pill'> FIGMA </li>
-                        </ul>
+                        <img src="assets/logo-beatScene.png" className="Interna-logo"/>
                         <h1 className='Interna-h1'>{t('beatsceneTitle')}<span className='Color-lila'>.</span></h1>
                         <h2 className='Interna-h2'>{t('beatsceneExcerpt')}</h2>
-                    </div>
-                    <div className="Info-container derecha">
-                        <picture>
-                            <source media="(max-width: 960px)" srcSet="/assets/beatscene_hero-mobile.webp" type="image/webp" />
-                            <img className="Interna-img" src="/assets/beatscene_hero.webp" alt="BeatScene Hero App" />
-                        </picture>
+                        <ul className='Interna-pills'>
+                            <li className='Interna-pill'> App </li>
+                            <li className='Interna-pill'> UX/UI </li>
+                            <li className='Interna-pill'> Figma </li>
+                            <li className='Interna-pill'> FigJam </li>
+                            <li className='Interna-pill'> Design System </li>
+                            <li className='Interna-pill'> Double Diamond </li>
+                        </ul>                    
                     </div>
                 </section>
                 <section className="Interna-info">
-                    <div className="Info-container izquierda">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectObjective')}:</span> {t('beatsceneWhatIs')}</h3>
-                        <p className="Interna-p"> {t('beatsceneWhatIsText')}</p>
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('projectObjective')} -</span>
+                        <h3 className="Interna-h3">"{t('beatsceneWhatIs')}"</h3>
                     </div>
-                    <div className="Info-container derecha">
-                        <img className="Interna-img" src="/assets/beatscene_info.webp" alt="Logo BeatScene" />
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('beatsceneWhatIsText')}</p>
+                        <p className="Interna-p"> {t('beatsceneWhatIsText2')}</p>
                     </div>
                 </section>
+                <picture>
+                    <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-Cuestionarios-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/BeatScene-Cuestionarios.webp" alt="BeatScene Hero App" />
+                </picture>
+
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('projectProcess')} -</span>
+                        <h3 className="Interna-h3">{t('beatsceneProcessTitle')}</h3>
+                    </div>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('beatsceneProcessText')}</p>
+                    </div>
+                </section>
+                <picture>
+                    <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-UserPersona-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/BeatScene-UserPersona.webp" alt="BeatScene Hero App" />
+                </picture>
+
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('beatsceneDesign')} -</span>
+                        <h3 className="Interna-h3">{t('beatsceneDesignTitle')}</h3>
+                    </div>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('beatsceneDesignText')}</p>
+                        <p className="Interna-p"> {t('beatsceneDesignText2')}</p>
+                    </div>
+                </section>
+                <picture>
+                    <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-Wireframes-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/BeatScene-Wireframes.webp" alt="BeatScene Hero App" />
+                </picture>
                 <section className='Interna-grid'>
                     <article className='Grid-article'>
-                        <h3 className='Interna-h3'>{t('beatsceneTitle')}</h3>
-                        <p className='Interna-p'>{t('beatsceneSubtitle')}</p>
+                        <h3 className='Interna-h3'>{t('beatscenePhrase')}</h3>
                         <img className='Grid-image-fondo' src="/assets/beatscene_fondo1.webp" alt="" />
                     </article>
                     <article className='Grid-article flex-center'>
                         <img className="Grid-logo" src="/assets/beatscene_logo.png" alt="Logo BeatScene" />
                     </article>
-                    <article className='Grid-article'>
-                        <h3 className='Interna-h3'>"{t('beatscenePhrase')}"</h3>
-                        <p className='Interna-p'><span className='Color-lila'>Dayana Villaizan - Raver</span></p>
+                    <article className='Grid-article mid-padding'>
+                        <picture>
+                            <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-Moodboard.webp" type="image/webp" />
+                            <img className="Interna-img" src="/assets/BeatScene-Moodboard.webp" alt="BeatScene Hero App" />
+                        </picture>
                     </article>
                     <article className='Grid-article autoSlide'>
                         <div className='autoSlide-wrapper'>
@@ -58,27 +90,47 @@ export const BeatScene = () => {
                         </div>
                     </article>
                 </section>
-                <section className="Interna-info proceso">
-                    <div className="Info-container derecha">
-                        <iframe className="Info-iframe" src="https://embed.figma.com/proto/O3tz9wXZ4tAj85Nm0DTgRi/Proyecto-Final?page-id=6%3A2&node-id=30-310&p=f&viewport=577%2C1509%2C0.2&scaling=contain&content-scaling=fixed&embed-host=share" allowFullScreen></iframe>
+                <picture>
+                    <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-prototipo-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/BeatScene-prototipo.webp" alt="BeatScene Hero App" />
+                </picture>
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('beatsceneResult')} -</span>
+                        <h3 className="Interna-h3">{t('beatsceneResultTitle')}</h3>
                     </div>
-                    <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('projectProcess')}:</span> {t('beatsceneProcessTitle')}</h3>
-                        <p className="Interna-p">{t('beatsceneProcessText')}</p>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('beatsceneResultText')}</p>
+                        <p className="Interna-p"> {t('beatsceneResultText2')}</p>
                     </div>
                 </section>
-                <section className="Interna-info resultado">
-                    <div className="Info-container">
-                        <h3 className="Interna-h3"><span className='Color-lila'>{t('beatsceneResult')}:</span> {t('beatsceneTitle')}</h3>
-                        <p className="Interna-p"> {t('beatsceneResultText')}</p>
+                <picture>
+                    <source media="(max-width: 48rem)" srcSet="/assets/BeatScene-Flowchart-mobile.webp" type="image/webp" />
+                    <img className="Interna-img" src="/assets/BeatScene-Flowchart.webp" alt="BeatScene Hero App" />
+                </picture>
+                <video className='Interna-img' preload='yes' autoPlay='on' loop='on' muted data-object-fit="cover" playsInline controls='on'>
+                    <source media="(max-width: 960px)" autoPlay src='/assets/BeatScene-video-mobile.mp4' type="video/mp4"></source>
+                    <source autoPlay src='/assets/BeatScene-video.mp4' type="video/mp4"></source>
+                </video>
+                <section className="Interna-info">
+                    <div className="Info-container flex-2">
+                        <span className='Span-Color-lila'>{t('beatsceneConclusion')} -</span>
+                        <h3 className="Interna-h3">{t('beatsceneConclusionTitle')}</h3>
                     </div>
-                    <div className="Info-container derecha">
-                        <video className='Interna-img' preload='yes' autoPlay='on' loop='on' muted data-object-fit="cover" playsInline controls='on'>
-                            <source media="(max-width: 960px)" autoPlay src='/assets/BeatScene-video-mobile.mp4' type="video/mp4"></source>
-                            <source autoPlay src='/assets/BeatScene-video.mp4' type="video/mp4"></source>
-                        </video>
+                    <div className="Info-container flex-3">
+                        <p className="Interna-p"> {t('beatsceneConclusionText')}</p>
                     </div>
-                    
+                </section>
+                    <iframe className="Info-iframe" src="https://embed.figma.com/proto/O3tz9wXZ4tAj85Nm0DTgRi/Proyecto-Final?page-id=6%3A2&node-id=30-310&p=f&viewport=577%2C1509%2C0.2&scaling=contain&content-scaling=fixed&embed-host=share" allowFullScreen>
+                    </iframe>
+                <section className="Interna-info proceso">
+                    <div className="info-button">
+                        <a href='#'>{t('goToTop')}
+                            <svg xmlns="http://www.w3.org/2000/svg" className="Trabajos-icon" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </section>
             </div>
             <div className='Interna-Banner'>
