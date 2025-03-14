@@ -27,6 +27,35 @@ export const Inicio = () => {
         <Helmet>
             <title>LuisMi • UX/UI Designer</title>
             <meta name="description" content="UX UI Designer & Web developer" />
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "Luis Miguel Sovero Guerrero",
+                    "url": "https://www.luismi.xyz/",
+                    "image": "https://www.luismi.xyz/assets/luismi-web-BN.webp",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/luismisg/",
+                        "https://github.com/luismi-sg"
+                    ],
+                    "jobTitle": "Diseñador UX/UI",
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Luismi."
+                    },
+                    "description": "Portafolio web de Luis Mi, diseñador UX/UI con experiencia en diseño de interfaces y desarrollo front-end.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Madrid",
+                        "addressCountry": "España"
+                    },
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "email": "lmsg1191@gmail.com",
+                        "contactType": "Personal email"
+                    }
+                })}
+            </script>
         </Helmet>
         <div className='Inicio'>
             <div className='Inicio-wrapper'>
