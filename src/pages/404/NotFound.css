@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    gap: 4rem;
 
     @media (max-width: 920px){
         justify-content: center;
@@ -40,18 +40,17 @@
     }
 }
 .NotFound-button{
-    padding: 12px 24px;
-    border: 2px solid var(--lila);
-    font-size: 1.5rem;
+    padding: 16px 24px;
+    font-size: 1rem;
     color: var(--blanco);
-    border-radius: 12px;
+    background-color: #ffffff1a;
+    border-radius: 8px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     transition: .5s all ease;
-    opacity: 0.5;
 
     @media (max-width: 920px){
         font-size: 1.2rem;

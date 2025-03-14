@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
@@ -21,7 +22,12 @@ export const Inicio = () => {
         }, 800)
     }
 
-    return( 
+    return(
+    <>
+        <Helmet>
+            <title>LuisMi • UX/UI Designer</title>
+            <meta name="description" content="UX UI Designer & Web developer" />
+        </Helmet>
         <div className='Inicio'>
             <div className='Inicio-wrapper'>
                 <main>
@@ -122,5 +128,6 @@ export const Inicio = () => {
                 </aside>
             </div>
         </div>
+    </>
     )
 }

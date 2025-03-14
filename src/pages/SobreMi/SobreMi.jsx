@@ -1,6 +1,6 @@
 import './SobreMi.css'
+import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next';
-
 
 export const SobreMi = () => {
 
@@ -8,8 +8,13 @@ export const SobreMi = () => {
     const stackFront = [ 'Figma', 'FigJam', 'Adobe XD', 'Maze', 'Illustrator', 'Photoshop', 'After Effects', 'Lightroom' ]
     const stackBack = [ 'HTML', 'CSS/SASS', 'Tailwind', 'JavaScript', 'React', 'Astro', 'MongoDB' , 'NodeJS', 'ExpressJS', 'GitHub' ]
 
-    return( 
-        <div className='Sobremi'>
+    return(
+        <>
+            <Helmet>
+                <title>LuisMi • About me</title>
+                <meta name="description" content="UX UI Designer & Web developer" />
+            </Helmet>
+            <div className='Sobremi'>
             <main className='Sobremi-wrapper'>
                 <section className='Perfil-section'>
                     <div className='Perfil-wrapper grid-1'>
@@ -95,5 +100,6 @@ export const SobreMi = () => {
                 </section>
             </main>
         </div>
+        </>
     )
 }

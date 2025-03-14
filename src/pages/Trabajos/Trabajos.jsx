@@ -2,6 +2,7 @@ import './Trabajos.css'
 import { CardTrabajo } from '../../components/CardTrabajo/CardTrabajo'
 import { useTranslation } from 'react-i18next';
 import useListProjects  from '../../hooks/proyectos';
+import { Helmet } from 'react-helmet-async'
 
 export const Trabajos = () => {
 
@@ -9,7 +10,12 @@ export const Trabajos = () => {
     const { t } = useTranslation();
     
     return( 
-        <div className='Trabajos'>
+        <>
+        <Helmet>
+            <title>LuisMi • Projects</title>
+            <meta name="description" content="Design and develop projects " />
+        </Helmet>
+            <div className='Trabajos'>
             <div className='Trabajos-wrapper'>
                 <div className='Tabs-container'>
                     <section className='Trabajos-grid'>
@@ -58,5 +64,6 @@ export const Trabajos = () => {
                 </div> */}
             </div>
         </div>
+        </>
     )
 }

@@ -1,13 +1,19 @@
 import { useState } from 'react'
 import './Proyectos.css'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 export const BeatScene = () => {
 
     const { t } = useTranslation();
 
     return(
-        <div className='Interna-container'>
+        <>
+            <Helmet>
+                <title>LuisMi • BeatScene</title>
+                <meta name="description" content="BeatScene App UX/UI Design" />
+            </Helmet>
+            <div className='Interna-container'>
             <div className="Interna-wrapper">
                 <section className="Interna-hero">
                     <div className="Interna-titulo">
@@ -152,5 +158,6 @@ export const BeatScene = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
